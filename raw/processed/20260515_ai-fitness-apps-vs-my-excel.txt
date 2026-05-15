@@ -1,0 +1,25 @@
+I Tried 5 AI Fitness Apps. Went Back to My Spreadsheet.
+
+So everyone's talking about AI fitness apps now. My coworker Jake won't shut up about this one that "learns your patterns" and "optimizes your macros." I figured, I'm a software engineer, I should at least try them before I mock them.
+
+I downloaded five. Not gonna name names because honestly they all kind of... blended together after day three.
+
+The first one asked me to take a photo of every meal. Every. Meal. I'm not a food blogger, I'm a guy who eats leftover pad thai over the sink at 11pm. I lasted four days before I deleted it.
+
+The second one was all about "mindful eating" and sent me push notifications asking how I FELT about my breakfast. I felt hungry. That's how I felt. Uninstalled.
+
+The third was actually decent for workouts. Good form cues, decent progression tracking. But when it came to BMI and body fat trends? Total garbage. It wanted to estimate my body fat from a photo. A PHOTO. I tried it three times in different lighting and got 12%, 18%, and 24%. My Navy method calculator says 16.2% and at least that's consistent.
+
+The fourth and fifth were basically subscription traps. Free for 3 days then $19.99/month. That's $240 a year. My spreadsheet costs $0 and doesn't judge my weekend beer consumption.
+
+Here's what I realized: these apps are built for engagement, not accuracy. They want you scrolling, tapping, subscribing. They gamify everything with streaks and badges and social features I don't want.
+
+My Excel sheet? It's ugly. It's just columns. Date, weight, waist, neck, BMI, body fat, notes. No animations. No AI coach telling me to "hydrate mindfully." But it's MINE. The data goes back 11 months. I can see exactly when I plateaued in March (turns out I was averaging 5 hours sleep, whoops). I can correlate my BMI dips with my actual behaviors, not some algorithm's guess.
+
+I did keep one thing from the apps: the reminder to measure weekly instead of daily. That was actually useful. Added it to my spreadsheet as a conditional formatting rule. Green if I logged this week, red if I didn't.
+
+Look, if AI fitness apps work for you, great. Jake lost 8kg with his. But for me? I'll stick with my ugly green-and-white spreadsheet and my $15 digital scale. At least I know where the data's going.
+
+Anyway, I've been meaning to write about what happened when I trained for my first half marathon. Yeah, my BMI went UP. I'll get to that next week maybe. Or not. Depends on whether my cat lets me use the laptop.
+
+See you next week. Or not.

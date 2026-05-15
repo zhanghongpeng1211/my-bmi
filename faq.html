@@ -3,8 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ | My-BMI.net</title>
+  <title>FAQ - My-BMI.net</title>
+  <meta name="description" content="Frequently asked questions about BMI calculation, body fat estimation, and health tracking on My-BMI.net.">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How accurate is the BMI calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMI is a useful screening tool but has limitations. It does not distinguish between muscle and fat, so athletes may have a high BMI despite being healthy. For a more complete picture, use our body fat estimator alongside BMI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Navy method body fat calculator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Navy method estimates body fat percentage using neck and waist circumference measurements along with height. It's based on formulas developed by the US Navy and provides a reasonable estimate for most people, though it may not be as accurate as DEXA scans or hydrostatic weighing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data saved on your servers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. All data you enter is stored locally in your browser using localStorage. We do not collect, store, or transmit any of your personal health data to our servers. Your data stays on your device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I export my tracking history?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Go to the Export tab in the calculator to download your data as JSON or CSV. This allows you to back up your records or import them into other applications."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I rely on BMI alone for health assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. BMI is just one metric and does not tell the whole story. We recommend tracking BMI alongside body fat percentage, waist circumference, and overall fitness levels. Always consult a healthcare provider for personalized health advice."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -19,58 +68,53 @@
     </nav>
   </header>
 
-  <main class="blog-container">
-    <div class="blog-header">
-      <h1>Frequently Asked Questions</h1>
+  <main class="page-container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div itemscope itemtype="https://schema.org/FAQPage">
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h2 itemprop="name">How accurate is the BMI calculator?</h2>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">BMI is a useful screening tool but has limitations. It does not distinguish between muscle and fat, so athletes may have a high BMI despite being healthy. For a more complete picture, use our body fat estimator alongside BMI.</p>
+        </div>
+      </div>
+
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h2 itemprop="name">How does the Navy method body fat calculator work?</h2>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">The Navy method estimates body fat percentage using neck and waist circumference measurements along with height. It's based on formulas developed by the US Navy and provides a reasonable estimate for most people, though it may not be as accurate as DEXA scans or hydrostatic weighing.</p>
+        </div>
+      </div>
+
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h2 itemprop="name">Is my data saved on your servers?</h2>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">No. All data you enter is stored locally in your browser using localStorage. We do not collect, store, or transmit any of your personal health data to our servers. Your data stays on your device.</p>
+        </div>
+      </div>
+
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h2 itemprop="name">Can I export my tracking history?</h2>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Yes. Go to the Export tab in the calculator to download your data as JSON or CSV. This allows you to back up your records or import them into other applications.</p>
+        </div>
+      </div>
+
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h2 itemprop="name">Should I rely on BMI alone for health assessment?</h2>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">No. BMI is just one metric and does not tell the whole story. We recommend tracking BMI alongside body fat percentage, waist circumference, and overall fitness levels. Always consult a healthcare provider for personalized health advice.</p>
+        </div>
+      </div>
     </div>
 
-    <article class="post-article">
-      <div class="advice-card">
-        <h4>Is this tool free?</h4>
-        <p>Yes, completely free. No account, no signup, no credit card. I built this because I needed it and figured others might too.</p>
-      </div>
-
-      <div class="advice-card">
-        <h4>Is my data saved?</h4>
-        <p>Yes, but only on your device. We use your browser's localStorage, which means your history stays on your computer/phone. Nothing is sent to our servers. You can clear it anytime by clearing your browser data.</p>
-      </div>
-
-      <div class="advice-card">
-        <h4>How accurate is the body fat calculator?</h4>
-        <p>We use the U.S. Navy method, which studies show is accurate within 3-4% compared to DEXA scans (the gold standard). For best results, measure your waist and neck at the same spots consistently. I measure my waist at the navel level, neck below the Adam's apple.</p>
-      </div>
-
-      <div class="advice-card">
-        <h4>Why did my BMI go up but I look better?</h4>
-        <p>This is exactly what happened to me. Muscle weighs more than fat. When you build muscle and lose fat, your weight (and therefore BMI) can increase while your body composition improves. That's why we track body fat percentage alongside BMI.</p>
-      </div>
-
-      <div class="advice-card">
-        <h4>Can I use this on my phone?</h4>
-        <p>Yes, the site is fully responsive. I actually use it on my phone every Sunday morning to check my weekly trend.</p>
-      </div>
-
-      <div class="advice-card">
-        <h4>Do you give medical advice?</h4>
-        <p>No. This tool is for informational purposes only. Always consult a healthcare professional for medical advice, especially if you have existing health conditions.</p>
-      </div>
-
-      <div class="advice-card">
-        <h4>How do I export my data?</h4>
-        <p>Go to the Export tab in the calculator. You can download your history as JSON or CSV. The JSON format is useful if you want to import into another app. CSV opens in Excel.</p>
-      </div>
-
-      <div class="advice-card">
-        <h4>Who built this?</h4>
-        <p>Alex Thompson, a software engineer in Denver who got obsessed with tracking his BMI and then realized BMI alone wasn't enough. <a href="about.html" style="color:#c4713d;">Read my full story →</a></p>
-      </div>
-    </article>
-
-    <a href="index.html" class="back-link">← Back to Calculator</a>
+    <p style="margin-top:32px;padding-top:16px;border-top:2px solid var(--border);">
+      Still have questions? Contact <a href="mailto:contact@my-bmi.net">contact@my-bmi.net</a>.
+    </p>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 My-BMI.net · All estimates for informational purposes only</p>
+    <p>© 2026 My-BMI.net · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a></p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | My-BMI.net</title>
+  <meta name="description" content="Page not found on My-BMI.net. Return to calculator or explore our blog.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .notfound-container {
+      max-width: 600px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .notfound-code {
+      font-size: 6rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .notfound-title {
+      font-size: 1.5rem;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .notfound-desc {
+      color: var(--text-light);
+      margin-bottom: 32px;
+      font-size: 1rem;
+    }
+    .notfound-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .notfound-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.2s;
+      min-height: 44px;
+    }
+    .notfound-btn:hover {
+      background: var(--primary-light);
+    }
+    .notfound-btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    .notfound-btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+    .notfound-recommended {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      text-align: left;
+    }
+    .notfound-recommended h3 {
+      color: var(--primary);
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+    .notfound-recommended a {
+      display: block;
+      padding: 10px 0;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .notfound-recommended a:hover {
+      color: var(--primary);
+    }
+    .notfound-recommended a:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-logo">My-BMI.net</a>
+      <div class="nav-links">
+        <a href="index.html">Calculator</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="notfound-container">
+    <div class="notfound-code">404</div>
+    <h1 class="notfound-title">Page Not Found</h1>
+    <p class="notfound-desc">Looks like this page took a rest day. It's not here right now.</p>
+
+    <div class="notfound-actions">
+      <a href="index.html" class="notfound-btn">← Back to Calculator</a>
+      <a href="blog/index.html" class="notfound-btn notfound-btn-outline">Read the Blog</a>
+    </div>
+
+    <div class="notfound-recommended">
+      <h3>You might be looking for:</h3>
+      <a href="index.html">BMI & Body Fat Calculator</a>
+      <a href="blog/index.html">Latest Blog Posts</a>
+      <a href="faq.html">Frequently Asked Questions</a>
+      <a href="about.html">About Alex Thompson</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 My-BMI.net · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a></p>
+  </footer>
+</body>
+</html>

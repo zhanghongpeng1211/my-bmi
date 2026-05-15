@@ -1,7 +1,7 @@
 {
   "site": "站1my-bmi.net",
-  "last_updated": "2026-05-15T14:54:12.557853",
-  "total_articles": 1,
+  "last_updated": "2026-05-15T20:47:02.586411",
+  "total_articles": 4,
   "articles": [
     {
       "title": "Why I Stopped Trusting BMI Alone (And Started Measuring Body Fat)",
@@ -11,6 +11,33 @@
       "excerpt": "Why I Stopped Trusting BMI Alone (And Started Measuring Body Fat)  I tracked my BMI for 365 days straight. Every morning, same time, same scale. The number said I was \"normal.\" My doctor said I was \"h...",
       "calc_type": "bmi",
       "filename": "article_my-bmi_2026-05-15.html"
+    },
+    {
+      "title": "I Tried 5 AI Fitness Apps. Went Back to My Spreadsheet.",
+      "slug": "ai-fitness-apps-vs-my-excel",
+      "date": "2026-05-15",
+      "category": "Rate Strategy",
+      "excerpt": "I Tried 5 AI Fitness Apps. Went Back to My Spreadsheet.  So everyone's talking about AI fitness apps now. My coworker Jake won't shut up about this one that \"learns your patterns\" and \"optimizes your ...",
+      "calc_type": "bmi",
+      "filename": "ai-fitness-apps-vs-my-excel.html"
+    },
+    {
+      "title": "I Trained for a Half Marathon. My BMI Went Up. Here's Why.",
+      "slug": "half-marathon-bmi-surprise",
+      "date": "2026-05-15",
+      "category": "Personal Story",
+      "excerpt": "I Trained for a Half Marathon. My BMI Went Up. Here's Why.  Okay so this is embarrassing but I'm writing it anyway because maybe someone else is confused by the same thing.",
+      "calc_type": "bmi",
+      "filename": "half-marathon-bmi-surprise.html"
+    },
+    {
+      "title": "I Tried Noom for 7 Days. Here's Why I Deleted It.",
+      "slug": "one-week-noom-deleted",
+      "date": "2026-05-15",
+      "category": "Health Tips",
+      "excerpt": "I Tried Noom for 7 Days. Here's Why I Deleted It.  Noom's everywhere right now. Ads on every podcast, Instagram influencers pushing it, my mom even mentioned it. \"Psychology-based weight loss,\" they s...",
+      "calc_type": "calorie",
+      "filename": "one-week-noom-deleted.html"
     }
   ]
 }
