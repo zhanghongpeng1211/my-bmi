@@ -1,0 +1,16 @@
+{
+  "site": "站1my-bmi.net",
+  "last_updated": "2026-05-15T14:54:12.557853",
+  "total_articles": 1,
+  "articles": [
+    {
+      "title": "Why I Stopped Trusting BMI Alone (And Started Measuring Body Fat)",
+      "slug": "article_my-bmi_2026-05-15",
+      "date": "2026-05-15",
+      "category": "Personal Story",
+      "excerpt": "Why I Stopped Trusting BMI Alone (And Started Measuring Body Fat)  I tracked my BMI for 365 days straight. Every morning, same time, same scale. The number said I was \"normal.\" My doctor said I was \"h...",
+      "calc_type": "bmi",
+      "filename": "article_my-bmi_2026-05-15.html"
+    }
+  ]
+}

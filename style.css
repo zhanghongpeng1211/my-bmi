@@ -1,0 +1,215 @@
+/* Minimal style for my-bmi.net */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+}
+
+.site-header {
+  background: #2c5530;
+  padding: 15px 20px;
+}
+
+.site-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #c4713d;
+}
+
+.post-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.post-article {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.post-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.post-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #888;
+}
+
+.post-category {
+  background: #c4713d;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.post-title {
+  font-size: 32px;
+  color: #2c5530;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.post-author {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.post-ad {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.post-related {
+  margin: 40px 0;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.post-related h3 {
+  margin-bottom: 15px;
+  color: #2c5530;
+}
+
+.post-related-card {
+  margin: 10px 0;
+  padding: 12px;
+  background: #fff;
+  border-radius: 6px;
+  border-left: 3px solid #c4713d;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 30px 0;
+  color: #c4713d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Blog index page */
+.blog-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-header h1 {
+  font-size: 32px;
+  color: #2c5530;
+  margin-bottom: 10px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid #eee;
+}
+
+.blog-card-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #888;
+}
+
+.blog-card-category {
+  background: #c4713d;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.blog-card-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.blog-card-title a {
+  color: #2c5530;
+  text-decoration: none;
+}
+
+.blog-card-title a:hover {
+  color: #c4713d;
+}
+
+.blog-card-excerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blog-card-read {
+  color: #c4713d;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.blog-card-read:hover {
+  text-decoration: underline;
+}
