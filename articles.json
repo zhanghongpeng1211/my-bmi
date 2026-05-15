@@ -1,7 +1,7 @@
 {
   "site": "站1my-bmi.net",
-  "last_updated": "2026-05-15T20:47:02.586411",
-  "total_articles": 4,
+  "last_updated": "2026-05-15T21:32:26.140816",
+  "total_articles": 5,
   "articles": [
     {
       "title": "Why I Stopped Trusting BMI Alone (And Started Measuring Body Fat)",
@@ -38,6 +38,15 @@
       "excerpt": "I Tried Noom for 7 Days. Here's Why I Deleted It.  Noom's everywhere right now. Ads on every podcast, Instagram influencers pushing it, my mom even mentioned it. \"Psychology-based weight loss,\" they s...",
       "calc_type": "calorie",
       "filename": "one-week-noom-deleted.html"
+    },
+    {
+      "title": "I Tracked My BMI for a Year. Here's the One Thing That Surprised Me.",
+      "slug": "apple-watch-vs-excel-data",
+      "date": "2026-05-15",
+      "category": "Personal Story",
+      "excerpt": "I Tracked My BMI for a Year. Here's the One Thing That Surprised Me.  日期：2026-05-15",
+      "calc_type": "bmi",
+      "filename": "apple-watch-vs-excel-data.html"
     }
   ]
 }

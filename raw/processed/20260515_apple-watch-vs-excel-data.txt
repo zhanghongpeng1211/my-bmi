@@ -1,0 +1,40 @@
+I Tracked My BMI for a Year. Here's the One Thing That Surprised Me.
+
+日期：2026-05-15
+分类：Personal Story
+
+正文：
+
+I hit day 365 of daily BMI tracking last Tuesday. Didn't even realize it until I opened my spreadsheet and saw the row count. 365 rows. One full year. I'm not gonna get sentimental about it but... okay maybe a little.
+
+I figured I'd write something about what I learned. Everyone does the "one year of X" post, right? But honestly, most of it was boring. Weight went up in winter (Denver gets cold, I get lazy). Down in spring (guilt + running). The usual.
+
+The thing that actually surprised me? The data I DIDN'T track.
+
+See, I have this column in my spreadsheet called "Notes." It's supposed to be for context. Bad sleep, stressful week, ate out a lot, whatever. I was really good about it for the first... 47 days. Then I just stopped. The last 318 rows have notes like "ok" or just blank.
+
+But here's the weird part. When I look at the 47 days I DID take notes, the correlation is insane.
+
+March 14: "Slept 4 hours, work deadline, ate pizza at 1am." BMI next day: +0.3
+April 3: "Went hiking, 8 hours sleep, meal prepped." BMI next day: -0.2
+May 22: "Breakup. Ice cream. Don't ask." BMI next day: +0.4 (over 3 days)
+
+I didn't track sleep, stress, or meals systematically. Just random notes when I remembered. But the pattern is obvious. The days I wrote something down, the next-day BMI change was 3x more predictable than the days I didn't.
+
+I spent the weekend thinking about this. Not tracking enough variables. That's the surprise. Not some magic diet or workout. Just... context matters more than the number itself.
+
+So I added three new columns to my spreadsheet. Sleep (hours), Stress (1-5), and Meals out (count). Too late for the first year, but maybe year two will tell a better story.
+
+Actually, I tried to automate it. Thought about connecting my Apple Watch to auto-fill sleep data. Then I remembered I'm a software engineer and I hate APIs that require OAuth. I'll just type it in manually. Old school.
+
+My girlfriend (yes, new one, post-breakup spreadsheet era) thinks I'm insane. She walked in on me color-coding the stress column at 11pm on a Saturday. "You're literally Excel-ing your feelings now." She's not wrong.
+
+Anyway. 365 days. The takeaway isn't some dramatic transformation. I didn't become a fitness model. My BMI went from 24.1 to 23.4. Big whoop.
+
+The takeaway is that a number without context is just... a number. And I spent 318 days collecting numbers that meant less than they could have.
+
+Year two starts now. With better notes.
+
+See you next week. Or not. Depends on whether I remember to log my sleep.
+
+Back to tracking.
