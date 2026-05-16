@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>I Tried 5 AI Fitness Apps. Went Back to My Spreadsheet. | my-bmi.net</title>
+  <meta name="description" content="I Tried 5 AI Fitness Apps. Went Back to My Spreadsheet.  So everyone's talking about AI fitness apps now. My coworker Jake won't shut up about this one that "le">
+  <meta name="keywords" content="bmi, Rate Strategy">
+  <meta name="author" content="Alex Thompson">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .sticky-calc { position: fixed; top: 0; left: 0; right: 0; background: #fff; border-bottom: 2px solid #c4713d; padding: 12px 20px; z-index: 1000; display: none; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .sticky-calc.active { display: block; }
+    .sticky-calc-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+    .sticky-calc h4 { margin: 0; font-size: 14px; }
+    .sticky-calc input { padding: 6px 10px; border: 1px solid #ddd; border-radius: 4px; width: 120px; font-size: 13px; }
+    .sticky-calc button { padding: 6px 16px; background: #c4713d; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; }
+    .sticky-calc .close-btn { margin-left: auto; background: none; color: #666; cursor: pointer; }
+    .post-ad { margin: 30px 0; text-align: center; }
+    .post-related { margin: 40px 0; padding: 25px; background: #f8f9fa; border-radius: 8px; }
+    .post-related h3 { margin: 0 0 15px; font-size: 18px; }
+    .post-related-card { margin: 10px 0; padding: 12px; background: #fff; border-radius: 6px; border-left: 3px solid #c4713d; }
+    .back-link { display: inline-block; margin: 30px 0; color: #c4713d; text-decoration: none; font-weight: 500; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="sticky-calc" id="stickyCalc"><div class="sticky-calc-inner"><h4>Quick BMI</h4><input placeholder="Height (cm)" id="sH"><input placeholder="Weight (kg)" id="sW"><button onclick="alert('Full calculator on homepage')">Calculate</button><button class="close-btn" onclick="document.getElementById('stickyCalc').classList.remove('active')">X</button></div></div>
+  <header class="site-header"><nav class="site-nav"><a href="../index.html" class="nav-logo">my-bmi.net</a><div class="nav-links"><a href="../index.html">Calculator</a><a href="./index.html" class="active">Blog</a><a href="../about.html">About</a></div></nav></header>
+  <main class="post-container">
+    <article class="post-article">
+      <header class="post-header"><div class="post-meta"><span class="post-date">2026-05-15</span><span class="post-category">Rate Strategy</span></div><h1 class="post-title">I Tried 5 AI Fitness Apps. Went Back to My Spreadsheet.</h1><div class="post-author"><span>By Alex Thompson (Software Engineer, Denver, CO)</span></div></header>
+      <div class="post-content"><p>I Tried 5 AI Fitness Apps. Went Back to My Spreadsheet.</p>
+<p>So everyone's talking about AI fitness apps now. My coworker Jake won't shut up about this one that "learns your patterns" and "optimizes your macros." I figured, I'm a software engineer, I should at least try them before I mock them.</p>
+<p>I downloaded five. Not gonna name names because honestly they all kind of... blended together after day three.</p>
+<p>The first one asked me to take a photo of every meal. Every. Meal. I'm not a food blogger, I'm a guy who eats leftover pad thai over the sink at 11pm. I lasted four days before I deleted it.</p>
+<p>The second one was all about "mindful eating" and sent me push notifications asking how I FELT about my breakfast. I felt hungry. That's how I felt. Uninstalled.</p>
+<p>The third was actually decent for workouts. Good form cues, decent progression tracking. But when it came to BMI and body fat trends? Total garbage. It wanted to estimate my body fat from a photo. A PHOTO. I tried it three times in different lighting and got 12%, 18%, and 24%. My Navy method calculator says 16.2% and at least that's consistent.</p>
+<p>The fourth and fifth were basically subscription traps. Free for 3 days then $19.99/month. That's $240 a year. My spreadsheet costs $0 and doesn't judge my weekend beer consumption.</p>
+<p>Here's what I realized: these apps are built for engagement, not accuracy. They want you scrolling, tapping, subscribing. They gamify everything with streaks and badges and social features I don't want.</p>
+<p>My Excel sheet? It's ugly. It's just columns. Date, weight, waist, neck, BMI, body fat, notes. No animations. No AI coach telling me to "hydrate mindfully." But it's MINE. The data goes back 11 months. I can see exactly when I plateaued in March (turns out I was averaging 5 hours sleep, whoops). I can correlate my BMI dips with my actual behaviors, not some algorithm's guess.</p>
+<p>I did keep one thing from the apps: the reminder to measure weekly instead of daily. That was actually useful. Added it to my spreadsheet as a conditional formatting rule. Green if I logged this week, red if I didn't.</p>
+<p>Look, if AI fitness apps work for you, great. Jake lost 8kg with his. But for me? I'll stick with my ugly green-and-white spreadsheet and my $15 digital scale. At least I know where the data's going.</p>
+<p>Anyway, I've been meaning to write about what happened when I trained for my first half marathon. Yeah, my BMI went UP. I'll get to that next week maybe. Or not. Depends on whether my cat lets me use the laptop.</p>
+<p>See you next week. Or not.</p>
+</div>
+      <div class="post-ad"><div style="width:336px;height:280px;background:#f0f0f0;display:flex;align-items:center;justify-content:center;color:#999;font-size:14px;">Ad Placeholder 336x280</div></div>
+      <div class="post-related"><h3>Related Reading</h3><p>No related articles yet.</p></div>
+      <a href="./index.html" class="back-link">&larr; Back to all posts</a>
+    </article>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 my-bmi.net. All estimates are for informational purposes only.</p></footer>
+  <script>window.addEventListener("scroll", function(){ var c = document.getElementById("stickyCalc"); if(window.scrollY > 400){ c.classList.add("active"); } else { c.classList.remove("active"); } });</script>
+</body>
+</html>
