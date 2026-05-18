@@ -3,186 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - My-BMI.net</title>
-  <meta name="description" content="Personal stories and insights about BMI tracking, body fat measurement, and health data.">
-  <link rel="stylesheet" href="../style.css">
-  <style>
-    /* 只保留必要的卡片样式，避免冲突 */
-    .blog-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .blog-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .blog-card {
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      background: #fff;
-    }
-    .blog-card-meta {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-    }
-    .blog-card h2 {
-      margin: 0 0 15px;
-      font-size: 1.4rem;
-    }
-    .blog-card h2 a {
-      color: #2c5e2e;
-      text-decoration: none;
-    }
-    .blog-card h2 a:hover {
-      text-decoration: underline;
-    }
-    .blog-card-excerpt {
-      color: #555;
-      line-height: 1.6;
-    }
-  </style>
+  <title>My-BMI.net | Free BMI & Body Fat Calculator</title>
+  <meta name="description" content="Free BMI calculator with body fat estimation, history tracking, trend charts, and data export. Built by a software engineer who tracked for 365 days.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="site-nav">
-      <a href="../index.html" class="nav-logo">My-BMI.net</a>
+      <a href="index.html" class="nav-logo">My-BMI.net</a>
       <div class="nav-links">
-        <a href="../index.html">Calculator</a>
-        <a href="index.html" class="active">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../faq.html">FAQ</a>
+        <a href="index.html" class="active">Calculator</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
       </div>
     </nav>
   </header>
 
-  <main class="blog-container">
-    <div class="blog-header">
-      <h1>Blog</h1>
-      <p style="color:#666;">Real stories from 365 days of BMI tracking.</p>
+  <main class="tool-container">
+    <h1>BMI & Body Fat Calculator</h1>
+    <p class="subtitle">By Alex Thompson · 365 days of tracking · All data stays on your device</p>
+
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="bmi">BMI</button>
+      <button class="tab-btn" data-tab="bodyfat">Body Fat</button>
+      <button class="tab-btn" data-tab="history">History</button>
+      <button class="tab-btn" data-tab="trends">Trends</button>
+      <button class="tab-btn" data-tab="advice">Advice</button>
+      <button class="tab-btn" data-tab="export">Export</button>
     </div>
-    <!-- 只留一个纯净的容器，没有任何硬编码内容 -->
-    <div id="articles-container"></div>
+
+    <div class="tab-content active" id="bmi">
+      <h2>BMI Calculator</h2>
+      <div class="input-group">
+        <label>Height (cm)</label>
+        <input type="number" id="bmi-height" placeholder="175">
+      </div>
+      <div class="input-group">
+        <label>Weight (kg)</label>
+        <input type="number" id="bmi-weight" placeholder="70">
+      </div>
+      <button class="calc-btn" onclick="calculateBMI()">Calculate</button>
+      <div class="result-box" id="bmi-result"></div>
+    </div>
+
+    <div class="tab-content" id="bodyfat">
+      <h2>Body Fat Estimator (Navy Method)</h2>
+      <div class="input-group">
+        <label>Height (cm)</label>
+        <input type="number" id="bf-height" placeholder="175">
+      </div>
+      <div class="input-group">
+        <label>Neck circumference (cm)</label>
+        <input type="number" id="bf-neck" placeholder="38">
+      </div>
+      <div class="input-group">
+        <label>Waist circumference (cm)</label>
+        <input type="number" id="bf-waist" placeholder="82">
+      </div>
+      <div class="input-group">
+        <label>Gender</label>
+        <select id="bf-gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button class="calc-btn" onclick="calculateBodyFat()">Calculate</button>
+      <div class="result-box" id="bf-result"></div>
+    </div>
+
+    <div class="tab-content" id="history">
+      <h2>Calculation History</h2>
+      <div id="history-list"></div>
+      <button class="calc-btn" onclick="clearHistory()" style="background:#666;">Clear History</button>
+    </div>
+
+    <div class="tab-content" id="trends">
+      <h2>Weight & BMI Trends</h2>
+      <canvas id="trend-chart" width="800" height="300" style="max-width:100%;"></canvas>
+      <p style="margin-top:12px;color:var(--text-light);font-size:0.9rem;">Chart shows your last 30 entries.</p>
+    </div>
+
+    <div class="tab-content" id="advice">
+      <h2>Health Advice</h2>
+      <div id="advice-content">
+        <p>Enter your measurements to get personalized advice.</p>
+      </div>
+    </div>
+
+    <div class="tab-content" id="export">
+      <h2>Export Your Data</h2>
+      <p style="margin-bottom:16px;">Download your tracking history as JSON or CSV.</p>
+      <div class="export-btns">
+        <button class="export-btn" onclick="exportJSON()">Download JSON</button>
+        <button class="export-btn" onclick="exportCSV()">Download CSV</button>
+      </div>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 My-BMI.net · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a></p>
+  <div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-17</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-17</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<div class="site-article-card"><h3><a href="blog/why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
+
+I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
+<footer class="site-footer">
+    <p>© 2026 My-BMI.net · All estimates for informational purposes only · <a href="disclaimer.html">Medical Disclaimer</a></p>
+    <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="faq.html">FAQ</a></p>
   </footer>
 
-  <script>
-    const container = document.getElementById('articles-container');
-    // 初始加载提示
-    container.innerHTML = '<p style="text-align:center; padding: 40px; color:#666;">Loading articles...</p>';
-
-    // 仅读取 articles.json，无任何硬编码文章
-    fetch('articles.json')
-      .then(response => {
-        if (!response.ok) throw new Error('Failed to load articles');
-        return response.json();
-      })
-      .then(articles => {
-        container.innerHTML = ''; // 清空加载提示
-        
-        // 按日期倒序排序（最新的在最上面）
-        const sortedArticles = articles.sort((a, b) => new Date(b.date) - new Date(a.date));
-        
-        // 逐个渲染，无重复
-        sortedArticles.forEach(article => {
-          // 跳过字段不全的文章，避免出错
-          if (!article.title || !article.date || !article.filename || !article.excerpt) return;
-          
-          const card = document.createElement('div');
-          card.className = 'blog-card';
-          // 只渲染当前文章的信息，无任何多余内容
-          card.innerHTML = `
-            <div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-17</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="site-article-card"><h3><a href="why-your-bmi-calculator-might-be-lying-to-you.html">Why Your BMI Calculator Might Be Lying to You</a></h3><p class="site-article-date">2026-05-18</p><p># Why Your BMI Calculator Might Be Lying to You
-
-I used to trust those online BMI calculators blindly. Type in height, type in weight, get a number, d...</p></div>
-<div class="blog-card-meta">${article.date} · ${article.category || 'General'}</div>
-            <h2><a href="./${article.filename}">${article.title}</a></h2>
-            <div class="blog-card-excerpt">${article.excerpt}</div>
-          `;
-          container.appendChild(card);
-        });
-
-        // 如果没有文章，显示提示
-        if (sortedArticles.length === 0) {
-          container.innerHTML = '<p style="text-align:center; padding: 40px; color:#666;">No articles found.</p>';
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        container.innerHTML = '<p style="text-align:center; padding: 40px; color:#666;">Failed to load articles. Please try again later.</p>';
-      });
-  </script>
+  <script src="app.js"></script>
+  <script src="ads.js"></script>
 </body>
 </html>
