@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal | my-bmi.net</title>
+<meta name="description" content="Personal health diary by Alex, a software engineer in Denver. Real stories about BMI tracking, weight loss, and figuring it out as I go.">
+<meta name="author" content="Alex">
+<link rel="canonical" href="https://my-bmi.net/blog/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Journal | my-bmi.net">
+<meta property="og:description" content="Personal health diary by Alex in Denver.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://my-bmi.net/blog/">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- 导航 -->
+<nav class="mbn-nav">
+  <div class="mbn-nav-inner">
+    <a href="../index.html" class="mbn-logo">
+      <svg class="mbn-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M14 32c0-8 4-14 10-14s10 6 10 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="24" cy="16" r="3" fill="currentColor"/>
+        <path d="M12 36h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+      </svg>
+      <span>my-bmi</span>
+    </a>
+    <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
+    <div class="mbn-nav-links">
+      <a href="../index.html">Tracker</a>
+      <a href="index.html" class="mbn-active">Journal</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<main class="mbn-main" style="max-width:800px;">
+  <header style="margin-bottom:40px;">
+    <h1 style="font-size:2rem;margin-bottom:8px;">The Journal</h1>
+    <p style="color:var(--mbn-text-light);">Real stories, real data, real struggles. By Alex in Denver.</p>
+  </header>
+
+  <!-- 博客列表 - JS动态加载 -->
+  <div id="mbn-blog-list" class="mbn-blog-list">
+    <p class="mbn-loading">Loading journal entries...</p>
+  </div>
+
+</main>
+
+<footer class="mbn-footer">
+  <div class="mbn-footer-inner">
+    <div class="mbn-footer-links">
+      <a href="../about.html">About Alex</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+    </div>
+    <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+  </div>
+</footer>
+
+<!-- JS动态加载文章 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  loadBlogArticles();
+});
+
+function loadBlogArticles() {
+  fetch('../articles.json')
+    .then(r => {
+      if (!r.ok) throw new Error('Network response was not ok');
+      return r.json();
+    })
+    .then(data => {
+      const list = document.getElementById('mbn-blog-list');
+      if (!list) return;
+      list.innerHTML = '';
+
+      const articles = data.articles || data || [];
+      if (articles.length === 0) {
+        list.innerHTML = '<p class="mbn-loading">No entries yet. Check back soon!</p>';
+        return;
+      }
+
+      articles.forEach(article => {
+        const item = document.createElement('article');
+        item.className = 'mbn-article-card';
+        item.style.marginBottom = '24px';
+        const url = (article.url || article.slug + '.html').replace('blog/', '');
+        item.innerHTML = `
+          <div class="mbn-article-meta" style="margin-bottom:12px;font-size:0.85rem;">
+            <span>${article.date}</span>
+            <span style="margin-left:16px;">${article.category || 'journal'}</span>
+          </div>
+          <h2 style="font-size:1.4rem;margin-bottom:12px;">
+            <a href="${url}" style="color:var(--mbn-text);text-decoration:none;">${article.title}</a>
+          </h2>
+          <p style="color:var(--mbn-text-light);line-height:1.6;">${article.excerpt}</p>
+          <a href="${url}" style="color:var(--mbn-primary);font-weight:600;display:inline-block;margin-top:12px;">Read more →</a>
+        `;
+        list.appendChild(item);
+      });
+    })
+    .catch(e => {
+      console.error('Failed to load articles:', e);
+      const list = document.getElementById('mbn-blog-list');
+      if (list) list.innerHTML = '<p class="mbn-loading">Failed to load entries. Please refresh.</p>';
+    });
+}
+</script>
+
+</body>
+</html>
