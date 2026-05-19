@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "ad_code_top": "<!-- Google AdSense / Affiliate Ad Placeholder - Top -->\n<div style=\"width:100%;min-height:120px;max-height:150px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;color:#adb5bd;border-radius:8px;\">\n  <div style=\"text-align:center;\">\n    <div style=\"font-size:13px;margin-bottom:6px;\">Advertisement</div>\n    <div style=\"font-size:11px;\">728x90 or 300x250</div>\n  </div>\n</div>",
+  "ad_code_bottom": "<!-- Google AdSense / Affiliate Ad Placeholder - Bottom -->\n<div style=\"width:100%;min-height:120px;max-height:150px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;color:#adb5bd;border-radius:8px;\">\n  <div style=\"text-align:center;\">\n    <div style=\"font-size:13px;margin-bottom:6px;\">Advertisement</div>\n    <div style=\"font-size:11px;\">728x90 or 300x250</div>\n  </div>\n</div>",
+  "ad_code_middle": "<!-- Google AdSense / Affiliate Ad Placeholder - Middle -->\n<div style=\"width:100%;min-height:120px;max-height:150px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;color:#adb5bd;border-radius:8px;\">\n  <div style=\"text-align:center;\">\n    <div style=\"font-size:13px;margin-bottom:6px;\">Advertisement</div>\n    <div style=\"font-size:11px;\">728x90 or 300x250</div>\n  </div>\n</div>"
+}
