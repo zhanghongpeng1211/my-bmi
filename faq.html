@@ -1,120 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - My-BMI.net</title>
-  <meta name="description" content="Frequently asked questions about BMI calculation, body fat estimation, and health tracking on My-BMI.net.">
-  <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How accurate is the BMI calculator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "BMI is a useful screening tool but has limitations. It does not distinguish between muscle and fat, so athletes may have a high BMI despite being healthy. For a more complete picture, use our body fat estimator alongside BMI."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does the Navy method body fat calculator work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Navy method estimates body fat percentage using neck and waist circumference measurements along with height. It's based on formulas developed by the US Navy and provides a reasonable estimate for most people, though it may not be as accurate as DEXA scans or hydrostatic weighing."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my data saved on your servers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. All data you enter is stored locally in your browser using localStorage. We do not collect, store, or transmit any of your personal health data to our servers. Your data stays on your device."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I export my tracking history?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Go to the Export tab in the calculator to download your data as JSON or CSV. This allows you to back up your records or import them into other applications."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Should I rely on BMI alone for health assessment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. BMI is just one metric and does not tell the whole story. We recommend tracking BMI alongside body fat percentage, waist circumference, and overall fitness levels. Always consult a healthcare provider for personalized health advice."
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | my-bmi.net</title>
+<meta name="description" content="Frequently asked questions about BMI tracking, weight loss, and using our free calculator tool.">
+<meta name="author" content="Alex">
+<link rel="canonical" href="https://my-bmi.net/faq.html">
+<link rel="stylesheet" href="style.css">
+
+<!-- FAQPage Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my data stored on your servers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Everything is stored in your browser's localStorage. Your data never leaves your computer. We don't have a server database, we don't collect emails, and we don't track you. If you clear your browser data, your logs disappear — so export regularly if you want to keep them."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is BMI for measuring health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BMI is a screening tool, not a diagnostic. It doesn't account for muscle mass, bone density, or body composition. I'm a software engineer with a BMI of 25.3 (technically 'overweight'), but I can run a 5K. The trend over time matters more than any single number. For medical decisions, talk to a real doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use this tool on my phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The site is fully responsive and works on any device. I actually designed it mobile-first because I usually weigh myself Saturday morning and log it while still in my pajamas on the couch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I export my data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Click the 'Export CSV' button in the history section. It downloads a CSV file with all your records: date, weight, BMI, and height. I export mine every month and keep the files in a folder called 'health-stuff' that I never look at. But they're there if I need them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why don't you require an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because I hate creating accounts for everything. I tried the fancy health apps and they all want your email, want to sync with your watch, want to sell you premium features, and send push notifications about 'staying hydrated' at 9 PM. I don't need that energy. This tool is just you and your numbers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I clear my browser data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your history will be gone. That's the trade-off of localStorage. Export your data regularly (takes 2 seconds) if you want to keep it. I learned this the hard way when I cleared my cache to fix a CSS issue and lost 3 months of logs. Now I export every month without fail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this medical advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely not. I'm a software engineer, not a doctor. This is my personal diary and the tool I built for myself. For actual health decisions, talk to a healthcare provider. If you want clinical-grade analysis, check out bmitool.org run by Dr. David Chen, an actual internal medicine physician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I weigh myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I do it once a week, same time, same conditions (Saturday morning, after bathroom, before breakfast). Daily weighing makes me obsessive and stressed. Weekly gives me the trend without the noise. But honestly? Do what works for your mental health. Some people do daily, some do monthly. The consistency matters more than the frequency."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <a href="index.html" class="nav-logo">My-BMI.net</a>
-      <div class="nav-links">
-        <a href="index.html">Calculator</a>
-        <a href="blog/index.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="faq.html" class="active">FAQ</a>
-      </div>
-    </nav>
+
+<nav class="mbn-nav">
+  <div class="mbn-nav-inner">
+    <a href="index.html" class="mbn-logo">
+      <svg class="mbn-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M14 32c0-8 4-14 10-14s10 6 10 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="24" cy="16" r="3" fill="currentColor"/>
+        <path d="M12 36h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+      </svg>
+      <span>my-bmi</span>
+    </a>
+    <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
+    <div class="mbn-nav-links">
+      <a href="index.html">Tracker</a>
+      <a href="blog/index.html">Journal</a>
+      <a href="faq.html" class="mbn-active">FAQ</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<main class="mbn-main" style="max-width:800px;">
+  <header style="margin-bottom:40px;">
+    <h1 style="font-size:2rem;margin-bottom:8px;">Frequently Asked Questions</h1>
+    <p style="color:var(--mbn-text-light);">Last updated: May 19, 2026</p>
   </header>
 
-  <main class="page-container">
-    <h1>Frequently Asked Questions</h1>
-
-    <div itemscope itemtype="https://schema.org/FAQPage">
-      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h2 itemprop="name">How accurate is the BMI calculator?</h2>
-        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">BMI is a useful screening tool but has limitations. It does not distinguish between muscle and fat, so athletes may have a high BMI despite being healthy. For a more complete picture, use our body fat estimator alongside BMI.</p>
-        </div>
+  <div class="faq-list">
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Is my data stored on your servers?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>No. Everything is stored in your browser's localStorage. Your data never leaves your computer. We don't have a server database, we don't collect emails, and we don't track you. If you clear your browser data, your logs disappear — so export regularly if you want to keep them.</p>
       </div>
+    </details>
 
-      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h2 itemprop="name">How does the Navy method body fat calculator work?</h2>
-        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">The Navy method estimates body fat percentage using neck and waist circumference measurements along with height. It's based on formulas developed by the US Navy and provides a reasonable estimate for most people, though it may not be as accurate as DEXA scans or hydrostatic weighing.</p>
-        </div>
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        How accurate is BMI for measuring health?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>BMI is a screening tool, not a diagnostic. It doesn't account for muscle mass, bone density, or body composition. I'm a software engineer with a BMI of 25.3 (technically "overweight"), but I can run a 5K. The trend over time matters more than any single number. For medical decisions, talk to a real doctor.</p>
+        <p style="margin-top:12px;"><strong>Source:</strong> CDC BMI Interpretation Guidelines</p>
       </div>
+    </details>
 
-      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h2 itemprop="name">Is my data saved on your servers?</h2>
-        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">No. All data you enter is stored locally in your browser using localStorage. We do not collect, store, or transmit any of your personal health data to our servers. Your data stays on your device.</p>
-        </div>
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Can I use this tool on my phone?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>Yes. The site is fully responsive and works on any device. I actually designed it mobile-first because I usually weigh myself Saturday morning and log it while still in my pajamas on the couch.</p>
       </div>
+    </details>
 
-      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h2 itemprop="name">Can I export my tracking history?</h2>
-        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Yes. Go to the Export tab in the calculator to download your data as JSON or CSV. This allows you to back up your records or import them into other applications.</p>
-        </div>
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        How do I export my data?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>Click the "Export CSV" button in the history section. It downloads a CSV file with all your records: date, weight, BMI, and height. I export mine every month and keep the files in a folder called "health-stuff" that I never look at. But they're there if I need them.</p>
       </div>
+    </details>
 
-      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h2 itemprop="name">Should I rely on BMI alone for health assessment?</h2>
-        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">No. BMI is just one metric and does not tell the whole story. We recommend tracking BMI alongside body fat percentage, waist circumference, and overall fitness levels. Always consult a healthcare provider for personalized health advice.</p>
-        </div>
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Why don't you require an account?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>Because I hate creating accounts for everything. I tried the fancy health apps and they all want your email, want to sync with your watch, want to sell you premium features, and send push notifications about "staying hydrated" at 9 PM. I don't need that energy. This tool is just you and your numbers.</p>
       </div>
+    </details>
+
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        What if I clear my browser data?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>Your history will be gone. That's the trade-off of localStorage. Export your data regularly (takes 2 seconds) if you want to keep it. I learned this the hard way when I cleared my cache to fix a CSS issue and lost 3 months of logs. Now I export every month without fail.</p>
+      </div>
+    </details>
+
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Is this medical advice?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>Absolutely not. I'm a software engineer, not a doctor. This is my personal diary and the tool I built for myself. For actual health decisions, talk to a healthcare provider. If you want clinical-grade analysis, check out <a href="https://bmitool.org" style="color:var(--mbn-primary);">bmitool.org</a> run by Dr. David Chen, an actual internal medicine physician.</p>
+      </div>
+    </details>
+
+    <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--mbn-border);border-radius:8px;padding:20px;">
+      <summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        How often should I weigh myself?
+        <span style="color:var(--mbn-primary);font-size:1.2rem;">+</span>
+      </summary>
+      <div style="margin-top:16px;color:var(--mbn-text-light);line-height:1.7;">
+        <p>I do it once a week, same time, same conditions (Saturday morning, after bathroom, before breakfast). Daily weighing makes me obsessive and stressed. Weekly gives me the trend without the noise. But honestly? Do what works for your mental health. Some people do daily, some do monthly. The consistency matters more than the frequency.</p>
+      </div>
+    </details>
+  </div>
+</main>
+
+<footer class="mbn-footer">
+  <div class="mbn-footer-inner">
+    <div class="mbn-footer-links">
+      <a href="about.html">About Alex</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
     </div>
+    <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+  </div>
+</footer>
 
-    <p style="margin-top:32px;padding-top:16px;border-top:2px solid var(--border);">
-      Still have questions? Contact <a href="mailto:contact@my-bmi.net">contact@my-bmi.net</a>.
-    </p>
-  </main>
+<script>
+// 手风琴效果
+document.querySelectorAll('details summary').forEach(summary => {
+  summary.addEventListener('click', function(e) {
+    e.preventDefault();
+    const details = this.parentElement;
+    const isOpen = details.open;
 
-  <footer class="site-footer">
-    <p>© 2026 My-BMI.net · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a></p>
-  </footer>
+    // 关闭所有其他
+    document.querySelectorAll('details').forEach(item => {
+      if (item !== details) {
+        item.open = false;
+        item.querySelector('span').textContent = '+';
+      }
+    });
+
+    // 切换当前
+    details.open = !isOpen;
+    this.querySelector('span').textContent = details.open ? '−' : '+';
+  });
+});
+</script>
+
 </body>
 </html>
