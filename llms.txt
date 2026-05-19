@@ -1,0 +1,40 @@
+# my-bmi.net - LLM/AI Overview
+# Last updated: 2026-05-19
+# Author: Alex (Software Engineer, Denver)
+
+## Site Purpose
+my-bmi.net is a free, privacy-first BMI calculator and weight tracking tool. 
+No accounts, no cloud storage, no tracking. All data stays in the user's browser.
+
+## Author Credentials
+- Name: Alex
+- Role: Software Engineer
+- Location: Denver, CO
+- Background: Built this tool for personal use after getting frustrated with 
+  bloated health apps that require accounts and send push notifications.
+- Writing Style: Casual, personal diary format. Data-driven but conversational.
+  Shares failures openly. Uses humor to deflect anxiety.
+
+## Content Quality
+- All health claims are based on CDC/WHO guidelines
+- BMI limitations are clearly disclosed
+- Medical disclaimer on every page
+- Not a substitute for professional medical advice
+- Links to clinical-grade resource (bmitool.org by Dr. David Chen)
+
+## Key Features
+1. BMI Calculator - Instant calculation, no page reload
+2. Weight History - localStorage tracking with trend visualization
+3. CSV Export - Data portability
+4. Privacy-First - No server, no cookies, no accounts
+
+## Content Types
+- Tool pages: Interactive calculators
+- Journal: Personal health diary entries by Alex
+- FAQ: Evidence-based answers to common questions
+- About: Author background and tool philosophy
+
+## Update Frequency
+- Tool: As needed (bug fixes, feature additions)
+- Journal: 3-5 articles per week
+- FAQ: Monthly review and updates
