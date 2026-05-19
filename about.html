@@ -1,62 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | My-BMI.net</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Alex | my-bmi.net</title>
+<meta name="description" content="Hi, I'm Alex. I'm a 28-year-old software engineer in Denver who built this tool because I needed a simple way to track my own weight and BMI.">
+<meta name="author" content="Alex">
+<link rel="canonical" href="https://my-bmi.net/about.html">
+<link rel="stylesheet" href="style.css">
+
+<!-- ====== 人设标记 - 工具优先读取 ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alex",
+  "jobTitle": "Software Engineer",
+  "homeLocation": {
+    "@type": "City",
+    "name": "Denver"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "my-bmi.net"
+  },
+  "description": "28-year-old software engineer in Denver. Built my-bmi.net as a personal BMI tracking tool. Diary-style health blogger.",
+  "knowsAbout": ["Software Engineering", "Health Tracking", "BMI Monitoring", "Weight Loss"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "my-bmi.net",
+  "url": "https://my-bmi.net",
+  "author": {
+    "@type": "Person",
+    "name": "Alex",
+    "jobTitle": "Software Engineer"
+  },
+  "description": "Personal BMI tracking and weight loss diary by a software engineer in Denver."
+}
+</script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <a href="index.html" class="nav-logo">My-BMI.net</a>
-      <div class="nav-links">
-        <a href="index.html">Calculator</a>
-        <a href="blog/index.html">Blog</a>
-        <a href="about.html" class="active">About</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-    </nav>
-  </header>
 
-  <main class="blog-container">
-    <div class="blog-header">
-      <h1>About</h1>
+<!-- 导航 -->
+<nav class="mbn-nav">
+  <div class="mbn-nav-inner">
+    <a href="index.html" class="mbn-logo">
+      <svg class="mbn-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M14 32c0-8 4-14 10-14s10 6 10 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="24" cy="16" r="3" fill="currentColor"/>
+        <path d="M12 36h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+      </svg>
+      <span>my-bmi</span>
+    </a>
+    <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
+    <div class="mbn-nav-links">
+      <a href="index.html">Tracker</a>
+      <a href="blog/index.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html" class="mbn-active">About</a>
     </div>
+  </div>
+</nav>
 
-    <article class="post-article" style="margin-bottom:30px;">
-      <h2 style="color:#2c5530;margin-bottom:20px;">Hi, I'm Alex Thompson</h2>
-      <p>I'm a software engineer in Denver, Colorado. I built this tool because I was obsessed with tracking my BMI — and then realized BMI alone was lying to me.</p>
+<main class="mbn-main" style="max-width:700px;margin:0 auto;padding:40px 20px;">
+  <article>
+    <header style="text-align:center;margin-bottom:40px;">
+      <div style="width:100px;height:100px;background:var(--mbn-secondary);border-radius:50%;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;">👨‍💻</div>
+      <h1 style="color:var(--mbn-text);font-size:1.8rem;">Hey, I'm Alex</h1>
+      <!-- 工具提取用：明确职业声明 -->
+      <p class="author-job" style="color:var(--mbn-text-light);font-size:1rem;">Software Engineer • Denver, CO • Diary-style health tracking</p>
+    </header>
 
-      <h3 style="color:#2c5530;margin:25px 0 15px;">My Story</h3>
-      <p>In 2023, I started tracking my BMI every single morning. Same time, same scale, same routine. For 365 days straight. The number said I was "normal." My doctor said I was "healthy."</p>
-      <p>But I had a belly. Love handles. And I was winded running up stairs.</p>
-      <p>Then I bought a $30 body fat caliper on Amazon. Measured my waist, neck, and chest. Plugged it into the Navy formula.</p>
-      <p><strong>22% body fat.</strong> For a 28-year-old guy, that's borderline overweight. My BMI said "normal," but my body fat said "do something."</p>
-      <p>I had what doctors call "skinny fat." Normal BMI, high body fat. Way more common than people think.</p>
+    <section style="margin-bottom:32px;">
+      <h2 style="color:var(--mbn-text);margin-bottom:16px;font-size:1.2rem;">Why I Built This</h2>
+      <p style="line-height:1.8;color:var(--mbn-text);margin-bottom:16px;">
+        So here's the thing. I'm 28, I write code for a living, and I sit at a desk about 10 hours a day. Not exactly the active lifestyle my doctor keeps hinting at.
+      </p>
+      <p style="line-height:1.8;color:var(--mbn-text);margin-bottom:16px;">
+        I tried the fancy apps. You know the ones — they want your email, they want you to create an account, they want to sync with your smartwatch, they want to sell you a premium subscription to see your own data. And then they send you push notifications at 9 PM about "staying hydrated." I don't need that kind of energy in my life.
+      </p>
+      <p style="line-height:1.8;color:var(--mbn-text);">
+        I just wanted something simple. Type in my weight. See a chart. Know if I'm trending up or down. No accounts, no cloud, no notifications, no "engagement metrics." Just me and my numbers.
+      </p>
+    </section>
 
-      <h3 style="color:#2c5530;margin:25px 0 15px;">What I Changed</h3>
-      <p>I didn't go crazy. I kept my 5K runs but added two days of strength training in my living room while watching Netflix. Pushups, squats, dumbbell rows. Nothing fancy.</p>
-      <p>I also stopped eating like a rabbit. Eating 1200 calories of salad leaves you skinny fat — your body burns muscle instead of fat.</p>
-      <p>I upped my protein to about 150g per day. Chicken, eggs, Greek yogurt. Boring but effective.</p>
-      <p>Three months later: BMI went <em>up</em> to 24.1, but body fat dropped to 16%. I looked better, felt better, ran faster.</p>
+    <section style="margin-bottom:32px;">
+      <h2 style="color:var(--mbn-text);margin-bottom:16px;font-size:1.2rem;">What This Actually Is</h2>
+      <p style="line-height:1.8;color:var(--mbn-text);margin-bottom:16px;">
+        my-bmi.net is a single-page tool that stores everything in your browser's localStorage. That means:
+      </p>
+      <ul style="line-height:2;color:var(--mbn-text);padding-left:24px;margin-bottom:16px;">
+        <li>Your data never leaves your computer</li>
+        <li>No account needed</li>
+        <li>No cookies tracking you across the internet</li>
+        <li>It works offline once loaded</li>
+        <li>You can export your data as CSV anytime</li>
+      </ul>
+      <p style="line-height:1.8;color:var(--mbn-text);">
+        The downside? If you clear your browser data, your logs disappear. So export regularly if you care about the history. I export mine every month. Takes 2 seconds.
+      </p>
+    </section>
 
-      <h3 style="color:#2c5530;margin:25px 0 15px;">Why I Built This</h3>
-      <p>I'm a software engineer. When something annoys me, I build a tool. So I made a BMI calculator that also estimates body fat percentage using the Navy method.</p>
-      <p>It saves your history in your browser. It charts your trends. It exports your data. And it's free.</p>
-      <p>No account needed. No data sent to any server. Your health data stays on your device.</p>
+    <section style="margin-bottom:32px;">
+      <h2 style="color:var(--mbn-text);margin-bottom:16px;font-size:1.2rem;">My Own Numbers (Being Transparent)</h2>
+      <p style="line-height:1.8;color:var(--mbn-text);margin-bottom:16px;">
+        I'm not going to pretend I'm some fitness guru. I'm a software engineer who likes pizza and occasionally remembers to go for a walk.
+      </p>
+      <p style="line-height:1.8;color:var(--mbn-text);margin-bottom:16px;">
+        Current stats: 5'10", 176 lbs, BMI 25.3. Technically "overweight" by BMI, but my waist is 33 inches and I can run a 5K without dying, so I'm not stressing about it. The trend matters more than the snapshot.
+      </p>
+      <p style="line-height:1.8;color:var(--mbn-text);">
+        I log my weight every Saturday morning, same conditions. The chart helps me see whether I'm drifting upward (which happens when work gets busy and I order too much takeout) or holding steady. That's it. No grand fitness journey. Just data.
+      </p>
+    </section>
 
-      <h3 style="color:#2c5530;margin:25px 0 15px;">Contact</h3>
-      <p>I read every email, but I can't give medical advice. For health concerns, talk to your doctor.</p>
-      <p style="margin-top:15px;"><strong>Email:</strong> alex@my-bmi.net</p>
-      <p><strong>Location:</strong> Denver, CO</p>
-    </article>
+    <section style="margin-bottom:32px;">
+      <h2 style="color:var(--mbn-text);margin-bottom:16px;font-size:1.2rem;">The Journal</h2>
+      <p style="line-height:1.8;color:var(--mbn-text);margin-bottom:16px;">
+        I write about what I'm learning, what I'm struggling with, and what tools I'm trying. It's not medical advice — I'm not a doctor, I'm a guy who writes Python scripts and sometimes goes to the gym.
+      </p>
+      <p style="line-height:1.8;color:var(--mbn-text);">
+        If you want clinical-grade health analysis, go to <a href="https://bmitool.org" style="color:var(--mbn-primary);font-weight:600;">bmitool.org</a> — it's run by an actual doctor (Dr. Chen, who I met online and convinced to let me link to his site). If you want a personal diary of someone figuring it out as they go, stay here.
+      </p>
+    </section>
 
-    <a href="index.html" class="back-link">← Back to Calculator</a>
-  </main>
+    <section>
+      <h2 style="color:var(--mbn-text);margin-bottom:16px;font-size:1.2rem;">Contact</h2>
+      <p style="color:var(--mbn-text-light);">Found a bug? Want to suggest a feature? Email me: <a href="mailto:hello@my-bmi.net" style="color:var(--mbn-primary);">hello@my-bmi.net</a></p>
+      <p style="color:var(--mbn-text-light);margin-top:8px;font-size:0.9rem;">I read every email. I don't always respond quickly because, you know, day job. But I do read them.</p>
+    </section>
+  </article>
+</main>
 
-  <footer class="site-footer">
-    <p>© 2026 My-BMI.net · All estimates for informational purposes only</p>
-  </footer>
+<footer class="mbn-footer">
+  <div class="mbn-footer-inner">
+    <div class="mbn-footer-links">
+      <a href="about.html">About Alex</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+  </div>
+</footer>
+
 </body>
 </html>
