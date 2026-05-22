@@ -1,97 +1,82 @@
 [
   {
-    "title": "I Stopped Weighing Myself Every Day",
-    "slug": "i-stopped-weighing-myself-every-day",
-    "date": "2026-05-19",
-    "excerpt": "I Stopped Weighing Myself Every Day\n\nI used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood. 174...",
-    "category": "article",
-    "url": "blog/i-stopped-weighing-myself-every-day.html"
-  },
-  {
-    "title": "Why I Stopped Weighing Myself Every Day",
+    "title": "Why I Stopped Weighing Myself Every Day | my-bmi.net",
     "slug": "why-i-stopped-weighing-myself-every-day",
-    "date": "2026-05-19",
+    "date": "2026-05-23",
     "excerpt": "Why I Stopped Weighing Myself Every Day\n\nI used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood....",
-    "category": "article"
+    "category": "article",
+    "url": "blog/why-i-stopped-weighing-myself-every-day.html"
   },
   {
-    "title": "What 8 Months of Data Taught Me About My Body",
-    "slug": "what-8-months-of-data-taught-me-about-my-body",
-    "date": "2026-05-19",
-    "excerpt": "What 8 Months of Data Taught Me About My Body  Logging weight since September. 34 entries. Not every week (missed some), but consistent.  Looking a...",
-    "category": "journal",
-    "url": "blog/what-8-months-of-data-taught-me-about-my-body.html"
-  },
-  {
-    "title": "How I Explain My Weird Health Website to Dates",
-    "slug": "how-i-explain-my-weird-health-website-to-dates",
-    "date": "2026-05-19",
-    "excerpt": "How I Explain My Weird Health Website to Dates  Been dating a bit. Nothing serious. Coffee, drinks. Denver scene.  \"What do you do?\" Software engin...",
-    "category": "journal",
-    "url": "blog/how-i-explain-my-weird-health-website-to-dates.html"
-  },
-  {
-    "title": "The Saturday Morning Routine That Actually Works",
-    "slug": "the-saturday-morning-routine-that-actually-works",
-    "date": "2026-05-19",
-    "excerpt": "The Saturday Morning Routine That Actually Works  Saturday mornings are my anchor. One consistent thing in chaotic weeks.  6:30 AM: Wake up. No ala...",
-    "category": "journal",
-    "url": "blog/the-saturday-morning-routine-that-actually-works.html"
-  },
-  {
-    "title": "What I Learned From 6 Months of Failed Diet Attempts",
-    "slug": "what-i-learned-from-6-months-of-failed-diet-attempts",
-    "date": "2026-05-19",
-    "excerpt": "What I Learned From 6 Months of Failed Diet Attempts  January: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fog. Constipated. Gave up aft...",
-    "category": "journal",
-    "url": "blog/what-i-learned-from-6-months-of-failed-diet-attempts.html"
-  },
-  {
-    "title": "Why I Deleted My Fitness App After Using It for 2 Years",
+    "title": "Why I Deleted My Fitness App After Using It for 2 Years | my-bmi.net",
     "slug": "why-i-deleted-my-fitness-app-after-using-it-for-2-years",
-    "date": "2026-05-19",
-    "excerpt": "Why I Deleted My Fitness App After Using It for 2 Years  MyFitnessPal. Two years. Every meal. Every snack. Every coffee. Weighed food. Scanned barc...",
-    "category": "journal",
+    "date": "2026-05-21",
+    "excerpt": "Why I Deleted My Fitness App After Using It for 2 Years\n\nMyFitnessPal. Two years. Every meal. Every snack. Every coffee. Weighed food. Scanned barcode...",
+    "category": "article",
     "url": "blog/why-i-deleted-my-fitness-app-after-using-it-for-2-years.html"
   },
   {
-    "title": "The Weird Thing That Happened When I Started Tracking My Sleep",
-    "slug": "the-weird-thing-that-happened-when-i-started-tracking-my-sleep",
+    "title": "What I Learned From 6 Months of Failed Diet Attempts | my-bmi.net",
+    "slug": "what-i-learned-from-6-months-of-failed-diet-attempts",
     "date": "2026-05-19",
-    "excerpt": "The Weird Thing That Happened When I Started Tracking My Sleep  Bought a cheap fitness tracker on Amazon. $35. Tracks steps, heart rate, sleep.  Wa...",
-    "category": "journal",
+    "excerpt": "What I Learned From 6 Months of Failed Diet Attempts\n\nJanuary: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fog. Constipated. Gave up after ...",
+    "category": "article",
+    "url": "blog/what-i-learned-from-6-months-of-failed-diet-attempts.html"
+  },
+  {
+    "title": "What 8 Months of Data Taught Me About My Body | my-bmi.net",
+    "slug": "what-8-months-of-data-taught-me-about-my-body",
+    "date": "2026-05-16",
+    "excerpt": "What 8 Months of Data Taught Me About My Body\n\nLogging weight since September. 34 entries. Not every week (missed some), but consistent.\n\nLooking at d...",
+    "category": "article",
+    "url": "blog/what-8-months-of-data-taught-me-about-my-body.html"
+  },
+  {
+    "title": "The Weird Thing That Happened When I Started Tracking My Sleep | my-bmi.net",
+    "slug": "the-weird-thing-that-happened-when-i-started-tracking-my-sleep",
+    "date": "2026-05-14",
+    "excerpt": "The Weird Thing That Happened When I Started Tracking My Sleep\n\nBought a cheap fitness tracker on Amazon. $35. Tracks steps, heart rate, sleep.\n\nWante...",
+    "category": "article",
     "url": "blog/the-weird-thing-that-happened-when-i-started-tracking-my-sleep.html"
   },
   {
-    "title": "I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened",
-    "slug": "i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened",
-    "date": "2026-05-19",
-    "excerpt": "I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened  Mike (yeah, the pizza guy) has been doing 16:8 fasting for a year. \"Ale...",
-    "category": "journal",
-    "url": "blog/i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened.html"
+    "title": "The Saturday Morning Routine That Actually Works | my-bmi.net",
+    "slug": "the-saturday-morning-routine-that-actually-works",
+    "date": "2026-05-11",
+    "excerpt": "The Saturday Morning Routine That Actually Works\n\nSaturday mornings are my anchor. One consistent thing in chaotic weeks.\n\n6:30 AM: Wake up. No alarm....",
+    "category": "article",
+    "url": "blog/the-saturday-morning-routine-that-actually-works.html"
   },
   {
-    "title": "My Doctor Said My BMI Is 'Borderline' and I Got Defensive",
-    "slug": "my-doctor-said-my-bmi-is-borderline-and-i-got-defensive",
-    "date": "2026-05-19",
-    "excerpt": "My Doctor Said My BMI Is 'Borderline' and I Got Defensive  Annual physical. Dr. Henderson. My GP since I moved to Denver. Straight shooter.  \"Your...",
-    "category": "journal",
-    "url": "blog/my-doctor-said-my-bmi-is-borderline-and-i-got-defensive.html"
-  },
-  {
-    "title": "The Day I Ate an Entire Pizza and Didn't Log It",
+    "title": "The Day I Ate an Entire Pizza and Didn't Log It | my-bmi.net",
     "slug": "the-day-i-ate-an-entire-pizza-and-didn-t-log-it",
-    "date": "2026-05-19",
-    "excerpt": "The Day I Ate an Entire Pizza and Didn't Log It  Last Friday I destroyed a large pepperoni pizza. Solo mission. Three episodes of some Netflix show...",
-    "category": "journal",
+    "date": "2026-05-09",
+    "excerpt": "The Day I Ate an Entire Pizza and Didn",
+    "category": "article",
     "url": "blog/the-day-i-ate-an-entire-pizza-and-didn-t-log-it.html"
   },
   {
-    "title": "Why I Stopped Weighing Myself Every Day",
-    "slug": "why-i-stopped-weighing-myself-every-day",
-    "date": "2026-05-19",
-    "excerpt": "Why I Stopped Weighing Myself Every Day  Okay so. I used to weigh myself every morning. Like, roll out of bed, shuffle to the bathroom, step on the...",
-    "category": "journal",
-    "url": "blog/why-i-stopped-weighing-myself-every-day.html"
+    "title": "My Doctor Said My BMI Is 'Borderline' and I Got Defensive | my-bmi.net",
+    "slug": "my-doctor-said-my-bmi-is-borderline-and-i-got-defensive",
+    "date": "2026-05-06",
+    "excerpt": "My Doctor Said My BMI Is",
+    "category": "article",
+    "url": "blog/my-doctor-said-my-bmi-is-borderline-and-i-got-defensive.html"
+  },
+  {
+    "title": "I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened | my-bmi.net",
+    "slug": "i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened",
+    "date": "2026-05-04",
+    "excerpt": "I Tried Intermittent Fasting for 30 Days and Here",
+    "category": "article",
+    "url": "blog/i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened.html"
+  },
+  {
+    "title": "How I Explain My Weird Health Website to Dates | my-bmi.net",
+    "slug": "how-i-explain-my-weird-health-website-to-dates",
+    "date": "2026-05-01",
+    "excerpt": "How I Explain My Weird Health Website to Dates\n\nBeen dating a bit. Nothing serious. Coffee, drinks. Denver scene.",
+    "category": "article",
+    "url": "blog/how-i-explain-my-weird-health-website-to-dates.html"
   }
 ]
