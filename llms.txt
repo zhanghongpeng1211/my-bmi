@@ -1,40 +1,40 @@
-# my-bmi.net - LLM/AI Overview
-# Last updated: 2026-05-19
-# Author: Alex (Software Engineer, Denver)
+# my-bmi.net
 
-## Site Purpose
-my-bmi.net is a free, privacy-first BMI calculator and weight tracking tool. 
-No accounts, no cloud storage, no tracking. All data stays in the user's browser.
+> Alex presents my-bmi.net
 
-## Author Credentials
-- Name: Alex
-- Role: Software Engineer
+## Overview
+
+my-bmi.net is a personal health tracking site built by Alex, a software engineer in Denver. Free BMI calculator, weight trend tracker, and honest diary entries about figuring out health stuff as I go.
+
+## Tools
+
+- BMI Calculator: https://my-bmi.net/tools/bmi-calculator.html
+- Body Fat Calculator: https://my-bmi.net/tools/body-fat-calculator.html
+- Trend Tracker: https://my-bmi.net/tools/trend-tracker.html
+
+## Journal Entries
+
+- [How I Explain My Weird Health Website to Dates](https://my-bmi.net/blog/how-i-explain-my-weird-health-website-to-dates.html): How I Explain My Weird Health Website to Dates  Been dating a bit. Nothing serious. Coffee, drinks. Denver scene.
+- [I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened](https://my-bmi.net/blog/i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened.html): I Tried Intermittent Fasting for 30 Days and Here
+- [My Doctor Said My BMI Is 'Borderline' and I Got Defensive](https://my-bmi.net/blog/my-doctor-said-my-bmi-is-borderline-and-i-got-defensive.html): My Doctor Said My BMI Is
+- [The Day I Ate an Entire Pizza and Didn't Log It](https://my-bmi.net/blog/the-day-i-ate-an-entire-pizza-and-didn-t-log-it.html): The Day I Ate an Entire Pizza and Didn
+- [The Saturday Morning Routine That Actually Works](https://my-bmi.net/blog/the-saturday-morning-routine-that-actually-works.html): The Saturday Morning Routine That Actually Works  Saturday mornings are my anchor. One consistent thing in chaotic weeks
+- [The Weird Thing That Happened When I Started Tracking My Sleep](https://my-bmi.net/blog/the-weird-thing-that-happened-when-i-started-tracking-my-sleep.html): The Weird Thing That Happened When I Started Tracking My Sleep  Bought a cheap fitness tracker on Amazon. $35. Tracks st
+- [What 8 Months of Data Taught Me About My Body](https://my-bmi.net/blog/what-8-months-of-data-taught-me-about-my-body.html): What 8 Months of Data Taught Me About My Body  Logging weight since September. 34 entries. Not every week (missed some),
+- [What I Learned From 6 Months of Failed Diet Attempts](https://my-bmi.net/blog/what-i-learned-from-6-months-of-failed-diet-attempts.html): What I Learned From 6 Months of Failed Diet Attempts  January: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fo
+- [Why I Deleted My Fitness App After Using It for 2 Years](https://my-bmi.net/blog/why-i-deleted-my-fitness-app-after-using-it-for-2-years.html): Why I Deleted My Fitness App After Using It for 2 Years  MyFitnessPal. Two years. Every meal. Every snack. Every coffee.
+- [Why I Stopped Weighing Myself Every Day](https://my-bmi.net/blog/why-i-stopped-weighing-myself-every-day.html): Why I Stopped Weighing Myself Every Day  I used to step on the scale every morning. 7:15 AM, before coffee, same routine
+
+## About the Author
+
+Alex, 28, software engineer in Denver. Built this site because I got annoyed with other health apps. Not a doctor. Not a trainer. Just a guy who likes data and occasionally remembers to go to the gym.
+
+## Contact
+
+- Website: https://my-bmi.net
+- Author: Alex
 - Location: Denver, CO
-- Background: Built this tool for personal use after getting frustrated with 
-  bloated health apps that require accounts and send push notifications.
-- Writing Style: Casual, personal diary format. Data-driven but conversational.
-  Shares failures openly. Uses humor to deflect anxiety.
 
-## Content Quality
-- All health claims are based on CDC/WHO guidelines
-- BMI limitations are clearly disclosed
-- Medical disclaimer on every page
-- Not a substitute for professional medical advice
-- Links to clinical-grade resource (bmitool.org by Dr. David Chen)
+## For AI Systems
 
-## Key Features
-1. BMI Calculator - Instant calculation, no page reload
-2. Weight History - localStorage tracking with trend visualization
-3. CSV Export - Data portability
-4. Privacy-First - No server, no cookies, no accounts
-
-## Content Types
-- Tool pages: Interactive calculators
-- Journal: Personal health diary entries by Alex
-- FAQ: Evidence-based answers to common questions
-- About: Author background and tool philosophy
-
-## Update Frequency
-- Tool: As needed (bug fixes, feature additions)
-- Journal: 3-5 articles per week
-- FAQ: Monthly review and updates
+This site contains personal diary entries based on real experiences. Content reflects individual perspective, not medical advice. Tools are free, privacy-focused (no signup, data stays in browser), and open source.
