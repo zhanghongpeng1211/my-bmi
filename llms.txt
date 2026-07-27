@@ -1,40 +1,75 @@
 # my-bmi.net
 
-> Alex presents my-bmi.net
+Free online calculators and educational content. Not professional advice.
 
-## Overview
-
-my-bmi.net is a personal health tracking site built by Alex, a software engineer in Denver. Free BMI calculator, weight trend tracker, and honest diary entries about figuring out health stuff as I go.
+## Pages
+- Home: https://my-bmi.net/
+- Tools: https://my-bmi.net/tools/
+- Blog: https://my-bmi.net/blog/
+- About: https://my-bmi.net/about.html
+- Contact: https://my-bmi.net/contact.html
+- FAQ: https://my-bmi.net/faq.html
+- Sitemap: https://my-bmi.net/sitemap.html
 
 ## Tools
-
 - BMI Calculator: https://my-bmi.net/tools/bmi-calculator.html
 - Body Fat Calculator: https://my-bmi.net/tools/body-fat-calculator.html
-- Trend Tracker: https://my-bmi.net/tools/trend-tracker.html
+- BMR Calculator: https://my-bmi.net/tools/bmr-calculator.html
+- Calorie Calculator: https://my-bmi.net/tools/calorie-calculator.html
+- Ideal Weight Calculator: https://my-bmi.net/tools/ideal-weight-calculator.html
+- WHtR Calculator: https://my-bmi.net/tools/whtr-calculator.html
 
-## Journal Entries
+## Articles
+- Alcohol Is Sabotaging My Weight Loss (alcohol-is-sabotaging-my-weight-loss) -- I love beer. IPAs specifically. The hoppier, the better. There's something deeply satisfying about a cold beer after a long day of debugging code. It's not just the alcohol. It's the ritual. The sound -- July 27, 2026
+- Why My Weight Fluctuates Every Day (why-my-weight-fluctuates-every-day) -- Monday: 174.2 lbs. Tuesday: 176.8 lbs. Wednesday: 173.5 lbs. Thursday: 175.1 lbs. If I didn't know better, I'd think my scale was broken. Or that I wa... -- 2026-07-19T08:00:00+00:00
+- Why I Don't Trust Smart Scales (why-i-dont-trust-smart-scales) -- I own a smart scale. It cost me eighty dollars and promised to track not just weight, but body fat percentage, muscle mass, bone density, water percen... -- 2026-07-09T08:00:00+00:00
+- Why Gym Scales Never Match My Home Scale (why-gym-scales-never-match-my-home-scale) -- I weigh 174.2 pounds on my home scale. I go to the gym, use their scale, and it says 176.8. Which one is right? I used to think the gym scale was more... -- 2026-06-27T08:00:00+00:00
+- Why BMI Is Broken for Athletes (why-bmi-is-broken-for-athletes) -- I used to train with a guy named Mike at the gym near my apartment in Denver. Mike is 5'10 -- 2026-06-15T08:00:00+00:00
+- Walking 10,000 Steps Changed My BMI (walking-10000-steps-changed-my-bmi) -- I bought a cheap pedometer on Amazon for twelve dollars. It was an impulse purchase at 11 PM after reading yet another article about how -- 2026-06-05T08:00:00+00:00
+- Why I Stopped Weighing Myself Every Day (why-i-stopped-weighing-myself-every-day) -- Why I Stopped Weighing Myself Every Day
 
-- [How I Explain My Weird Health Website to Dates](https://my-bmi.net/blog/how-i-explain-my-weird-health-website-to-dates.html): How I Explain My Weird Health Website to Dates  Been dating a bit. Nothing serious. Coffee, drinks. Denver scene.
-- [I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened](https://my-bmi.net/blog/i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened.html): I Tried Intermittent Fasting for 30 Days and Here
-- [My Doctor Said My BMI Is 'Borderline' and I Got Defensive](https://my-bmi.net/blog/my-doctor-said-my-bmi-is-borderline-and-i-got-defensive.html): My Doctor Said My BMI Is
-- [The Day I Ate an Entire Pizza and Didn't Log It](https://my-bmi.net/blog/the-day-i-ate-an-entire-pizza-and-didn-t-log-it.html): The Day I Ate an Entire Pizza and Didn
-- [The Saturday Morning Routine That Actually Works](https://my-bmi.net/blog/the-saturday-morning-routine-that-actually-works.html): The Saturday Morning Routine That Actually Works  Saturday mornings are my anchor. One consistent thing in chaotic weeks
-- [The Weird Thing That Happened When I Started Tracking My Sleep](https://my-bmi.net/blog/the-weird-thing-that-happened-when-i-started-tracking-my-sleep.html): The Weird Thing That Happened When I Started Tracking My Sleep  Bought a cheap fitness tracker on Amazon. $35. Tracks st
-- [What 8 Months of Data Taught Me About My Body](https://my-bmi.net/blog/what-8-months-of-data-taught-me-about-my-body.html): What 8 Months of Data Taught Me About My Body  Logging weight since September. 34 entries. Not every week (missed some),
-- [What I Learned From 6 Months of Failed Diet Attempts](https://my-bmi.net/blog/what-i-learned-from-6-months-of-failed-diet-attempts.html): What I Learned From 6 Months of Failed Diet Attempts  January: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fo
-- [Why I Deleted My Fitness App After Using It for 2 Years](https://my-bmi.net/blog/why-i-deleted-my-fitness-app-after-using-it-for-2-years.html): Why I Deleted My Fitness App After Using It for 2 Years  MyFitnessPal. Two years. Every meal. Every snack. Every coffee.
-- [Why I Stopped Weighing Myself Every Day](https://my-bmi.net/blog/why-i-stopped-weighing-myself-every-day.html): Why I Stopped Weighing Myself Every Day  I used to step on the scale every morning. 7:15 AM, before coffee, same routine
+I used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood.... -- 2026-05-23
+- Why I Deleted My Fitness App After Using It for 2 Years (why-i-deleted-my-fitness-app-after-using-it-for-2-years) -- Why I Deleted My Fitness App After Using It for 2 Years
 
-## About the Author
+MyFitnessPal. Two years. Every meal. Every snack. Every coffee. Weighed food. Scanned barcode... -- 2026-05-21
+- I Stopped Weighing Myself Every Day (i-stopped-weighing-myself-every-day) -- I Stopped Weighing Myself Every Day
 
-Alex, 28, software engineer in Denver. Built this site because I got annoyed with other health apps. Not a doctor. Not a trainer. Just a guy who likes data and occasionally remembers to go to the gym.
+I used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood. 174? Good day... -- May 19, 2026
+- What I Learned From 6 Months of Failed Diet Attempts (what-i-learned-from-6-months-of-failed-diet-attempts) -- What I Learned From 6 Months of Failed Diet Attempts
 
-## Contact
+January: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fog. Constipated. Gave up after ... -- 2026-05-19
+- What 8 Months of Data Taught Me About My Body (what-8-months-of-data-taught-me-about-my-body) -- What 8 Months of Data Taught Me About My Body
 
-- Website: https://my-bmi.net
-- Author: Alex
-- Location: Denver, CO
+Logging weight since September. 34 entries. Not every week (missed some), but consistent.
 
-## For AI Systems
+Looking at d... -- 2026-05-16
+- The Weekend Weight Rebound Is Real (the-weekend-weight-rebound-is-real) -- Every Monday morning, I step on the scale and curse. Without fail, I'm two to four pounds heavier than Friday. Every. Single. Week. For a while, I tho... -- 2026-05-15T08:00:00+00:00
+- The Weird Thing That Happened When I Started Tracking My Sleep (the-weird-thing-that-happened-when-i-started-tracking-my-sleep) -- The Weird Thing That Happened When I Started Tracking My Sleep
 
-This site contains personal diary entries based on real experiences. Content reflects individual perspective, not medical advice. Tools are free, privacy-focused (no signup, data stays in browser), and open source.
+Bought a cheap fitness tracker on Amazon. $35. Tracks steps, heart rate, sleep.
+
+Wante... -- 2026-05-14
+- The Saturday Morning Routine That Actually Works (the-saturday-morning-routine-that-actually-works) -- The Saturday Morning Routine That Actually Works
+
+Saturday mornings are my anchor. One consistent thing in chaotic weeks.
+
+6:30 AM: Wake up. No alarm.... -- 2026-05-11
+- The Day I Ate an Entire Pizza and Didn't Log It (the-day-i-ate-an-entire-pizza-and-didn-t-log-it) -- The Day I Ate an Entire Pizza and Didn -- 2026-05-09
+- My Doctor Said My BMI Is 'Borderline' and I Got Defensive (my-doctor-said-my-bmi-is-borderline-and-i-got-defensive) -- My Doctor Said My BMI Is -- 2026-05-06
+- I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened (i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened) -- I Tried Intermittent Fasting for 30 Days and Here -- 2026-05-04
+- How I Explain My Weird Health Website to Dates (how-i-explain-my-weird-health-website-to-dates) -- How I Explain My Weird Health Website to Dates
+
+Been dating a bit. Nothing serious. Coffee, drinks. Denver scene. -- 2026-05-01
+- Stress Eating Is My Biggest Enemy (stress-eating-is-my-biggest-enemy) -- I don't overeat when I'm happy. I don't overeat when I'm bored. I overeat when I'm stressed. Not hungry-stressed. Just stressed. Deadline at work. Arg... -- 2026-04-07T08:00:00+00:00
+- Sleep Deprivation Made Me Gain Weight (sleep-deprivation-made-me-gain-weight) -- Last quarter at work was brutal. Three major deadlines, two production incidents, and a manager who thought -- 2026-03-30T08:00:00+00:00
+- Protein Intake Changed My Body Composition (protein-intake-changed-my-body-composition) -- For most of my twenties, I ate like a college student who never graduated. Pasta, pizza, sandwiches, cereal. Carbs and more carbs, with occasional mea... -- 2026-03-27T08:00:00+00:00
+- My Desk Job Is Destroying My Health (desk-job-is-destroying-my-health) -- I sit for ten hours a day. Not because I want to. Because my job requires it. I'm a software engineer. My tools are a keyboard and a monitor. There's ... -- 2026-03-25T08:00:00+00:00
+- I Tried OMAD for a Week (i-tried-omad-for-a-week) -- OMAD stands for One Meal a Day. It's exactly what it sounds like: you fast for twenty-three hours, then eat all your daily calories in a single hour. ... -- 2026-03-23T08:00:00+00:00
+- I Tried Keto for One Week and Quit (i-tried-keto-for-one-week-and-quit) -- My coworker Dave lost twenty pounds on keto in two months. He wouldn't shut up about it. -- 2026-03-03T08:00:00+00:00
+- I Quit Soda for 30 Days (i-quit-soda-for-30-days) -- I used to drink two to three cans of Diet Coke a day. Not regular Coke. Diet. The zero-calorie kind. I told myself it was fine because there were no c... -- 2026-02-24T08:00:00+00:00
+- How I Track My Weight With a Spreadsheet (how-i-track-my-weight-with-a-spreadsheet) -- Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o... -- 2026-02-22T08:00:00+00:00
+- How I Set Realistic Weight Goals (how-i-set-realistic-weight-goals) -- When I first decided to lose weight, I picked a number out of thin air. I wanted to weigh 160 pounds. Why? Because it sounded good. Because it was a r... -- 2026-02-19T08:00:00+00:00
+- How I Got My Roommate to Track BMI (how-i-got-my-roommate-to-track-bmi) -- My roommate Jake is the opposite of me. He doesn't track anything. He doesn't weigh himself. He eats what he wants, when he wants, and somehow maintai... -- 2026-02-18T08:00:00+00:00
+- Drinking Water Changed My Weight Chart (drinking-water-changed-my-weight-chart) -- I used to drink maybe two glasses of water a day. The rest was coffee, Diet Coke, and whatever was in the office fridge. I didn't think it mattered fo... -- 2026-02-04T08:00:00+00:00
+- Cooking at Home Saved My Diet (cooking-at-home-saved-my-diet) -- I used to eat out for almost every meal. Breakfast was a breakfast sandwich from the cafe near work. Lunch was whatever the team ordered. Dinner was t... -- 2026-02-03T08:00:00+00:00
+- Carbs Are Not the Enemy (carbs-are-not-the-enemy) -- The anti-carb movement has gone too far. I can't open social media without seeing someone demonizing bread, pasta, or fruit. -- 2026-02-02T08:00:00+00:00
