@@ -8,6 +8,18 @@
 <meta name="author" content="Alex">
 <link rel="canonical" href="https://my-bmi.net/disclaimer.html">
 <link rel="stylesheet" href="style.css">
+<!-- Open Graph -->
+<meta property="og:title" content="Disclaimer | my-bmi.net">
+<meta property="og:description" content="Medical disclaimer for my-bmi.net. I'm not a doctor. Seriously.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://my-bmi.net/disclaimer.html">
+<meta property="og:image" content="https://my-bmi.net/images/og-default.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Disclaimer | my-bmi.net">
+<meta name="twitter:description" content="Medical disclaimer for my-bmi.net. I'm not a doctor. Seriously.">
+<meta name="twitter:image" content="https://my-bmi.net/images/og-default.jpg">
 </head>
 <body>
 
@@ -24,20 +36,23 @@
     </a>
     <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
     <div class="mbn-nav-links">
-      <a href="index.html">Tracker</a>
-      <a href="blog/index.html">Journal</a>
-      <a href="faq.html">FAQ</a>
+      <a href="index.html">Home</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="blog/index.html">Blog</a>
       <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
     </div>
   </div>
 </nav>
 
+<nav style="max-width:700px;margin:20px auto 0;padding:0 20px;font-size:0.85rem;color:var(--mbn-text-light);"><a href="index.html" style="color:var(--mbn-text-light);text-decoration:none;">Home</a> <span style="margin:0 8px;">/</span> <span style="color:var(--mbn-text);">Disclaimer</span></nav>
 <main class="mbn-main" style="max-width:700px;">
   <h1 style="margin-bottom:24px;">Medical Disclaimer</h1>
 
-  <div style="background:#fef3c7;border-left:4px solid #fbbf24;padding:20px;margin-bottom:24px;">
-    <p style="font-weight:600;color:#92400e;margin-bottom:8px;">⚠️ Important</p>
-    <p style="color:#92400e;">I am not a doctor. I am a software engineer who built a calculator.</p>
+  <div style="background:var(--mbn-warning-bg);border-left:4px solid var(--mbn-warning);padding:20px;margin-bottom:24px;">
+    <p style="font-weight:600;color:var(--mbn-warning-text);margin-bottom:8px;">⚠️ Important</p>
+    <p style="color:var(--mbn-warning-text);">I am not a doctor. I am a software engineer who built a calculator.</p>
   </div>
 
   <div style="line-height:1.8;color:var(--mbn-text);">
@@ -58,8 +73,10 @@
       <a href="faq.html">FAQ</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
     </div>
-    <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+    <p class="mbn-footer-copy">&copy; 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
   </div>
 </footer>
 
