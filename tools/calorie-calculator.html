@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calorie Calculator | my-bmi.net</title>
+<meta name="description" content="Calculate your daily calorie needs based on activity level, weight goals, and metabolism.">
+<meta name="author" content="Alex">
+<link rel="canonical" href="https://my-bmi.net/tools/calorie-calculator.html">
+<meta property="og:title" content="Calorie Calculator | my-bmi.net">
+<meta property="og:description" content="Daily calorie needs based on activity level and goals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://my-bmi.net/tools/calorie-calculator.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Calorie Calculator","applicationCategory":"HealthApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Alex"}}
+</script>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="mbn-nav">
+  <div class="mbn-nav-inner">
+    <a href="../index.html" class="mbn-logo"><svg class="mbn-logo-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M14 32c0-8 4-14 10-14s10 6 10 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="16" r="3" fill="currentColor"/><path d="M12 36h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/></svg><span>my-bmi</span></a>
+    <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
+    <div class="mbn-nav-links">
+      <a href="../index.html">Home</a><a href="index.html" class="mbn-active">Tools</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../faq.html">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main class="mbn-tool-page">
+  <div class="mbn-tool-hero" style="background:linear-gradient(135deg,#d1fae5 0%,#fff 100%);">
+    <h1>🍎 Calorie Calculator</h1>
+    <p>Daily calorie needs based on your BMR, activity level, and weight goals.</p>
+  </div>
+  <div id="tool_top" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+  <div class="mbn-tool-form">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
+      <div class="mbn-form-group"><label>Gender</label><select id="gender" class="mbn-input"><option value="male">Male</option><option value="female">Female</option></select></div>
+      <div class="mbn-form-group"><label>Age</label><input type="number" id="age" class="mbn-input" placeholder="e.g. 28" min="10" max="100"></div>
+      <div class="mbn-form-group"><label>Height (cm)</label><input type="number" id="height" class="mbn-input" placeholder="e.g. 178" min="100" max="250"></div>
+      <div class="mbn-form-group"><label>Weight (kg)</label><input type="number" id="weight" class="mbn-input" placeholder="e.g. 80" min="30" max="300" step="0.1"></div>
+      <div class="mbn-form-group"><label>Activity Level</label><select id="activity" class="mbn-input">
+        <option value="1.2">Sedentary (desk job)</option>
+        <option value="1.375">Light (1-3 days/week)</option>
+        <option value="1.55">Moderate (3-5 days/week)</option>
+        <option value="1.725">Active (6-7 days/week)</option>
+        <option value="1.9">Very Active (physical job)</option>
+      </select></div>
+      <div class="mbn-form-group"><label>Goal</label><select id="goal" class="mbn-input">
+        <option value="0">Maintain weight</option>
+        <option value="-500">Lose 1 lb/week</option>
+        <option value="-250">Lose 0.5 lb/week</option>
+        <option value="250">Gain 0.5 lb/week</option>
+        <option value="500">Gain 1 lb/week</option>
+      </select></div>
+    </div>
+    <div class="mbn-tool-actions">
+      <button class="mbn-btn mbn-btn-primary" onclick="calcCal()">Calculate</button>
+      <button class="mbn-btn mbn-btn-secondary" onclick="saveCal()">Save</button>
+      <button class="mbn-btn mbn-btn-secondary" onclick="exportCal()">Export CSV</button>
+      <button class="mbn-btn mbn-btn-secondary" onclick="clearCal()" style="background:#fee2e2;color:#991b1b;">Clear</button>
+    </div>
+    <div id="result" class="mbn-tool-result">
+      <div class="mbn-tool-result-value" id="calValue">--</div>
+      <div class="mbn-tool-result-label">calories / day</div>
+      <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+        <div style="background:var(--mbn-bg);padding:12px;border-radius:8px;text-align:center;">
+          <div style="font-size:1.2rem;font-weight:700;color:var(--mbn-primary);" id="bmrVal">--</div>
+          <div style="font-size:0.75rem;color:var(--mbn-text-light);">BMR</div>
+        </div>
+        <div style="background:var(--mbn-bg);padding:12px;border-radius:8px;text-align:center;">
+          <div style="font-size:1.2rem;font-weight:700;color:var(--mbn-primary);" id="tdeeVal">--</div>
+          <div style="font-size:0.75rem;color:var(--mbn-text-light);">TDEE</div>
+        </div>
+        <div style="background:var(--mbn-bg);padding:12px;border-radius:8px;text-align:center;">
+          <div style="font-size:1.2rem;font-weight:700;color:var(--mbn-primary);" id="goalVal">--</div>
+          <div style="font-size:0.75rem;color:var(--mbn-text-light);">Goal Adjust</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="tool_middle" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+  <div class="mbn-tool-chart"><canvas id="calChart"></canvas></div>
+  <div class="mbn-tool-history" id="historySection" style="display:none;">
+    <h3>History</h3><table class="mbn-tool-history-table"><thead><tr><th>Date</th><th>Target</th><th>TDEE</th><th>Goal</th></tr></thead><tbody id="historyBody"></tbody></table>
+  </div>
+  <div class="mbn-tool-how">
+    <h3>How It Works</h3>
+    <p>We calculate your BMR first, then multiply by your activity factor to get TDEE (Total Daily Energy Expenditure).</p>
+    <p><strong>Activity Multipliers:</strong></p>
+    <ul>
+      <li>Sedentary: 1.2</li>
+      <li>Light exercise: 1.375</li>
+      <li>Moderate exercise: 1.55</li>
+      <li>Active: 1.725</li>
+      <li>Very active: 1.9</li>
+    </ul>
+    <p>Then we adjust by your goal: -500 calories per day ~ 1 lb fat loss per week. +500 ~ 1 lb gain per week.</p>
+  </div>
+  <div class="mbn-tool-related">
+    <div class="mbn-tool-related-col">
+      <h3>Related Articles</h3>
+      <ul>
+        <li><a href="../blog/what-i-learned-from-6-months-of-failed-diet-attempts.html">6 Months of Failed Diet Attempts</a></li>
+        <li><a href="../blog/the-day-i-ate-an-entire-pizza-and-didn-t-log-it.html">The Day I Ate an Entire Pizza</a></li>
+        <li><a href="../blog/why-i-deleted-my-fitness-app-after-using-it-for-2-years.html">Why I Deleted My Fitness App</a></li>
+      </ul>
+    </div>
+    <div class="mbn-tool-related-col">
+      <h3>More Tools</h3>
+      <ul>
+        <li><a href="bmr-calculator.html">BMR Calculator</a></li>
+        <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+        <li><a href="body-fat-calculator.html">Body Fat Calculator</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tool_bottom" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+</main>
+<footer class="mbn-footer">
+  <div class="mbn-footer-inner">
+    <div class="mbn-footer-links">
+      <a href="../about.html">About Alex</a><a href="../faq.html">FAQ</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../contact.html">Contact</a>
+    </div>
+    <p class="mbn-footer-copy">&copy; 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+  </div>
+</footer>
+<script src="../ads-loader.js"></script>
+<script>
+function calcCal(){var g=document.getElementById('gender').value,age=parseFloat(document.getElementById('age').value),h=parseFloat(document.getElementById('height').value),w=parseFloat(document.getElementById('weight').value),act=parseFloat(document.getElementById('activity').value),goal=parseFloat(document.getElementById('goal').value);if(!age||!h||!w){alert('Fill all fields');return;}var bmr=g==='male'?(10*w+6.25*h-5*age+5):(10*w+6.25*h-5*age-161);var tdee=Math.round(bmr*act);var target=tdee+goal;document.getElementById('calValue').textContent=target.toLocaleString();document.getElementById('bmrVal').textContent=Math.round(bmr).toLocaleString();document.getElementById('tdeeVal').textContent=tdee.toLocaleString();document.getElementById('goalVal').textContent=(goal>0?'+':'')+goal;document.getElementById('result').classList.add('show');}
+function saveCal(){var cal=document.getElementById('calValue').textContent;if(cal==='--'){alert('Calculate first');return;}var rec={date:new Date().toISOString().split('T')[0],target:cal.replace(/,/g,''),tdee:document.getElementById('tdeeVal').textContent.replace(/,/g,''),goal:document.getElementById('goalVal').textContent};var hist=JSON.parse(localStorage.getItem('mbn_cal_history')||'[]');hist.unshift(rec);localStorage.setItem('mbn_cal_history',JSON.stringify(hist));loadCal();drawCal();alert('Saved!');}
+function loadCal(){var hist=JSON.parse(localStorage.getItem('mbn_cal_history')||'[]');if(hist.length>0){document.getElementById('historySection').style.display='block';var tb=document.getElementById('historyBody');tb.innerHTML='';hist.slice(0,20).forEach(function(r){tb.innerHTML+='<tr><td>'+r.date+'</td><td>'+r.target+'</td><td>'+r.tdee+'</td><td>'+r.goal+'</td></tr>';});}}
+function drawCal(){var hist=JSON.parse(localStorage.getItem('mbn_cal_history')||'[]');if(hist.length<2)return;var c=document.getElementById('calChart');c.width=c.offsetWidth||600;c.height=300;var ctx=c.getContext('2d'),w=c.width,h=c.height,p=40;ctx.clearRect(0,0,w,h);var vals=hist.slice(0,30).reverse().map(function(r){return parseFloat(r.target);});var minV=Math.min.apply(null,vals)-200,maxV=Math.max.apply(null,vals)+200;ctx.strokeStyle='var(--mbn-border)';ctx.lineWidth=1;for(var i=0;i<=5;i++){var y=p+(h-2*p)*i/5;ctx.beginPath();ctx.moveTo(p,y);ctx.lineTo(w-p,y);ctx.stroke();}ctx.strokeStyle='#10b981';ctx.lineWidth=3;ctx.beginPath();vals.forEach(function(v,i){var x=p+(w-2*p)*i/(vals.length-1),y=p+(h-2*p)*(1-(v-minV)/(maxV-minV));if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();ctx.fillStyle='#10b981';vals.forEach(function(v,i){var x=p+(w-2*p)*i/(vals.length-1),y=p+(h-2*p)*(1-(v-minV)/(maxV-minV));ctx.beginPath();ctx.arc(x,y,5,0,Math.PI*2);ctx.fill();});}
+function exportCal(){var hist=JSON.parse(localStorage.getItem('mbn_cal_history')||'[]');if(!hist.length){alert('No data');return;}var csv='Date,Target,TDEE,Goal\n';hist.forEach(function(r){csv+=r.date+','+r.target+','+r.tdee+','+r.goal+'\n';});var blob=new Blob([csv],{type:'text/csv'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='calorie-history.csv';a.click();URL.revokeObjectURL(url);}
+function clearCal(){if(confirm('Delete all history?')){localStorage.removeItem('mbn_cal_history');document.getElementById('historySection').style.display='none';var c=document.getElementById('calChart'),ctx=c.getContext('2d');ctx.clearRect(0,0,c.width,c.height);}}
+document.addEventListener('DOMContentLoaded',function(){loadCal();drawCal();});
+</script>
+</body>
+</html>
