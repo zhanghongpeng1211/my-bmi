@@ -6,6 +6,18 @@
 <title>404 - Page Not Found | my-bmi.net</title>
 <meta name="description" content="Page not found. Maybe you typed the URL wrong? Happens to the best of us.">
 <link rel="stylesheet" href="style.css">
+<!-- Open Graph -->
+<meta property="og:title" content="404 - Page Not Found | my-bmi.net">
+<meta property="og:description" content="Page not found. Maybe you typed the URL wrong? Happens to the best of us.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://my-bmi.net/404.html">
+<meta property="og:image" content="https://my-bmi.net/images/og-default.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="404 - Page Not Found | my-bmi.net">
+<meta name="twitter:description" content="Page not found. Maybe you typed the URL wrong? Happens to the best of us.">
+<meta name="twitter:image" content="https://my-bmi.net/images/og-default.jpg">
 </head>
 <body>
 
@@ -20,6 +32,15 @@
       </svg>
       <span>my-bmi</span>
     </a>
+    <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
+    <div class="mbn-nav-links">
+      <a href="index.html">Home</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
   </div>
 </nav>
 
@@ -35,7 +56,15 @@
 
 <footer class="mbn-footer">
   <div class="mbn-footer-inner">
-    <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+    <div class="mbn-footer-links">
+      <a href="about.html">About Alex</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p class="mbn-footer-copy">&copy; 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
   </div>
 </footer>
 
