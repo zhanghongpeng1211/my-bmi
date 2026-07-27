@@ -4,21 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Journal | my-bmi.net</title>
-<meta name="description" content="Personal health diary by Alex, a software engineer in Denver. Real stories about BMI tracking, weight loss, and figuring it out as I go.">
+<meta name="description" content="Real stories about health tracking, weight loss, and data. Written by Alex, a software engineer in Denver.">
 <meta name="author" content="Alex">
-<link rel="canonical" href="https://my-bmi.net/blog/">
-
-<!-- Open Graph -->
+<link rel="canonical" href="https://my-bmi.net/blog/index.html">
 <meta property="og:title" content="Journal | my-bmi.net">
-<meta property="og:description" content="Personal health diary by Alex in Denver.">
+<meta property="og:description" content="Real stories about health tracking and weight loss. By Alex in Denver.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://my-bmi.net/blog/">
-
+<meta property="og:url" content="https://my-bmi.net/blog/index.html">
+<meta property="og:image" content="https://my-bmi.net/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Journal | my-bmi.net">
+<meta name="twitter:description" content="Real stories about health tracking and weight loss. By Alex in Denver.">
+<meta name="twitter:image" content="https://my-bmi.net/images/og-default.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Journal | my-bmi.net",
+  "url": "https://my-bmi.net/blog/index.html",
+  "description": "Personal health tracking diary by Alex in Denver.",
+  "author": {
+    "@type": "Person",
+    "name": "Alex",
+    "jobTitle": "Software Engineer"
+  }
+}
+</script>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<!-- 导航 -->
 <nav class="mbn-nav">
   <div class="mbn-nav-inner">
     <a href="../index.html" class="mbn-logo">
@@ -32,25 +47,247 @@
     </a>
     <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
     <div class="mbn-nav-links">
-      <a href="../index.html">Tracker</a>
-      <a href="index.html" class="mbn-active">Journal</a>
-      <a href="../faq.html">FAQ</a>
+      <a href="../index.html">Home</a>
+      <a href="../tools/index.html">Tools</a>
+      <a href="index.html" class="mbn-active">Blog</a>
       <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../faq.html">FAQ</a>
     </div>
   </div>
 </nav>
 
-<main class="mbn-main" style="max-width:800px;">
-  <header style="margin-bottom:40px;">
-    <h1 style="font-size:2rem;margin-bottom:8px;">The Journal</h1>
-    <p style="color:var(--mbn-text-light);">Real stories, real data, real struggles. By Alex in Denver.</p>
-  </header>
-
-  <!-- 博客列表 - JS动态加载 -->
-  <div id="mbn-blog-list" class="mbn-blog-list">
-    <p class="mbn-loading">Loading journal entries...</p>
+<main class="mbn-main">
+  <div class="mbn-tool-hero" style="background:linear-gradient(135deg,var(--mbn-secondary) 0%,#fff 100%);">
+    <h1>Journal</h1>
+    <p>Real stories, real data, real struggles. By Alex.</p>
   </div>
 
+  <!-- blog_top 广告位 -->
+  <div id="blog_top" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+
+  <!-- BLOG_ARTICLES_START -->
+
+
+  <div class="mbn-articles-grid">
+      <a href="./alcohol-is-sabotaging-my-weight-loss.html" class="mbn-article-card">
+        <img src="../images/blog/alcohol-is-sabotaging-my-weight-loss.jpg" alt="Alcohol Is Sabotaging My Weight Loss" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Alcohol Is Sabotaging My Weight Loss</h4>
+        <p>I love beer. IPAs specifically. The hoppier, the better. There's something deeply satisfying about a cold beer after a long day of debugging code. It'...</p>
+        <div class="mbn-article-meta">July 27, 2026</div>
+      </a>
+<a href="./why-my-weight-fluctuates-every-day.html" class="mbn-article-card">
+        <img src="../images/blog/why-my-weight-fluctuates-every-day.jpg" alt="Why My Weight Fluctuates Every Day" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why My Weight Fluctuates Every Day</h4>
+        <p>Monday: 174.2 lbs. Tuesday: 176.8 lbs. Wednesday: 173.5 lbs. Thursday: 175.1 lbs. If I didn't know better, I'd think my scale was broken. Or that I wa...</p>
+        <div class="mbn-article-meta">2026-07-19T08:00:00+00:00</div>
+      </a>
+<a href="./why-i-dont-trust-smart-scales.html" class="mbn-article-card">
+        <img src="../images/blog/why-i-dont-trust-smart-scales.jpg" alt="Why I Don't Trust Smart Scales" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why I Don't Trust Smart Scales</h4>
+        <p>I own a smart scale. It cost me eighty dollars and promised to track not just weight, but body fat percentage, muscle mass, bone density, water percen...</p>
+        <div class="mbn-article-meta">2026-07-09T08:00:00+00:00</div>
+      </a>
+<a href="./why-gym-scales-never-match-my-home-scale.html" class="mbn-article-card">
+        <img src="../images/blog/why-gym-scales-never-match-my-home-scale.jpg" alt="Why Gym Scales Never Match My Home Scale" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why Gym Scales Never Match My Home Scale</h4>
+        <p>I weigh 174.2 pounds on my home scale. I go to the gym, use their scale, and it says 176.8. Which one is right? I used to think the gym scale was more...</p>
+        <div class="mbn-article-meta">2026-06-27T08:00:00+00:00</div>
+      </a>
+<a href="./why-bmi-is-broken-for-athletes.html" class="mbn-article-card">
+        <img src="../images/blog/why-bmi-is-broken-for-athletes.jpg" alt="Why BMI Is Broken for Athletes" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why BMI Is Broken for Athletes</h4>
+        <p>I used to train with a guy named Mike at the gym near my apartment in Denver. Mike is 5'10</p>
+        <div class="mbn-article-meta">2026-06-15T08:00:00+00:00</div>
+      </a>
+<a href="./walking-10000-steps-changed-my-bmi.html" class="mbn-article-card">
+        <img src="../images/blog/walking-10000-steps-changed-my-bmi.jpg" alt="Walking 10,000 Steps Changed My BMI" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Walking 10,000 Steps Changed My BMI</h4>
+        <p>I bought a cheap pedometer on Amazon for twelve dollars. It was an impulse purchase at 11 PM after reading yet another article about how</p>
+        <div class="mbn-article-meta">2026-06-05T08:00:00+00:00</div>
+      </a>
+<a href="./why-i-stopped-weighing-myself-every-day.html" class="mbn-article-card">
+        <img src="../images/blog/why-i-stopped-weighing-myself-every-day.jpg" alt="Why I Stopped Weighing Myself Every Day" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why I Stopped Weighing Myself Every Day</h4>
+        <p>Why I Stopped Weighing Myself Every Day
+
+I used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood....</p>
+        <div class="mbn-article-meta">2026-05-23</div>
+      </a>
+<a href="./why-i-deleted-my-fitness-app-after-using-it-for-2-years.html" class="mbn-article-card">
+        <img src="../images/blog/why-i-deleted-my-fitness-app-after-using-it-for-2-years.jpg" alt="Why I Deleted My Fitness App After Using It for 2 Years" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why I Deleted My Fitness App After Using It for 2 Years</h4>
+        <p>Why I Deleted My Fitness App After Using It for 2 Years
+
+MyFitnessPal. Two years. Every meal. Every snack. Every coffee. Weighed food. Scanned barcode...</p>
+        <div class="mbn-article-meta">2026-05-21</div>
+      </a>
+<a href="./i-stopped-weighing-myself-every-day.html" class="mbn-article-card">
+        <img src="../images/blog/i-stopped-weighing-myself-every-day.jpg" alt="I Stopped Weighing Myself Every Day" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>I Stopped Weighing Myself Every Day</h4>
+        <p>I Stopped Weighing Myself Every Day
+
+I used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood. 174...</p>
+        <div class="mbn-article-meta">May 19, 2026</div>
+      </a>
+<div class="mbn-ad-slot has-content" data-ad-slot="blog_mid" style="width:100%;height:250px;margin:20px 0;grid-column:1/-1;"></div>
+<a href="./what-i-learned-from-6-months-of-failed-diet-attempts.html" class="mbn-article-card">
+        <img src="../images/blog/what-i-learned-from-6-months-of-failed-diet-attempts.jpg" alt="What I Learned From 6 Months of Failed Diet Attempts" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>What I Learned From 6 Months of Failed Diet Attempts</h4>
+        <p>What I Learned From 6 Months of Failed Diet Attempts
+
+January: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fog. Constipated. Gave up after ...</p>
+        <div class="mbn-article-meta">2026-05-19</div>
+      </a>
+<a href="./what-8-months-of-data-taught-me-about-my-body.html" class="mbn-article-card">
+        <img src="../images/blog/what-8-months-of-data-taught-me-about-my-body.jpg" alt="What 8 Months of Data Taught Me About My Body" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>What 8 Months of Data Taught Me About My Body</h4>
+        <p>What 8 Months of Data Taught Me About My Body
+
+Logging weight since September. 34 entries. Not every week (missed some), but consistent.
+
+Looking at d...</p>
+        <div class="mbn-article-meta">2026-05-16</div>
+      </a>
+<a href="./the-weekend-weight-rebound-is-real.html" class="mbn-article-card">
+        <img src="../images/blog/the-weekend-weight-rebound-is-real.jpg" alt="The Weekend Weight Rebound Is Real" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>The Weekend Weight Rebound Is Real</h4>
+        <p>Every Monday morning, I step on the scale and curse. Without fail, I'm two to four pounds heavier than Friday. Every. Single. Week. For a while, I tho...</p>
+        <div class="mbn-article-meta">2026-05-15T08:00:00+00:00</div>
+      </a>
+<a href="./the-weird-thing-that-happened-when-i-started-tracking-my-sleep.html" class="mbn-article-card">
+        <img src="../images/blog/the-weird-thing-that-happened-when-i-started-tracking-my-sleep.jpg" alt="The Weird Thing That Happened When I Started Tracking My Sleep" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>The Weird Thing That Happened When I Started Tracking My Sleep</h4>
+        <p>The Weird Thing That Happened When I Started Tracking My Sleep
+
+Bought a cheap fitness tracker on Amazon. $35. Tracks steps, heart rate, sleep.
+
+Wante...</p>
+        <div class="mbn-article-meta">2026-05-14</div>
+      </a>
+<a href="./the-saturday-morning-routine-that-actually-works.html" class="mbn-article-card">
+        <img src="../images/blog/the-saturday-morning-routine-that-actually-works.jpg" alt="The Saturday Morning Routine That Actually Works" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>The Saturday Morning Routine That Actually Works</h4>
+        <p>The Saturday Morning Routine That Actually Works
+
+Saturday mornings are my anchor. One consistent thing in chaotic weeks.
+
+6:30 AM: Wake up. No alarm....</p>
+        <div class="mbn-article-meta">2026-05-11</div>
+      </a>
+<a href="./the-day-i-ate-an-entire-pizza-and-didn-t-log-it.html" class="mbn-article-card">
+        <img src="../images/blog/the-day-i-ate-an-entire-pizza-and-didn-t-log-it.jpg" alt="The Day I Ate an Entire Pizza and Didn't Log It" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>The Day I Ate an Entire Pizza and Didn't Log It</h4>
+        <p>The Day I Ate an Entire Pizza and Didn</p>
+        <div class="mbn-article-meta">2026-05-09</div>
+      </a>
+<a href="./my-doctor-said-my-bmi-is-borderline-and-i-got-defensive.html" class="mbn-article-card">
+        <img src="../images/blog/my-doctor-said-my-bmi-is-borderline-and-i-got-defensive.jpg" alt="My Doctor Said My BMI Is 'Borderline' and I Got Defensive" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>My Doctor Said My BMI Is 'Borderline' and I Got Defensive</h4>
+        <p>My Doctor Said My BMI Is</p>
+        <div class="mbn-article-meta">2026-05-06</div>
+      </a>
+<a href="./i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened.html" class="mbn-article-card">
+        <img src="../images/blog/i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened.jpg" alt="I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened</h4>
+        <p>I Tried Intermittent Fasting for 30 Days and Here</p>
+        <div class="mbn-article-meta">2026-05-04</div>
+      </a>
+<a href="./how-i-explain-my-weird-health-website-to-dates.html" class="mbn-article-card">
+        <img src="../images/blog/how-i-explain-my-weird-health-website-to-dates.jpg" alt="How I Explain My Weird Health Website to Dates" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>How I Explain My Weird Health Website to Dates</h4>
+        <p>How I Explain My Weird Health Website to Dates
+
+Been dating a bit. Nothing serious. Coffee, drinks. Denver scene.</p>
+        <div class="mbn-article-meta">2026-05-01</div>
+      </a>
+<div class="mbn-ad-slot has-content" data-ad-slot="blog_mid" style="width:100%;height:250px;margin:20px 0;grid-column:1/-1;"></div>
+<a href="./stress-eating-is-my-biggest-enemy.html" class="mbn-article-card">
+        <img src="../images/blog/stress-eating-is-my-biggest-enemy.jpg" alt="Stress Eating Is My Biggest Enemy" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Stress Eating Is My Biggest Enemy</h4>
+        <p>I don't overeat when I'm happy. I don't overeat when I'm bored. I overeat when I'm stressed. Not hungry-stressed. Just stressed. Deadline at work. Arg...</p>
+        <div class="mbn-article-meta">2026-04-07T08:00:00+00:00</div>
+      </a>
+<a href="./sleep-deprivation-made-me-gain-weight.html" class="mbn-article-card">
+        <img src="../images/blog/sleep-deprivation-made-me-gain-weight.jpg" alt="Sleep Deprivation Made Me Gain Weight" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Sleep Deprivation Made Me Gain Weight</h4>
+        <p>Last quarter at work was brutal. Three major deadlines, two production incidents, and a manager who thought</p>
+        <div class="mbn-article-meta">2026-03-30T08:00:00+00:00</div>
+      </a>
+<a href="./protein-intake-changed-my-body-composition.html" class="mbn-article-card">
+        <img src="../images/blog/protein-intake-changed-my-body-composition.jpg" alt="Protein Intake Changed My Body Composition" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Protein Intake Changed My Body Composition</h4>
+        <p>For most of my twenties, I ate like a college student who never graduated. Pasta, pizza, sandwiches, cereal. Carbs and more carbs, with occasional mea...</p>
+        <div class="mbn-article-meta">2026-03-27T08:00:00+00:00</div>
+      </a>
+<a href="./desk-job-is-destroying-my-health.html" class="mbn-article-card">
+        <img src="../images/blog/desk-job-is-destroying-my-health.jpg" alt="My Desk Job Is Destroying My Health" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>My Desk Job Is Destroying My Health</h4>
+        <p>I sit for ten hours a day. Not because I want to. Because my job requires it. I'm a software engineer. My tools are a keyboard and a monitor. There's ...</p>
+        <div class="mbn-article-meta">2026-03-25T08:00:00+00:00</div>
+      </a>
+<a href="./i-tried-omad-for-a-week.html" class="mbn-article-card">
+        <img src="../images/blog/i-tried-omad-for-a-week.jpg" alt="I Tried OMAD for a Week" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>I Tried OMAD for a Week</h4>
+        <p>OMAD stands for One Meal a Day. It's exactly what it sounds like: you fast for twenty-three hours, then eat all your daily calories in a single hour. ...</p>
+        <div class="mbn-article-meta">2026-03-23T08:00:00+00:00</div>
+      </a>
+<a href="./i-tried-keto-for-one-week-and-quit.html" class="mbn-article-card">
+        <img src="../images/blog/i-tried-keto-for-one-week-and-quit.jpg" alt="I Tried Keto for One Week and Quit" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>I Tried Keto for One Week and Quit</h4>
+        <p>My coworker Dave lost twenty pounds on keto in two months. He wouldn't shut up about it.</p>
+        <div class="mbn-article-meta">2026-03-03T08:00:00+00:00</div>
+      </a>
+<a href="./i-quit-soda-for-30-days.html" class="mbn-article-card">
+        <img src="../images/blog/i-quit-soda-for-30-days.jpg" alt="I Quit Soda for 30 Days" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>I Quit Soda for 30 Days</h4>
+        <p>I used to drink two to three cans of Diet Coke a day. Not regular Coke. Diet. The zero-calorie kind. I told myself it was fine because there were no c...</p>
+        <div class="mbn-article-meta">2026-02-24T08:00:00+00:00</div>
+      </a>
+<a href="./how-i-track-my-weight-with-a-spreadsheet.html" class="mbn-article-card">
+        <img src="../images/blog/how-i-track-my-weight-with-a-spreadsheet.jpg" alt="How I Track My Weight With a Spreadsheet" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>How I Track My Weight With a Spreadsheet</h4>
+        <p>Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o...</p>
+        <div class="mbn-article-meta">2026-02-22T08:00:00+00:00</div>
+      </a>
+<a href="./how-i-set-realistic-weight-goals.html" class="mbn-article-card">
+        <img src="../images/blog/how-i-set-realistic-weight-goals.jpg" alt="How I Set Realistic Weight Goals" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>How I Set Realistic Weight Goals</h4>
+        <p>When I first decided to lose weight, I picked a number out of thin air. I wanted to weigh 160 pounds. Why? Because it sounded good. Because it was a r...</p>
+        <div class="mbn-article-meta">2026-02-19T08:00:00+00:00</div>
+      </a>
+<div class="mbn-ad-slot has-content" data-ad-slot="blog_mid" style="width:100%;height:250px;margin:20px 0;grid-column:1/-1;"></div>
+<a href="./how-i-got-my-roommate-to-track-bmi.html" class="mbn-article-card">
+        <img src="../images/blog/how-i-got-my-roommate-to-track-bmi.jpg" alt="How I Got My Roommate to Track BMI" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>How I Got My Roommate to Track BMI</h4>
+        <p>My roommate Jake is the opposite of me. He doesn't track anything. He doesn't weigh himself. He eats what he wants, when he wants, and somehow maintai...</p>
+        <div class="mbn-article-meta">2026-02-18T08:00:00+00:00</div>
+      </a>
+<a href="./drinking-water-changed-my-weight-chart.html" class="mbn-article-card">
+        <img src="../images/blog/drinking-water-changed-my-weight-chart.jpg" alt="Drinking Water Changed My Weight Chart" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Drinking Water Changed My Weight Chart</h4>
+        <p>I used to drink maybe two glasses of water a day. The rest was coffee, Diet Coke, and whatever was in the office fridge. I didn't think it mattered fo...</p>
+        <div class="mbn-article-meta">2026-02-04T08:00:00+00:00</div>
+      </a>
+<a href="./cooking-at-home-saved-my-diet.html" class="mbn-article-card">
+        <img src="../images/blog/cooking-at-home-saved-my-diet.jpg" alt="Cooking at Home Saved My Diet" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Cooking at Home Saved My Diet</h4>
+        <p>I used to eat out for almost every meal. Breakfast was a breakfast sandwich from the cafe near work. Lunch was whatever the team ordered. Dinner was t...</p>
+        <div class="mbn-article-meta">2026-02-03T08:00:00+00:00</div>
+      </a>
+<a href="./carbs-are-not-the-enemy.html" class="mbn-article-card">
+        <img src="../images/blog/carbs-are-not-the-enemy.jpg" alt="Carbs Are Not the Enemy" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Carbs Are Not the Enemy</h4>
+        <p>The anti-carb movement has gone too far. I can't open social media without seeing someone demonizing bread, pasta, or fruit.</p>
+        <div class="mbn-article-meta">2026-02-02T08:00:00+00:00</div>
+      </a>
+  </div>
+  
+
+<!-- BLOG_ARTICLES_END -->
+
+  <!-- blog_bottom 广告位 -->
+  <div id="blog_bottom" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
 </main>
 
 <footer class="mbn-footer">
@@ -60,60 +297,12 @@
       <a href="../faq.html">FAQ</a>
       <a href="../privacy.html">Privacy</a>
       <a href="../terms.html">Terms</a>
+      <a href="../contact.html">Contact</a>
     </div>
     <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
   </div>
 </footer>
 
-<!-- JS动态加载文章 -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  loadBlogArticles();
-});
-
-function loadBlogArticles() {
-  fetch('../articles.json')
-    .then(r => {
-      if (!r.ok) throw new Error('Network response was not ok');
-      return r.json();
-    })
-    .then(data => {
-      const list = document.getElementById('mbn-blog-list');
-      if (!list) return;
-      list.innerHTML = '';
-
-      const articles = data.articles || data || [];
-      if (articles.length === 0) {
-        list.innerHTML = '<p class="mbn-loading">No entries yet. Check back soon!</p>';
-        return;
-      }
-
-      articles.forEach(article => {
-        const item = document.createElement('article');
-        item.className = 'mbn-article-card';
-        item.style.marginBottom = '24px';
-        const url = (article.url || article.slug + '.html').replace('blog/', '');
-        item.innerHTML = `
-          <div class="mbn-article-meta" style="margin-bottom:12px;font-size:0.85rem;">
-            <span>${article.date}</span>
-            <span style="margin-left:16px;">${article.category || 'journal'}</span>
-          </div>
-          <h2 style="font-size:1.4rem;margin-bottom:12px;">
-            <a href="${url}" style="color:var(--mbn-text);text-decoration:none;">${article.title}</a>
-          </h2>
-          <p style="color:var(--mbn-text-light);line-height:1.6;">${article.excerpt}</p>
-          <a href="${url}" style="color:var(--mbn-primary);font-weight:600;display:inline-block;margin-top:12px;">Read more →</a>
-        `;
-        list.appendChild(item);
-      });
-    })
-    .catch(e => {
-      console.error('Failed to load articles:', e);
-      const list = document.getElementById('mbn-blog-list');
-      if (list) list.innerHTML = '<p class="mbn-loading">Failed to load entries. Please refresh.</p>';
-    });
-}
-</script>
-
+<script src="../ads-loader.js"></script>
 </body>
 </html>
