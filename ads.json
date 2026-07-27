@@ -1,6 +1,257 @@
 {
-  "enabled": false,
-  "ad_code_top": "<!-- Google AdSense / Affiliate Ad Placeholder - Top -->\n<div style=\"width:100%;min-height:120px;max-height:150px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;color:#adb5bd;border-radius:8px;\">\n  <div style=\"text-align:center;\">\n    <div style=\"font-size:13px;margin-bottom:6px;\">Advertisement</div>\n    <div style=\"font-size:11px;\">728x90 or 300x250</div>\n  </div>\n</div>",
-  "ad_code_bottom": "<!-- Google AdSense / Affiliate Ad Placeholder - Bottom -->\n<div style=\"width:100%;min-height:120px;max-height:150px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;color:#adb5bd;border-radius:8px;\">\n  <div style=\"text-align:center;\">\n    <div style=\"font-size:13px;margin-bottom:6px;\">Advertisement</div>\n    <div style=\"font-size:11px;\">728x90 or 300x250</div>\n  </div>\n</div>",
-  "ad_code_middle": "<!-- Google AdSense / Affiliate Ad Placeholder - Middle -->\n<div style=\"width:100%;min-height:120px;max-height:150px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;color:#adb5bd;border-radius:8px;\">\n  <div style=\"text-align:center;\">\n    <div style=\"font-size:13px;margin-bottom:6px;\">Advertisement</div>\n    <div style=\"font-size:11px;\">728x90 or 300x250</div>\n  </div>\n</div>"
+  "slots": [
+    {
+      "name": "hero_top",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "middle",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "footer",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "tool_top",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "tool_middle",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "tool_bottom",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "article_top",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "article_middle",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "article_bottom",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_top",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_1",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_2",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_3",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_4",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_5",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_6",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_7",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_8",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_9",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_10",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_11",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_12",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_13",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_14",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_15",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_16",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_17",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_18",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_19",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_20",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_21",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_22",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_23",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_24",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_25",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_26",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_27",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_28",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_29",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_mid_30",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "blog_bottom",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    },
+    {
+      "name": "about_bottom",
+      "width": "100%",
+      "height": 250,
+      "enabled": true
+    }
+  ],
+  "enabled": true
 }
