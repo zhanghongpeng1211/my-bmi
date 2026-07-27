@@ -6,17 +6,16 @@
 <title>my-bmi.net | Simple BMI Tracker & Weight Journal</title>
 <meta name="description" content="Free private BMI calculator and weight tracking tool. No accounts, no cloud, no BS. Built by Alex in Denver.">
 <meta name="author" content="Alex">
-<meta name="keywords" content="BMI calculator, weight tracker, health diary, Denver">
-<meta name="ai-purpose" content="health-tool">
 <link rel="canonical" href="https://my-bmi.net/">
-
-<!-- Open Graph -->
 <meta property="og:title" content="my-bmi.net | Simple BMI Tracker">
 <meta property="og:description" content="Free private BMI calculator. No accounts, no cloud.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://my-bmi.net/">
-
-<!-- Schema.org -->
+<meta property="og:image" content="https://my-bmi.net/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="my-bmi.net | Simple BMI Tracker">
+<meta name="twitter:description" content="Free private BMI calculator. No accounts, no cloud.">
+<meta name="twitter:image" content="https://my-bmi.net/images/og-default.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -31,137 +30,10 @@
   "description": "Personal BMI tracking and weight loss diary by a software engineer in Denver."
 }
 </script>
-
 <link rel="stylesheet" href="style.css">
-<style>
-/* 额外功能样式 */
-.mbn-share-box {
-  background: var(--mbn-secondary);
-  border-radius: var(--mbn-radius);
-  padding: 20px;
-  margin: 20px 0;
-  display: none;
-}
-.mbn-share-box.show { display: block; }
-.mbn-share-url {
-  background: white;
-  border: 1px solid var(--mbn-border);
-  border-radius: 8px;
-  padding: 12px;
-  font-family: monospace;
-  font-size: 0.85rem;
-  word-break: break-all;
-  margin: 10px 0;
-}
-.mbn-pk-section {
-  background: var(--mbn-bg);
-  border: 2px solid var(--mbn-primary);
-  border-radius: var(--mbn-radius);
-  padding: 24px;
-  margin: 24px 0;
-  display: none;
-}
-.mbn-pk-section.show { display: block; }
-.mbn-pk-result {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 16px;
-}
-.mbn-pk-card {
-  background: var(--mbn-secondary);
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-}
-.mbn-pk-card.winner {
-  border: 2px solid var(--mbn-success);
-  background: #d1fae5;
-}
-.mbn-challenge-box {
-  background: var(--mbn-secondary);
-  border-radius: var(--mbn-radius);
-  padding: 20px;
-  margin: 20px 0;
-}
-.mbn-challenge-days {
-  display: flex;
-  gap: 8px;
-  margin: 16px 0;
-  flex-wrap: wrap;
-}
-.mbn-day {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  font-weight: 600;
-  background: var(--mbn-border);
-  color: var(--mbn-text-light);
-}
-.mbn-day.done {
-  background: var(--mbn-success);
-  color: white;
-}
-.mbn-day.missed {
-  background: var(--mbn-danger);
-  color: white;
-}
-.mbn-rank-box {
-  background: var(--mbn-secondary);
-  border-radius: var(--mbn-radius);
-  padding: 20px;
-  margin: 20px 0;
-  text-align: center;
-}
-.mbn-rank-bar {
-  height: 30px;
-  background: var(--mbn-border);
-  border-radius: 15px;
-  margin: 16px 0;
-  position: relative;
-  overflow: hidden;
-}
-.mbn-rank-you {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: var(--mbn-primary);
-  transition: left 0.5s;
-}
-.mbn-rank-label {
-  position: absolute;
-  top: -20px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--mbn-primary);
-  transform: translateX(-50%);
-}
-.mbn-export-img {
-  display: none;
-  margin-top: 16px;
-}
-.mbn-export-img.show {
-  display: block;
-}
-.mbn-export-img img {
-  max-width: 100%;
-  border-radius: 8px;
-  border: 1px solid var(--mbn-border);
-}
-.mbn-btn-small {
-  padding: 8px 16px;
-  font-size: 0.85rem;
-}
-</style>
 </head>
 <body>
 
-<!-- 导航 -->
 <nav class="mbn-nav">
   <div class="mbn-nav-inner">
     <a href="index.html" class="mbn-logo">
@@ -175,146 +47,128 @@
     </a>
     <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
     <div class="mbn-nav-links">
-      <a href="index.html" class="mbn-active">Tracker</a>
-      <a href="blog/index.html">Journal</a>
-      <a href="faq.html">FAQ</a>
+      <a href="index.html" class="mbn-active">Home</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="blog/index.html">Blog</a>
       <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
     </div>
   </div>
 </nav>
 
 <main class="mbn-main">
 
-  <!-- 工具区 -->
-  <div class="mbn-tool-card">
-    <h2>📊 BMI Calculator</h2>
-    <p style="color:var(--mbn-text-light);margin-bottom:20px;">Quick check. No data stored on our servers — everything stays in your browser.</p>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
-      <div class="mbn-form-group">
-        <label>Height (cm)</label>
-        <input type="number" id="height" class="mbn-input" placeholder="e.g. 178" min="100" max="250">
-      </div>
-      <div class="mbn-form-group">
-        <label>Weight (kg)</label>
-        <input type="number" id="weight" class="mbn-input" placeholder="e.g. 80" min="30" max="300" step="0.1">
-      </div>
-    </div>
-
+  <!-- Hero -->
+  <div class="mbn-tool-card" style="background:linear-gradient(135deg,var(--mbn-secondary) 0%,#fff 100%);">
+    <h2 style="font-size:2rem;margin-bottom:12px;">📊 Track Your BMI. Keep Your Data.</h2>
+    <p style="color:var(--mbn-text-light);margin-bottom:24px;font-size:1.1rem;">Free private health calculators and a personal weight journal. No accounts. No cloud. No BS.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <button class="mbn-btn mbn-btn-primary" onclick="calculateBMI()">Calculate BMI</button>
-      <button class="mbn-btn mbn-btn-secondary" onclick="saveRecord()">Save to Log</button>
-      <button class="mbn-btn mbn-btn-secondary mbn-btn-small" onclick="shareResult()">🔗 Share</button>
-      <button class="mbn-btn mbn-btn-secondary mbn-btn-small" onclick="showPK()">⚔️ PK Friend</button>
-      <button class="mbn-btn mbn-btn-secondary mbn-btn-small" onclick="showChallenge()">🔥 Challenge</button>
-      <button class="mbn-btn mbn-btn-secondary mbn-btn-small" onclick="showRank()">📊 Rank</button>
-    </div>
-
-    <div id="result" class="mbn-result" style="display:none;">
-      <div class="mbn-result-value" id="bmiValue">--</div>
-      <div class="mbn-result-label">Your BMI</div>
-      <div class="mbn-result-category" id="bmiCategory">--</div>
-    </div>
-
-    <!-- 分享链接 -->
-    <div id="shareBox" class="mbn-share-box">
-      <h4>📤 Share Your Result</h4>
-      <p style="font-size:0.9rem;color:var(--mbn-text-light);margin-bottom:10px;">Copy this link — anyone who opens it will see your result:</p>
-      <div class="mbn-share-url" id="shareUrl"></div>
-      <button class="mbn-btn mbn-btn-primary mbn-btn-small" onclick="copyShareUrl()">Copy Link</button>
-      <button class="mbn-btn mbn-btn-secondary mbn-btn-small" onclick="generateImage()">🖼️ Save as Image</button>
-      <div id="exportImg" class="mbn-export-img"></div>
-    </div>
-
-    <!-- PK对战 -->
-    <div id="pkBox" class="mbn-pk-section">
-      <h4>⚔️ PK Your Friend</h4>
-      <p style="font-size:0.9rem;color:var(--mbn-text-light);margin-bottom:10px;">Enter your friend's stats to compare:</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
-        <input type="number" id="friendHeight" class="mbn-input" placeholder="Friend height (cm)">
-        <input type="number" id="friendWeight" class="mbn-input" placeholder="Friend weight (kg)" step="0.1">
-      </div>
-      <button class="mbn-btn mbn-btn-primary" onclick="doPK()">Compare!</button>
-      <div id="pkResult" class="mbn-pk-result" style="display:none;">
-        <div class="mbn-pk-card" id="yourCard">
-          <div style="font-size:0.8rem;color:var(--mbn-text-light);">You</div>
-          <div style="font-size:2rem;font-weight:700;color:var(--mbn-primary);" id="yourBMI">--</div>
-          <div style="font-size:0.85rem;" id="yourCat">--</div>
-        </div>
-        <div class="mbn-pk-card" id="friendCard">
-          <div style="font-size:0.8rem;color:var(--mbn-text-light);">Friend</div>
-          <div style="font-size:2rem;font-weight:700;color:var(--mbn-primary);" id="friendBMI">--</div>
-          <div style="font-size:0.85rem;" id="friendCat">--</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 挑战打卡 -->
-    <div id="challengeBox" class="mbn-challenge-box" style="display:none;">
-      <h4>🔥 7-Day Challenge</h4>
-      <p style="font-size:0.9rem;color:var(--mbn-text-light);margin-bottom:10px;">Log your weight for 7 days straight. Current streak: <strong id="streakCount">0</strong> days</p>
-      <div class="mbn-challenge-days" id="challengeDays"></div>
-      <button class="mbn-btn mbn-btn-primary mbn-btn-small" onclick="checkInToday()">✅ Check In Today</button>
-      <button class="mbn-btn mbn-btn-secondary mbn-btn-small" onclick="resetChallenge()">Reset</button>
-    </div>
-
-    <!-- 健康排名 -->
-    <div id="rankBox" class="mbn-rank-box" style="display:none;">
-      <h4>📊 Where Do You Stand?</h4>
-      <p style="font-size:0.9rem;color:var(--mbn-text-light);margin-bottom:10px;">Anonymous comparison based on BMI distribution</p>
-      <div class="mbn-rank-bar" id="rankBar">
-        <div style="position:absolute;left:0;top:0;bottom:0;width:18.5%;background:#dbeafe;border-radius:15px 0 0 15px;"></div>
-        <div style="position:absolute;left:18.5%;top:0;bottom:0;width:56.5%;background:#d1fae5;"></div>
-        <div style="position:absolute;left:75%;top:0;bottom:0;width:15%;background:#fef3c7;"></div>
-        <div style="position:absolute;left:90%;top:0;bottom:0;width:10%;background:#fee2e2;border-radius:0 15px 15px 0;"></div>
-        <div class="mbn-rank-you" id="rankYou" style="left:50%;">
-          <div class="mbn-rank-label">YOU</div>
-        </div>
-      </div>
-      <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--mbn-text-light);margin-top:4px;">
-        <span>Underweight</span>
-        <span>Normal</span>
-        <span>Overweight</span>
-        <span>Obese</span>
-      </div>
-      <p style="margin-top:12px;font-size:0.9rem;" id="rankText">Enter your stats to see where you rank!</p>
+      <a href="tools/bmi-calculator.html" class="mbn-btn mbn-btn-primary">Calculate BMI</a>
+      <a href="blog/index.html" class="mbn-btn mbn-btn-secondary">Read the Blog</a>
     </div>
   </div>
 
-  <!-- 历史记录 -->
-  <div class="mbn-history" id="historySection" style="display:none;">
-    <h3>📈 Your History</h3>
-    <div class="mbn-chart-container">
-      <canvas id="trendChart"></canvas>
-    </div>
-    <table class="mbn-history-table">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Weight</th>
-          <th>BMI</th>
-          <th>Change</th>
-        </tr>
-      </thead>
-      <tbody id="historyBody"></tbody>
-    </table>
-    <div style="margin-top:16px;">
-      <button class="mbn-btn mbn-btn-secondary" onclick="exportCSV()">📥 Export CSV</button>
-      <button class="mbn-btn mbn-btn-secondary" onclick="clearData()" style="margin-left:8px;">🗑️ Clear All</button>
-    </div>
-  </div>
+  <!-- hero_top 广告位 -->
+  <div id="hero_top" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
 
-  <!-- 文章板块 - JS动态加载 -->
-  <section class="mbn-articles-section">
-    <h2>From the Journal</h2>
-    <p class="mbn-articles-sub">Real stories, real data, real struggles. By Alex.</p>
-    <div id="mbn-articles-grid" class="mbn-articles-grid">
-      <p class="mbn-loading">Loading entries...</p>
-    </div>
-    <div class="mbn-articles-more">
-      <a href="blog/index.html" class="mbn-btn mbn-btn-primary">Read All Entries →</a>
+  <!-- 工具卡片 -->
+  <section style="margin-bottom:48px;">
+    <h2 style="font-size:1.5rem;margin-bottom:20px;">Free Calculators</h2>
+    <div class="mbn-articles-grid">
+      <a href="tools/bmi-calculator.html" class="mbn-article-card">
+        <div style="font-size:2rem;margin-bottom:12px;">📊</div>
+        <h4>BMI Calculator</h4>
+        <p>Body Mass Index with trend tracking and export.</p>
+      </a>
+      <a href="tools/body-fat-calculator.html" class="mbn-article-card">
+        <div style="font-size:2rem;margin-bottom:12px;">🔥</div>
+        <h4>Body Fat Calculator</h4>
+        <p>Navy method estimate from measurements.</p>
+      </a>
+      <a href="tools/bmr-calculator.html" class="mbn-article-card">
+        <div style="font-size:2rem;margin-bottom:12px;">⚡</div>
+        <h4>BMR Calculator</h4>
+        <p>Basal Metabolic Rate using Mifflin-St Jeor.</p>
+      </a>
+      <a href="tools/calorie-calculator.html" class="mbn-article-card">
+        <div style="font-size:2rem;margin-bottom:12px;">🍎</div>
+        <h4>Calorie Calculator</h4>
+        <p>Daily calorie needs based on your goals.</p>
+      </a>
+      <a href="tools/ideal-weight-calculator.html" class="mbn-article-card">
+        <div style="font-size:2rem;margin-bottom:12px;">🎯</div>
+        <h4>Ideal Weight</h4>
+        <p>Compare Devine, Robinson, Miller, Hamwi.</p>
+      </a>
+      <a href="tools/whtr-calculator.html" class="mbn-article-card">
+        <div style="font-size:2rem;margin-bottom:12px;">📏</div>
+        <h4>WHtR Calculator</h4>
+        <p>Waist-to-Height Ratio health indicator.</p>
+      </a>
     </div>
   </section>
+
+  <!-- middle 广告位 -->
+  <div id="middle" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+
+  <!-- 文章板块 -->
+  <section class="mbn-articles-section">
+    <h2>From the Blog</h2>
+    <p class="mbn-articles-sub">Real stories, real data, real struggles. By Alex.</p>
+
+    <!-- INDEX_ARTICLES_START -->
+
+
+    <div class="mbn-articles-grid">
+      <a href="./blog/alcohol-is-sabotaging-my-weight-loss.html" class="mbn-article-card">
+        <img src="./images/blog/alcohol-is-sabotaging-my-weight-loss.jpg" alt="Alcohol Is Sabotaging My Weight Loss" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Alcohol Is Sabotaging My Weight Loss</h4>
+        <p>I love beer. IPAs specifically. The hoppier, the better. There's something deeply satisfying about a cold beer after a long day of debugging code. It'...</p>
+        <div class="mbn-article-meta">July 27, 2026</span><span>article</span></div>
+      </a>
+<a href="./blog/why-my-weight-fluctuates-every-day.html" class="mbn-article-card">
+        <img src="./images/blog/why-my-weight-fluctuates-every-day.jpg" alt="Why My Weight Fluctuates Every Day" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why My Weight Fluctuates Every Day</h4>
+        <p>Monday: 174.2 lbs. Tuesday: 176.8 lbs. Wednesday: 173.5 lbs. Thursday: 175.1 lbs. If I didn't know better, I'd think my scale was broken. Or that I wa...</p>
+        <div class="mbn-article-meta">2026-07-19T08:00:00+00:00</span><span>article</span></div>
+      </a>
+<a href="./blog/why-i-dont-trust-smart-scales.html" class="mbn-article-card">
+        <img src="./images/blog/why-i-dont-trust-smart-scales.jpg" alt="Why I Don't Trust Smart Scales" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why I Don't Trust Smart Scales</h4>
+        <p>I own a smart scale. It cost me eighty dollars and promised to track not just weight, but body fat percentage, muscle mass, bone density, water percen...</p>
+        <div class="mbn-article-meta">2026-07-09T08:00:00+00:00</span><span>article</span></div>
+      </a>
+<a href="./blog/why-gym-scales-never-match-my-home-scale.html" class="mbn-article-card">
+        <img src="./images/blog/why-gym-scales-never-match-my-home-scale.jpg" alt="Why Gym Scales Never Match My Home Scale" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why Gym Scales Never Match My Home Scale</h4>
+        <p>I weigh 174.2 pounds on my home scale. I go to the gym, use their scale, and it says 176.8. Which one is right? I used to think the gym scale was more...</p>
+        <div class="mbn-article-meta">2026-06-27T08:00:00+00:00</span><span>article</span></div>
+      </a>
+<a href="./blog/why-bmi-is-broken-for-athletes.html" class="mbn-article-card">
+        <img src="./images/blog/why-bmi-is-broken-for-athletes.jpg" alt="Why BMI Is Broken for Athletes" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Why BMI Is Broken for Athletes</h4>
+        <p>I used to train with a guy named Mike at the gym near my apartment in Denver. Mike is 5'10</p>
+        <div class="mbn-article-meta">2026-06-15T08:00:00+00:00</span><span>article</span></div>
+      </a>
+<a href="./blog/walking-10000-steps-changed-my-bmi.html" class="mbn-article-card">
+        <img src="./images/blog/walking-10000-steps-changed-my-bmi.jpg" alt="Walking 10,000 Steps Changed My BMI" width="400" height="225" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;margin:0 0 12px;">
+        <h4>Walking 10,000 Steps Changed My BMI</h4>
+        <p>I bought a cheap pedometer on Amazon for twelve dollars. It was an impulse purchase at 11 PM after reading yet another article about how</p>
+        <div class="mbn-article-meta">2026-06-05T08:00:00+00:00</span><span>article</span></div>
+      </a>
+    </div>
+    
+
+<!-- INDEX_ARTICLES_END -->
+
+    <div class="mbn-articles-more">
+      <a href="blog/index.html" class="mbn-btn mbn-btn-primary">Read All Entries &rarr;</a>
+    </div>
+  </section>
+
+  <!-- footer 广告位 -->
+  <div id="footer" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
 
 </main>
 
@@ -325,491 +179,13 @@
       <a href="faq.html">FAQ</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
     </div>
     <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
   </div>
 </footer>
 
-<script>
-// ====== 初始化 ======
-document.addEventListener('DOMContentLoaded', function() {
-  loadArticles();
-  loadHistory();
-  initChallenge();
-
-  // 检查URL参数（分享链接）
-  const params = new URLSearchParams(window.location.search);
-  if (params.has('h') && params.has('w')) {
-    document.getElementById('height').value = params.get('h');
-    document.getElementById('weight').value = params.get('w');
-    calculateBMI();
-  }
-});
-
-// ====== BMI计算 ======
-function calculateBMI() {
-  const height = parseFloat(document.getElementById('height').value);
-  const weight = parseFloat(document.getElementById('weight').value);
-
-  if (!height || !weight) {
-    alert('Please enter both height and weight');
-    return;
-  }
-
-  const bmi = weight / ((height / 100) ** 2);
-  const bmiRounded = bmi.toFixed(1);
-
-  document.getElementById('bmiValue').textContent = bmiRounded;
-  document.getElementById('result').style.display = 'block';
-
-  const category = document.getElementById('bmiCategory');
-  let catName = '';
-  if (bmi < 18.5) {
-    catName = 'Underweight';
-    category.className = 'mbn-result-category mbn-category-underweight';
-  } else if (bmi < 25) {
-    catName = 'Normal weight';
-    category.className = 'mbn-result-category mbn-category-normal';
-  } else if (bmi < 30) {
-    catName = 'Overweight';
-    category.className = 'mbn-result-category mbn-category-overweight';
-  } else {
-    catName = 'Obese';
-    category.className = 'mbn-result-category mbn-category-obese';
-  }
-  category.textContent = catName;
-
-  // 更新排名位置
-  updateRank(bmi);
-
-  return { bmi: bmiRounded, category: catName };
-}
-
-// ====== 保存记录 ======
-function saveRecord() {
-  const height = document.getElementById('height').value;
-  const weight = document.getElementById('weight').value;
-
-  if (!height || !weight) {
-    alert('Please calculate BMI first');
-    return;
-  }
-
-  const bmi = (weight / ((height / 100) ** 2)).toFixed(1);
-  const record = {
-    date: new Date().toISOString().split('T')[0],
-    weight: weight,
-    bmi: bmi,
-    height: height
-  };
-
-  let history = JSON.parse(localStorage.getItem('mbn_history') || '[]');
-  history.unshift(record);
-  localStorage.setItem('mbn_history', JSON.stringify(history));
-
-  loadHistory();
-  checkChallenge();
-  alert('Saved to your local log!');
-}
-
-// ====== 分享链接 ======
-function shareResult() {
-  const height = document.getElementById('height').value;
-  const weight = document.getElementById('weight').value;
-
-  if (!height || !weight) {
-    alert('Please calculate BMI first');
-    return;
-  }
-
-  const url = new URL(window.location.href);
-  url.searchParams.set('h', height);
-  url.searchParams.set('w', weight);
-
-  document.getElementById('shareUrl').textContent = url.toString();
-  document.getElementById('shareBox').classList.add('show');
-}
-
-function copyShareUrl() {
-  const url = document.getElementById('shareUrl').textContent;
-  navigator.clipboard.writeText(url).then(() => {
-    alert('Link copied! Send it to anyone.');
-  });
-}
-
-// ====== 生成图片 ======
-function generateImage() {
-  const height = document.getElementById('height').value;
-  const weight = document.getElementById('weight').value;
-  const bmi = document.getElementById('bmiValue').textContent;
-  const cat = document.getElementById('bmiCategory').textContent;
-
-  const canvas = document.createElement('canvas');
-  canvas.width = 600;
-  canvas.height = 400;
-  const ctx = canvas.getContext('2d');
-
-  // 背景
-  ctx.fillStyle = '#f5f3ff';
-  ctx.fillRect(0, 0, 600, 400);
-
-  // 边框
-  ctx.strokeStyle = '#7c3aed';
-  ctx.lineWidth = 4;
-  ctx.strokeRect(20, 20, 560, 360);
-
-  // 标题
-  ctx.fillStyle = '#1e1b4b';
-  ctx.font = 'bold 28px Arial';
-  ctx.textAlign = 'center';
-  ctx.fillText('my-bmi.net', 300, 70);
-
-  // BMI值
-  ctx.font = 'bold 72px Arial';
-  ctx.fillStyle = '#7c3aed';
-  ctx.fillText(bmi, 300, 180);
-
-  // 分类
-  ctx.font = '24px Arial';
-  ctx.fillStyle = '#1e1b4b';
-  ctx.fillText(cat, 300, 220);
-
-  // 详情
-  ctx.font = '18px Arial';
-  ctx.fillStyle = '#6b7280';
-  ctx.fillText(`Height: ${height}cm | Weight: ${weight}kg`, 300, 270);
-
-  // 底部
-  ctx.font = '14px Arial';
-  ctx.fillText('Generated by my-bmi.net | No data stored', 300, 340);
-
-  // 显示图片
-  const imgBox = document.getElementById('exportImg');
-  imgBox.innerHTML = `<img src="${canvas.toDataURL()}" alt="BMI Result">`;
-  imgBox.classList.add('show');
-
-  // 自动下载
-  const link = document.createElement('a');
-  link.download = `my-bmi-result-${new Date().toISOString().split('T')[0]}.png`;
-  link.href = canvas.toDataURL();
-  link.click();
-}
-
-// ====== PK对战 ======
-function showPK() {
-  document.getElementById('pkBox').classList.toggle('show');
-}
-
-function doPK() {
-  const myHeight = parseFloat(document.getElementById('height').value);
-  const myWeight = parseFloat(document.getElementById('weight').value);
-  const friendHeight = parseFloat(document.getElementById('friendHeight').value);
-  const friendWeight = parseFloat(document.getElementById('friendWeight').value);
-
-  if (!myHeight || !myWeight || !friendHeight || !friendWeight) {
-    alert('Please fill in all stats');
-    return;
-  }
-
-  const myBMI = (myWeight / ((myHeight / 100) ** 2)).toFixed(1);
-  const friendBMI = (friendWeight / ((friendHeight / 100) ** 2)).toFixed(1);
-
-  document.getElementById('yourBMI').textContent = myBMI;
-  document.getElementById('friendBMI').textContent = friendBMI;
-
-  document.getElementById('yourCat').textContent = getCategory(myBMI);
-  document.getElementById('friendCat').textContent = getCategory(friendBMI);
-
-  // 标记赢家（更接近正常BMI 21.7）
-  const myDiff = Math.abs(myBMI - 21.7);
-  const friendDiff = Math.abs(friendBMI - 21.7);
-
-  document.getElementById('yourCard').classList.toggle('winner', myDiff < friendDiff);
-  document.getElementById('friendCard').classList.toggle('winner', friendDiff < myDiff);
-
-  document.getElementById('pkResult').style.display = 'grid';
-}
-
-function getCategory(bmi) {
-  if (bmi < 18.5) return 'Underweight';
-  if (bmi < 25) return 'Normal';
-  if (bmi < 30) return 'Overweight';
-  return 'Obese';
-}
-
-// ====== 挑战打卡 ======
-function showChallenge() {
-  document.getElementById('challengeBox').style.display = 'block';
-  renderChallenge();
-}
-
-function initChallenge() {
-  if (!localStorage.getItem('mbn_challenge')) {
-    localStorage.setItem('mbn_challenge', JSON.stringify({
-      startDate: null,
-      days: [],
-      streak: 0
-    }));
-  }
-}
-
-function renderChallenge() {
-  const challenge = JSON.parse(localStorage.getItem('mbn_challenge') || '{}');
-  const daysBox = document.getElementById('challengeDays');
-  daysBox.innerHTML = '';
-
-  for (let i = 1; i <= 7; i++) {
-    const day = document.createElement('div');
-    day.className = 'mbn-day';
-    day.textContent = i;
-
-    if (challenge.days && challenge.days.includes(i)) {
-      day.classList.add('done');
-    }
-    daysBox.appendChild(day);
-  }
-
-  document.getElementById('streakCount').textContent = challenge.streak || 0;
-}
-
-function checkInToday() {
-  const challenge = JSON.parse(localStorage.getItem('mbn_challenge') || '{}');
-  const today = new Date().toISOString().split('T')[0];
-
-  if (!challenge.days) challenge.days = [];
-
-  // 检查今天是否已打卡
-  if (challenge.days.includes(today)) {
-    alert('Already checked in today!');
-    return;
-  }
-
-  challenge.days.push(today);
-  challenge.streak = (challenge.streak || 0) + 1;
-
-  localStorage.setItem('mbn_challenge', JSON.stringify(challenge));
-  renderChallenge();
-  alert(`Checked in! Streak: ${challenge.streak} days 🔥`);
-}
-
-function resetChallenge() {
-  if (confirm('Reset challenge? All progress will be lost.')) {
-    localStorage.setItem('mbn_challenge', JSON.stringify({
-      startDate: null,
-      days: [],
-      streak: 0
-    }));
-    renderChallenge();
-  }
-}
-
-function checkChallenge() {
-  // 每次保存记录时检查挑战
-  const challenge = JSON.parse(localStorage.getItem('mbn_challenge') || '{}');
-  if (challenge.days && challenge.days.length >= 7) {
-    alert('🎉 7-Day Challenge Complete! You are awesome.');
-  }
-}
-
-// ====== 健康排名 ======
-function showRank() {
-  document.getElementById('rankBox').style.display = 'block';
-  const height = document.getElementById('height').value;
-  const weight = document.getElementById('weight').value;
-  if (height && weight) {
-    const bmi = weight / ((height / 100) ** 2);
-    updateRank(bmi);
-  }
-}
-
-function updateRank(bmi) {
-  // BMI分布：18.5以下(18.5%), 18.5-25(56.5%), 25-30(15%), 30+(10%)
-  let position = 50;
-  if (bmi < 18.5) position = 9;
-  else if (bmi < 25) position = 47;
-  else if (bmi < 30) position = 82;
-  else position = 95;
-
-  document.getElementById('rankYou').style.left = position + '%';
-
-  let text = '';
-  if (bmi < 18.5) text = `Your BMI (${bmi.toFixed(1)}) is lower than about 81% of adults.`;
-  else if (bmi < 25) text = `Your BMI (${bmi.toFixed(1)}) is in the healthy range — about 47% of adults are here.`;
-  else if (bmi < 30) text = `Your BMI (${bmi.toFixed(1)}) is higher than about 75% of adults.`;
-  else text = `Your BMI (${bmi.toFixed(1)}) is higher than about 90% of adults.`;
-
-  document.getElementById('rankText').textContent = text;
-}
-
-// ====== 历史记录 ======
-function loadHistory() {
-  const history = JSON.parse(localStorage.getItem('mbn_history') || '[]');
-
-  if (history.length > 0) {
-    document.getElementById('historySection').style.display = 'block';
-
-    const tbody = document.getElementById('historyBody');
-    tbody.innerHTML = '';
-
-    history.slice(0, 10).forEach((record, index) => {
-      const prev = history[index + 1];
-      let change = '-';
-      if (prev) {
-        const diff = (record.weight - prev.weight).toFixed(1);
-        change = diff > 0 ? '+' + diff : diff;
-      }
-
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${record.date}</td>
-        <td>${record.weight} kg</td>
-        <td>${record.bmi}</td>
-        <td>${change}</td>
-      `;
-      tbody.appendChild(row);
-    });
-
-    // 绘制趋势图（简单版）
-    drawChart(history.slice(0, 30).reverse());
-  }
-}
-
-function drawChart(history) {
-  const canvas = document.getElementById('trendChart');
-  if (!canvas || history.length < 2) return;
-
-  const ctx = canvas.getContext('2d');
-  canvas.width = canvas.offsetWidth || 600;
-  canvas.height = 300;
-
-  const w = canvas.width;
-  const h = canvas.height;
-  const padding = 40;
-
-  // 清空
-  ctx.clearRect(0, 0, w, h);
-
-  // 找出范围
-  const weights = history.map(r => parseFloat(r.weight));
-  const minW = Math.min(...weights) - 2;
-  const maxW = Math.max(...weights) + 2;
-
-  // 绘制网格
-  ctx.strokeStyle = '#e5e7eb';
-  ctx.lineWidth = 1;
-  for (let i = 0; i <= 5; i++) {
-    const y = padding + (h - 2 * padding) * i / 5;
-    ctx.beginPath();
-    ctx.moveTo(padding, y);
-    ctx.lineTo(w - padding, y);
-    ctx.stroke();
-  }
-
-  // 绘制线条
-  ctx.strokeStyle = '#7c3aed';
-  ctx.lineWidth = 3;
-  ctx.beginPath();
-
-  history.forEach((record, i) => {
-    const x = padding + (w - 2 * padding) * i / (history.length - 1);
-    const y = padding + (h - 2 * padding) * (1 - (record.weight - minW) / (maxW - minW));
-
-    if (i === 0) ctx.moveTo(x, y);
-    else ctx.lineTo(x, y);
-  });
-
-  ctx.stroke();
-
-  // 绘制点
-  ctx.fillStyle = '#7c3aed';
-  history.forEach((record, i) => {
-    const x = padding + (w - 2 * padding) * i / (history.length - 1);
-    const y = padding + (h - 2 * padding) * (1 - (record.weight - minW) / (maxW - minW));
-
-    ctx.beginPath();
-    ctx.arc(x, y, 5, 0, Math.PI * 2);
-    ctx.fill();
-  });
-
-  // 标签
-  ctx.fillStyle = '#6b7280';
-  ctx.font = '12px Arial';
-  ctx.textAlign = 'center';
-  ctx.fillText('Weight Trend (kg)', w / 2, h - 10);
-}
-
-// ====== 导出CSV ======
-function exportCSV() {
-  const history = JSON.parse(localStorage.getItem('mbn_history') || '[]');
-  if (history.length === 0) {
-    alert('No data to export');
-    return;
-  }
-
-  let csv = 'Date,Weight(kg),BMI,Height(cm)\n';
-  history.forEach(r => {
-    csv += `${r.date},${r.weight},${r.bmi},${r.height}\n`;
-  });
-
-  const blob = new Blob([csv], { type: 'text/csv' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'my-bmi-history.csv';
-  a.click();
-  URL.revokeObjectURL(url);
-}
-
-// ====== 清除数据 ======
-function clearData() {
-  if (confirm('Delete all your local history? This cannot be undone.')) {
-    localStorage.removeItem('mbn_history');
-    localStorage.removeItem('mbn_challenge');
-    document.getElementById('historySection').style.display = 'none';
-    document.getElementById('challengeBox').style.display = 'none';
-  }
-}
-
-// ====== JS动态加载文章 ======
-function loadArticles() {
-  fetch('articles.json')
-    .then(r => {
-      if (!r.ok) throw new Error('Network response was not ok');
-      return r.json();
-    })
-    .then(data => {
-      const grid = document.getElementById('mbn-articles-grid');
-      if (!grid) return;
-      grid.innerHTML = '';
-
-      const articles = data.articles || data || [];
-      if (articles.length === 0) {
-        grid.innerHTML = '<p class="mbn-loading">No entries yet. Check back soon!</p>';
-        return;
-      }
-
-      articles.slice(0, 6).forEach(article => {
-        const card = document.createElement('div');
-        card.className = 'mbn-article-card';
-        const url = article.url || 'blog/' + article.slug + '.html';
-        card.innerHTML = `
-          <h4><a href="${url}">${article.title}</a></h4>
-          <p>${article.excerpt}</p>
-          <div class="mbn-article-meta">
-            <span>${article.date}</span>
-            <span>${article.category || 'journal'}</span>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    })
-    .catch(e => {
-      console.error('Failed to load articles:', e);
-      const grid = document.getElementById('mbn-articles-grid');
-      if (grid) grid.innerHTML = '<p class="mbn-loading">Failed to load entries. Please refresh.</p>';
-    });
-}
-</script>
-
+<script src="ads-loader.js"></script>
 </body>
 </html>
