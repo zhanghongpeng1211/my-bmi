@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<title>How I Track My Weight With a Spreadsheet | my-bmi.net</title>
+<meta name="description" content="Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o...">
+<meta name="author" content="Alex">
+<link rel="canonical" href="https://my-bmi.net/blog/how-i-track-my-weight-with-a-spreadsheet.html">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+<!-- Open Graph -->
+<meta property="og:title" content="How I Track My Weight With a Spreadsheet">
+<meta property="og:description" content="Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o...">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://my-bmi.net/blog/how-i-track-my-weight-with-a-spreadsheet.html">
+<meta property="og:image" content="https://my-bmi.net/images/blog/how-i-track-my-weight-with-a-spreadsheet.jpg">
+<meta property="og:site_name" content="my-bmi.net">
+<meta property="article:published_time" content="2026-02-22T08:00:00+00:00">
+<meta property="article:modified_time" content="2026-02-22T08:00:00+00:00">
+<meta property="article:author" content="Alex">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How I Track My Weight With a Spreadsheet">
+<meta name="twitter:description" content="Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o...">
+<meta name="twitter:image" content="https://my-bmi.net/images/blog/how-i-track-my-weight-with-a-spreadsheet.jpg">
+
+<link rel="stylesheet" href="../style.css">
+
+<!-- Post-page overrides -->
+<style>
+/* 文章容器宽度限制 */
+.mbn-post-container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+/* 广告位默认显示 */
+.mbn-ad-slot { display: flex !important; }
+/* 面包屑 */
+.mbn-breadcrumb { max-width: 720px; margin: 20px auto 0; padding: 0 20px; font-size: 0.85rem; color: var(--mbn-text-light); }
+.mbn-breadcrumb a { color: var(--mbn-text-light); text-decoration: none; }
+.mbn-breadcrumb a:hover { color: var(--mbn-primary); }
+.mbn-breadcrumb span { margin: 0 8px; }
+/* 作者框 */
+.mbn-author-box { background: var(--mbn-secondary); border-radius: var(--mbn-radius); padding: 24px; margin: 32px 0; display: flex; gap: 16px; align-items: flex-start; }
+.mbn-author-avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--mbn-primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; flex-shrink: 0; }
+.mbn-author-info h4 { margin: 0 0 4px; font-size: 1rem; }
+.mbn-author-role { margin: 0 0 4px; font-size: 0.85rem; color: var(--mbn-text-light); }
+.mbn-author-bio { margin: 0; font-size: 0.85rem; color: var(--mbn-text-light); line-height: 1.6; }
+.mbn-author-link { color: var(--mbn-primary); font-size: 0.85rem; text-decoration: none; }
+.mbn-author-link:hover { text-decoration: underline; }
+/* 尾部两栏 */
+.mbn-post-tail { max-width: 720px; margin: 0 auto; padding: 0 20px 40px; display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+.mbn-post-tail-col { background: var(--mbn-secondary); border-radius: var(--mbn-radius); padding: 20px; box-shadow: var(--mbn-shadow); transition: box-shadow 0.2s, transform 0.2s; }
+.mbn-post-tail-col:hover { box-shadow: var(--mbn-shadow-lg); transform: translateY(-2px); }
+.mbn-post-tail-col h3 { font-size: 1rem; margin-bottom: 16px; }
+/* 尾部卡片链接 */
+.mbn-tail-link { display: block; padding: 10px 0; border-bottom: 1px solid var(--mbn-border); color: var(--mbn-primary); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+.mbn-tail-link:hover { color: var(--mbn-primary-dark); }
+.mbn-tail-link span { color: var(--mbn-text-light); font-size: 0.75rem; }
+/* 广告位宽度限制：对齐导航栏 */
+.mbn-ad-slot {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 移动端 */
+@media (max-width: 768px) {
+  .mbn-post-tail { grid-template-columns: 1fr; }
+  .mbn-author-box { flex-direction: column; align-items: center; text-align: center; }
+  .mbn-ad-slot { padding-left: 16px; padding-right: 16px; }
+}
+</style>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How I Track My Weight With a Spreadsheet",
+  "description": "Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o...",
+  "image": "https://my-bmi.net/images/blog/how-i-track-my-weight-with-a-spreadsheet.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Alex",
+    "jobTitle": "Software Engineer",
+    "url": "https://my-bmi.net/about.html",
+    "image": "https://my-bmi.net/images/about/author-alex.jpg",
+    "alumniOf": "University of Colorado Boulder",
+    "knowsAbout": ["Health Technology", "BMI Tracking", "Fitness Data Analysis"]
+  },
+  "datePublished": "2026-02-22T08:00:00+00:00",
+  "dateModified": "2026-02-22T08:00:00+00:00",
+  "publisher": {
+    "@type": "Organization",
+    "name": "my-bmi.net",
+    "url": "https://my-bmi.net"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://my-bmi.net/blog/how-i-track-my-weight-with-a-spreadsheet.html"
+  }
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://my-bmi.net/index.html"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://my-bmi.net/blog/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "How I Track My Weight With a Spreadsheet", "item": "https://my-bmi.net/blog/how-i-track-my-weight-with-a-spreadsheet.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="mbn-nav">
+  <div class="mbn-nav-inner">
+    <a href="../index.html" class="mbn-logo">
+      <svg class="mbn-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M14 32c0-8 4-14 10-14s10 6 10 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="24" cy="16" r="3" fill="currentColor"/>
+        <path d="M12 36h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+      </svg>
+      <span>my-bmi</span>
+    </a>
+    <button class="mbn-hamburger" aria-label="Toggle menu" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
+    <div class="mbn-nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../tools/index.html">Tools</a>
+      <a href="index.html">Blog</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 顶部广告位：导航与面包屑之间 -->
+<div class="mbn-ad-slot" id="article_top" data-ad-slot="article_top"><div class="mbn-ad-label">Advertisement</div></div>
+
+<!-- 面包屑 -->
+<nav class="mbn-breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>/</span>
+  <a href="index.html">Blog</a>
+  <span>/</span>
+  <span>How I Track My Weight With a Spreadsheet</span>
+</nav>
+
+<article class="mbn-post-container">
+  <header class="mbn-post-header">
+    <span class="mbn-post-category">Tracking</span>
+    <h1 class="mbn-post-title">How I Track My Weight With a Spreadsheet</h1>
+    <div class="mbn-post-meta">
+      <span class="author">Alex</span>
+      <span>|</span>
+      <span>February 22, 2026</span>
+      <span>|</span>
+      <span>5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero图片 -->
+  <div class="mbn-post-hero" id="heroImage">
+    <img src="../images/blog/how-i-track-my-weight-with-a-spreadsheet.jpg" alt="How I Track My Weight With a Spreadsheet" width="800" height="450" loading="eager" onerror="this.parentElement.style.display='none'">
+  </div>
+
+  <!-- 文章内容 -->
+  <div class="mbn-post-content">
+<p>Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my own data. So I did what any reasonable software engineer would do: I opened Google Sheets and built my own tracker. It took twenty minutes. It has no animations, no push notifications, and no "engagement loops." It's just rows and columns. And honestly? It's the best weight tracking system I've ever used.</p>
+
+<p>My spreadsheet has five columns: Date, Weight (lbs), BMI, Notes, and Trend. The Date column is obvious. Weight is whatever the scale says that morning. BMI auto-calculates from a formula I plugged in on day one. Notes is where I write things like "ate pizza late" or "dehydrated from hike." And Trend is a seven-day rolling average that smooths out the noise.</p>
+
+<a href="../tools/bmi-calculator.html" class="mbn-inline-tool">
+  <div class="mbn-inline-tool-icon">📊</div>
+  <div class="mbn-inline-tool-body">
+    <div class="mbn-inline-tool-title">BMI Calculator</div>
+    <div class="mbn-inline-tool-desc">Calculate your BMI and track trends over time.</div>
+    <div class="mbn-inline-tool-privacy"><em>All data stays in your browser — we never see it.</em></div>
+  </div>
+</a>
+
+<p>The magic is in the Trend column. Raw weight bounces around like a caffeinated squirrel. Monday I'm 174. Tuesday I'm 176. Wednesday I'm 173. If I only looked at the daily number, I'd lose my mind. But the seven-day average moves slowly and predictably. When the trend line drifts upward for two weeks straight, I know something needs to change. When it holds steady, I know I'm maintaining. That single smoothed number is worth more than a hundred raw data points.</p>
+
+<p>The spreadsheet has evolved over time. I added a "Notes" column after I noticed patterns I couldn't explain. "Ate Thai food last night" would predict a two-pound spike the next morning — sodium bloat. "Had three beers" meant a guaranteed Monday rebound. "Traveled to Phoenix" always showed up as a drop, probably dehydration from the dry air. The notes turned raw numbers into a story.</p>
+
+<p>I also added a "Delta" column that shows the week-over-week change in the trend line. Not the raw weight change — the trend change. That's the number that actually matters. A delta of -0.3 pounds per week means I'm on track. A delta of +0.1 for three weeks means I need to tighten something up. It's early warning, not panic mode.</p>
+
+<p>My favorite feature is the conditional formatting I mentioned earlier, but I should explain how it works. The trend column uses a formula that checks the last five entries. If all five are higher than the five before them, the cell turns red. If three out of five are higher, it turns yellow. If the trend is flat or down, it stays white. It's a visual alarm system that requires zero mental math. I open the spreadsheet on Sunday morning, scan the colors, and know immediately whether I'm drifting.</p>
+
+<p>I've tried exporting the data to more sophisticated tools — Tableau, Python scripts, even a custom dashboard I built one weekend. They were all overkill. The spreadsheet does exactly what I need: store data, calculate trends, and warn me when things go wrong. Anything more is procrastination disguised as productivity.</p>
+
+
+
+<p>I also added conditional formatting. If the trend goes up for five consecutive days, the cell turns yellow. If it goes up for ten, it turns red. It's a stupid-simple visual signal that cuts through all the mental gymnastics of "maybe it's water weight" or "maybe the scale was off." The spreadsheet doesn't care about my excuses. It just colors the cell and stares at me.</p>
+
+<p>Every Sunday morning, I spend five minutes updating the sheet, then I look at the weekly chart I built. The chart isn't fancy — just a line graph with two series: raw weight and trend. But seeing them side by side is genuinely useful. The raw line is jagged and emotional. The trend line is calm and honest. I need both, but I trust the trend.</p>
+
+<a href="../tools/calorie-calculator.html" class="mbn-inline-tool">
+  <div class="mbn-inline-tool-icon">🍎</div>
+  <div class="mbn-inline-tool-body">
+    <div class="mbn-inline-tool-title">Calorie Calculator</div>
+    <div class="mbn-inline-tool-desc">Calculate daily calorie needs based on your goals.</div>
+    <div class="mbn-inline-tool-privacy"><em>All data stays in your browser — we never see it.</em></div>
+  </div>
+</a>
+
+<p>The best part? I own the data. It's in my Google Drive, exportable as CSV, and if Google disappears tomorrow, I'll download it in thirty seconds. No vendor lock-in. No "your account has been suspended" nightmares. Just a spreadsheet that does exactly what I need and nothing else.</p>
+
+<p>I've shared the template with three friends now. Two of them actually use it. The third said it was "too minimalist" and went back to his app. Fair enough. But for me, the lack of features is the feature. I don't need gamification. I need a number that tells me if I'm drifting.</p>
+
+<p>One thing I didn't expect was how the spreadsheet changed my relationship with failure. Before, a bad week felt like a personal failing. Now I can look at the data and see exactly what happened. "Oh, I averaged 2,600 calories that week because of two social dinners." The numbers remove the shame. They turn subjective feelings into objective facts. And facts are easier to fix than feelings.</p>
+
+<p>I've also started using the spreadsheet to plan ahead. If I know I have a big dinner coming up on Saturday, I'll eat lighter on Thursday and Friday. I can model the impact in the spreadsheet before it happens. "If I eat 1,800 calories Thursday and Friday, I can eat 3,000 on Saturday and still average 2,200 for the week." It's like budgeting, but for food. The math is simple. The discipline is hard.</p>
+
+
+
+<p>Do you track your weight in an app, a spreadsheet, or not at all?</p>
+
+<p>The spreadsheet has outlasted every app I've ever tried. Apps get acquired and shut down. They change their pricing. They redesign their interface and break your workflow. A spreadsheet is just a file. It will still open in twenty years. That permanence matters when you're building a dataset that spans months or years. I don't want my health history trapped in someone else's business model.</p>
+
+
+  </div>
+
+  <!-- 中间广告位 -->
+  <div class="mbn-ad-slot" id="article_middle" data-ad-slot="article_middle"><div class="mbn-ad-label">Advertisement</div></div>
+
+  <!-- 作者框 -->
+  <div class="mbn-author-box">
+    <div class="mbn-author-avatar">A</div>
+    <div class="mbn-author-info">
+      <h4>Alex</h4>
+      <p class="mbn-author-role">Software Engineer, Denver</p>
+      <p class="mbn-author-bio">Built this site because I got annoyed with other health apps. Not a doctor. Just a guy who likes data.</p>
+      <a href="../about.html" class="mbn-author-link">Read full bio &rarr;</a>
+    </div>
+  </div>
+</article>
+
+<!-- 尾部两栏：相关文章 + 推荐工具 -->
+<div class="mbn-post-tail">
+  <!-- 左栏：相关文章 -->
+  <div class="mbn-post-tail-col">
+    <h3>Related Reading</h3>
+    <div id="related-articles-static">
+      <a href="how-i-got-my-roommate-to-track-bmi.html" class="mbn-tail-link">How I Got My Roommate to Track BMI<br><span>February 18, 2026</span></a>
+<a href="the-weekend-weight-rebound-is-real.html" class="mbn-tail-link">The Weekend Weight Rebound Is Real<br><span>May 15, 2026</span></a>
+<a href="carbs-are-not-the-enemy.html" class="mbn-tail-link">Carbs Are Not the Enemy<br><span>February 02, 2026</span></a>
+
+    </div>
+    <div id="related-articles-dynamic" style="display:none;"></div>
+  </div>
+  <!-- 右栏：推荐工具 -->
+  <div class="mbn-post-tail-col">
+    <h3>Recommended Tools</h3>
+    <div id="recommended-tools-static">
+      <a href="../tools/bmi-calculator.html" class="mbn-tail-link">BMI Calculator<br><span>Check your BMI and track trends over time</span></a>
+<a href="../tools/whtr-calculator.html" class="mbn-tail-link">WHtR Calculator<br><span>Waist-to-height ratio health indicator</span></a>
+<a href="../tools/calorie-calculator.html" class="mbn-tail-link">Calorie Calculator<br><span>Calculate daily calorie needs based on goals</span></a>
+
+    </div>
+    <div id="recommended-tools-dynamic" style="display:none;"></div>
+  </div>
+</div>
+
+<!-- 底部广告位 -->
+<div class="mbn-ad-slot" id="article_bottom" data-ad-slot="article_bottom"><div class="mbn-ad-label">Advertisement</div></div>
+
+<footer class="mbn-footer">
+  <div class="mbn-footer-inner">
+    <div class="mbn-footer-links">
+      <a href="../about.html">About Alex</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+    </div>
+    <p class="mbn-footer-copy">&copy; 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+  </div>
+</footer>
+
+<script src="../ads-loader.js"></script>
+<script>
+// ===== Related Articles: JS Dynamic Fallback =====
+(function() {
+  var staticContainer = document.getElementById('related-articles-static');
+  var dynamicContainer = document.getElementById('related-articles-dynamic');
+  var staticCards = staticContainer ? staticContainer.querySelectorAll('a').length : 0;
+  if (staticCards >= 3) return;
+
+  fetch('../articles.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var articles = data.articles || data || [];
+      if (!articles.length) return;
+      var currentSlug = 'how-i-track-my-weight-with-a-spreadsheet';
+      var current = articles.find(function(a) { return a.slug === currentSlug; });
+      var related = [];
+      if (current) {
+        related = articles.filter(function(a) {
+          return a.slug !== currentSlug && a.category === current.category;
+        });
+        if (related.length < 3) {
+          var others = articles.filter(function(a) {
+            return a.slug !== currentSlug && !related.some(function(r) { return r.slug === a.slug; });
+          });
+          related = related.concat(others);
+        }
+      } else {
+        related = articles.filter(function(a) { return a.slug !== currentSlug; });
+      }
+      var html = related.slice(0, 3).map(function(a) {
+        return '<a href="' + a.slug + '.html" class="mbn-tail-link">' + a.title + '<br><span>' + (a.date || '') + '</span></a>';
+      }).join('');
+      if (html) {
+        dynamicContainer.innerHTML = html;
+        dynamicContainer.style.display = 'block';
+        if (staticContainer) staticContainer.style.display = 'none';
+      }
+    })
+    .catch(function() {});
+})();
+
+// ===== Recommended Tools: JS Dynamic Fallback =====
+(function() {
+  var staticContainer = document.getElementById('recommended-tools-static');
+  var dynamicContainer = document.getElementById('recommended-tools-dynamic');
+  var staticCards = staticContainer ? staticContainer.querySelectorAll('a').length : 0;
+  if (staticCards >= 2) return;
+
+  var tools = [
+    ['../tools/bmi-calculator.html', 'BMI Calculator', 'Check your BMI'],
+    ['../tools/body-fat-calculator.html', 'Body Fat Calculator', 'Navy method estimate'],
+    ['../tools/bmr-calculator.html', 'BMR Calculator', 'Calories at rest'],
+    ['../tools/calorie-calculator.html', 'Calorie Calculator', 'Daily needs'],
+    ['../tools/ideal-weight-calculator.html', 'Ideal Weight', 'Compare formulas'],
+    ['../tools/whtr-calculator.html', 'WHtR Calculator', 'Waist-to-height ratio']
+  ];
+  var html = '';
+  for (var i = 0; i < tools.length; i++) {
+    var t = tools[i];
+    html += '<a href="' + t[0] + '" class="mbn-tail-link">' + t[1] + '<br><span>' + t[2] + '</span></a>';
+  }
+  if (html) {
+    dynamicContainer.innerHTML = html;
+    dynamicContainer.style.display = 'block';
+    if (staticContainer) staticContainer.style.display = 'none';
+  }
+})();
+</script>
+
+</body>
+</html>
