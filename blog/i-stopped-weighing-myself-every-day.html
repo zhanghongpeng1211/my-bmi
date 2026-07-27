@@ -98,7 +98,7 @@ I used to step on the scale every morning. 7:15 AM, before coffee, same routine.
   border-radius: 12px;
   padding: 24px;
   margin: 24px 0;
-  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.08);
+  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.08);
 }
 .mbn-inline-tool-title {
   font-size: 20px;
@@ -221,7 +221,7 @@ I used to step on the scale every morning. 7:15 AM, before coffee, same routine.
 }
 .mbn-tool-card:hover { 
   transform: translateY(-2px); 
-  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1); 
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.1); 
 }
 .mbn-tool-icon { font-size: 24px; }
 .mbn-tool-name { font-weight: 600; color: var(--mbn-text); }
@@ -252,12 +252,12 @@ I used to step on the scale every morning. 7:15 AM, before coffee, same routine.
 
 /* 免责声明 */
 .mbn-post-disclaimer { 
-  background: #fef3c7; 
-  border-left: 4px solid #fbbf24; 
+  background: var(--mbn-warning-bg); 
+  border-left: 4px solid var(--mbn-warning); 
   padding: 15px; 
   margin: 30px 0; 
   font-size: 14px; 
-  color: #92400e; 
+  color: var(--mbn-warning-text); 
 }
 
 /* 返回链接 */
@@ -310,10 +310,12 @@ I used to step on the scale every morning. 7:15 AM, before coffee, same routine.
     </a>
     <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
     <div class="mbn-nav-links">
-      <a href="../index.html">Tracker</a>
-      <a href="index.html">Journal</a>
-      <a href="../faq.html">FAQ</a>
+      <a href="../index.html">Home</a>
+      <a href="../tools/index.html">Tools</a>
+      <a href="index.html">Blog</a>
       <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../faq.html">FAQ</a>
     </div>
   </div>
 </nav>
@@ -346,7 +348,7 @@ I used to step on the scale every morning. 7:15 AM, before coffee, same routine.
 
 <p>This went on for eight months. I have the data—34 entries in my tracker. Not every week, sometimes I forgot, but mostly consistent. Looking back now, I see patterns I missed when I was too close to the numbers.</p>
 
-<p>Pattern one: winter is rough. November through February, weight crept up. 176 to 181. Not dramatic, but clear. Less walking because it gets dark at 5 PM. More comfort food. Holiday parties. It all adds up.</p><div class="article-image"><img src="images/why-i-stopped-weighing-myself-every-day-01.png" alt="i-stopped-weighing-myself-every-day" loading="lazy"></div>
+<p>Pattern one: winter is rough. November through February, weight crept up. 176 to 181. Not dramatic, but clear. Less walking because it gets dark at 5 PM. More comfort food. Holiday parties. It all adds up.</p><div class="article-image"><img src="../images/blog/i-stopped-weighing-myself-every-day.jpg" alt="i-stopped-weighing-myself-every-day" loading="lazy"></div>
 
 <p>Pattern two: spring rebounds. March through May, steady decline. 181 back to 174. More daylight equals more walking. More energy equals better food choices. Your body has seasons. I did not realize this until I stopped looking at daily numbers and started looking at monthly trends.</p>
 
@@ -419,6 +421,8 @@ Denver, CO. 28, software engineer, still figuring it out.</p>
       <a href="../faq.html">FAQ</a>
       <a href="../privacy.html">Privacy</a>
       <a href="../terms.html">Terms</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../disclaimer.html">Disclaimer</a>
     </div>
     <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
   </div>
