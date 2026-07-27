@@ -1,82 +1,851 @@
 [
   {
-    "title": "Why I Stopped Weighing Myself Every Day | my-bmi.net",
+    "slug": "alcohol-is-sabotaging-my-weight-loss",
+    "title": "Alcohol Is Sabotaging My Weight Loss",
+    "description": "I love beer. IPAs specifically. The hoppier, the better. There's something deeply satisfying about a cold beer after a long day of debugging code. It's not just the alcohol. It's the ritual. The sound",
+    "excerpt": "I love beer. IPAs specifically. The hoppier, the better. There's something deeply satisfying about a cold beer after a long day of debugging code. It's not just the alcohol. It's the ritual. The sound",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "July 27, 2026",
+    "date": "July 27, 2026",
+    "date_modified": "2026-07-27",
+    "word_count": 1011,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/alcohol-is-sabotaging-my-weight-loss.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmi-calculator",
+      "bmr-calculator",
+      "ideal-weight-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-07-27",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "why-my-weight-fluctuates-every-day",
+    "title": "Why My Weight Fluctuates Every Day",
+    "description": "Monday: 174.2 lbs. Tuesday: 176.8 lbs. Wednesday: 173.5 lbs. Thursday: 175.1 lbs. If I didn't know better, I'd think my scale was broken. Or that I wa...",
+    "excerpt": "Monday: 174.2 lbs. Tuesday: 176.8 lbs. Wednesday: 173.5 lbs. Thursday: 175.1 lbs. If I didn't know better, I'd think my scale was broken. Or that I wa...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-07-19T08:00:00+00:00",
+    "date": "2026-07-19T08:00:00+00:00",
+    "date_modified": "2026-07-19T08:00:00+00:00",
+    "word_count": 1031,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/why-my-weight-fluctuates-every-day.jpg",
+    "tools_referenced": [
+      "index",
+      "bmi-calculator",
+      "body-fat-calculator",
+      "whtr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-07-19T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "why-i-dont-trust-smart-scales",
+    "title": "Why I Don't Trust Smart Scales",
+    "description": "I own a smart scale. It cost me eighty dollars and promised to track not just weight, but body fat percentage, muscle mass, bone density, water percen...",
+    "excerpt": "I own a smart scale. It cost me eighty dollars and promised to track not just weight, but body fat percentage, muscle mass, bone density, water percen...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-07-09T08:00:00+00:00",
+    "date": "2026-07-09T08:00:00+00:00",
+    "date_modified": "2026-07-09T08:00:00+00:00",
+    "word_count": 1128,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/why-i-dont-trust-smart-scales.jpg",
+    "tools_referenced": [
+      "index",
+      "body-fat-calculator",
+      "bmi-calculator",
+      "whtr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-07-09T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "why-gym-scales-never-match-my-home-scale",
+    "title": "Why Gym Scales Never Match My Home Scale",
+    "description": "I weigh 174.2 pounds on my home scale. I go to the gym, use their scale, and it says 176.8. Which one is right? I used to think the gym scale was more...",
+    "excerpt": "I weigh 174.2 pounds on my home scale. I go to the gym, use their scale, and it says 176.8. Which one is right? I used to think the gym scale was more...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-06-27T08:00:00+00:00",
+    "date": "2026-06-27T08:00:00+00:00",
+    "date_modified": "2026-06-27T08:00:00+00:00",
+    "word_count": 1022,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/why-gym-scales-never-match-my-home-scale.jpg",
+    "tools_referenced": [
+      "index",
+      "bmi-calculator",
+      "ideal-weight-calculator",
+      "body-fat-calculator",
+      "whtr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-06-27T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "why-bmi-is-broken-for-athletes",
+    "title": "Why BMI Is Broken for Athletes",
+    "description": "I used to train with a guy named Mike at the gym near my apartment in Denver. Mike is 5'10",
+    "excerpt": "I used to train with a guy named Mike at the gym near my apartment in Denver. Mike is 5'10",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-06-15T08:00:00+00:00",
+    "date": "2026-06-15T08:00:00+00:00",
+    "date_modified": "2026-06-15T08:00:00+00:00",
+    "word_count": 1197,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/why-bmi-is-broken-for-athletes.jpg",
+    "tools_referenced": [
+      "index",
+      "bmi-calculator",
+      "body-fat-calculator",
+      "whtr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-06-15T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "walking-10000-steps-changed-my-bmi",
+    "title": "Walking 10,000 Steps Changed My BMI",
+    "description": "I bought a cheap pedometer on Amazon for twelve dollars. It was an impulse purchase at 11 PM after reading yet another article about how",
+    "excerpt": "I bought a cheap pedometer on Amazon for twelve dollars. It was an impulse purchase at 11 PM after reading yet another article about how",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-06-05T08:00:00+00:00",
+    "date": "2026-06-05T08:00:00+00:00",
+    "date_modified": "2026-06-05T08:00:00+00:00",
+    "word_count": 1091,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/walking-10000-steps-changed-my-bmi.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmi-calculator",
+      "bmr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-06-05T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
     "slug": "why-i-stopped-weighing-myself-every-day",
+    "title": "Why I Stopped Weighing Myself Every Day",
     "date": "2026-05-23",
+    "date_iso": "2026-05-23",
+    "date_published": "2026-05-23",
+    "date_modified": "2026-05-23",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "Why I Stopped Weighing Myself Every Day\n\nI used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood....",
     "excerpt": "Why I Stopped Weighing Myself Every Day\n\nI used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood....",
-    "category": "article",
-    "url": "blog/why-i-stopped-weighing-myself-every-day.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "Why I Deleted My Fitness App After Using It for 2 Years | my-bmi.net",
     "slug": "why-i-deleted-my-fitness-app-after-using-it-for-2-years",
+    "title": "Why I Deleted My Fitness App After Using It for 2 Years",
     "date": "2026-05-21",
+    "date_iso": "2026-05-21",
+    "date_published": "2026-05-21",
+    "date_modified": "2026-05-21",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "Why I Deleted My Fitness App After Using It for 2 Years\n\nMyFitnessPal. Two years. Every meal. Every snack. Every coffee. Weighed food. Scanned barcode...",
     "excerpt": "Why I Deleted My Fitness App After Using It for 2 Years\n\nMyFitnessPal. Two years. Every meal. Every snack. Every coffee. Weighed food. Scanned barcode...",
-    "category": "article",
-    "url": "blog/why-i-deleted-my-fitness-app-after-using-it-for-2-years.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "What I Learned From 6 Months of Failed Diet Attempts | my-bmi.net",
+    "slug": "i-stopped-weighing-myself-every-day",
+    "title": "I Stopped Weighing Myself Every Day",
+    "description": "I Stopped Weighing Myself Every Day\n\nI used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood. 174? Good day...",
+    "excerpt": "I Stopped Weighing Myself Every Day\n\nI used to step on the scale every morning. 7:15 AM, before coffee, same routine. The number dictated my mood. 174? Good day...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "May 19, 2026",
+    "date": "May 19, 2026",
+    "date_modified": "2026-05-19",
+    "word_count": 581,
+    "has_image": true,
+    "image_path": "../images/blog/i-stopped-weighing-myself-every-day.jpg",
+    "tools_referenced": [
+      "index"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-05-19",
+    "readTime": "2min read"
+  },
+  {
     "slug": "what-i-learned-from-6-months-of-failed-diet-attempts",
+    "title": "What I Learned From 6 Months of Failed Diet Attempts",
     "date": "2026-05-19",
+    "date_iso": "2026-05-19",
+    "date_published": "2026-05-19",
+    "date_modified": "2026-05-19",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "What I Learned From 6 Months of Failed Diet Attempts\n\nJanuary: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fog. Constipated. Gave up after ...",
     "excerpt": "What I Learned From 6 Months of Failed Diet Attempts\n\nJanuary: Keto. Lost 5 pounds in two weeks. Felt terrible. Brain fog. Constipated. Gave up after ...",
-    "category": "article",
-    "url": "blog/what-i-learned-from-6-months-of-failed-diet-attempts.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "What 8 Months of Data Taught Me About My Body | my-bmi.net",
     "slug": "what-8-months-of-data-taught-me-about-my-body",
+    "title": "What 8 Months of Data Taught Me About My Body",
     "date": "2026-05-16",
+    "date_iso": "2026-05-16",
+    "date_published": "2026-05-16",
+    "date_modified": "2026-05-16",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "What 8 Months of Data Taught Me About My Body\n\nLogging weight since September. 34 entries. Not every week (missed some), but consistent.\n\nLooking at d...",
     "excerpt": "What 8 Months of Data Taught Me About My Body\n\nLogging weight since September. 34 entries. Not every week (missed some), but consistent.\n\nLooking at d...",
-    "category": "article",
-    "url": "blog/what-8-months-of-data-taught-me-about-my-body.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "The Weird Thing That Happened When I Started Tracking My Sleep | my-bmi.net",
+    "slug": "the-weekend-weight-rebound-is-real",
+    "title": "The Weekend Weight Rebound Is Real",
+    "description": "Every Monday morning, I step on the scale and curse. Without fail, I'm two to four pounds heavier than Friday. Every. Single. Week. For a while, I tho...",
+    "excerpt": "Every Monday morning, I step on the scale and curse. Without fail, I'm two to four pounds heavier than Friday. Every. Single. Week. For a while, I tho...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-05-15T08:00:00+00:00",
+    "date": "2026-05-15T08:00:00+00:00",
+    "date_modified": "2026-05-15T08:00:00+00:00",
+    "word_count": 1151,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/the-weekend-weight-rebound-is-real.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmi-calculator",
+      "whtr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-05-15T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
     "slug": "the-weird-thing-that-happened-when-i-started-tracking-my-sleep",
+    "title": "The Weird Thing That Happened When I Started Tracking My Sleep",
     "date": "2026-05-14",
+    "date_iso": "2026-05-14",
+    "date_published": "2026-05-14",
+    "date_modified": "2026-05-14",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "The Weird Thing That Happened When I Started Tracking My Sleep\n\nBought a cheap fitness tracker on Amazon. $35. Tracks steps, heart rate, sleep.\n\nWante...",
     "excerpt": "The Weird Thing That Happened When I Started Tracking My Sleep\n\nBought a cheap fitness tracker on Amazon. $35. Tracks steps, heart rate, sleep.\n\nWante...",
-    "category": "article",
-    "url": "blog/the-weird-thing-that-happened-when-i-started-tracking-my-sleep.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "The Saturday Morning Routine That Actually Works | my-bmi.net",
     "slug": "the-saturday-morning-routine-that-actually-works",
+    "title": "The Saturday Morning Routine That Actually Works",
     "date": "2026-05-11",
+    "date_iso": "2026-05-11",
+    "date_published": "2026-05-11",
+    "date_modified": "2026-05-11",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "The Saturday Morning Routine That Actually Works\n\nSaturday mornings are my anchor. One consistent thing in chaotic weeks.\n\n6:30 AM: Wake up. No alarm....",
     "excerpt": "The Saturday Morning Routine That Actually Works\n\nSaturday mornings are my anchor. One consistent thing in chaotic weeks.\n\n6:30 AM: Wake up. No alarm....",
-    "category": "article",
-    "url": "blog/the-saturday-morning-routine-that-actually-works.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "The Day I Ate an Entire Pizza and Didn't Log It | my-bmi.net",
     "slug": "the-day-i-ate-an-entire-pizza-and-didn-t-log-it",
+    "title": "The Day I Ate an Entire Pizza and Didn't Log It",
     "date": "2026-05-09",
+    "date_iso": "2026-05-09",
+    "date_published": "2026-05-09",
+    "date_modified": "2026-05-09",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "The Day I Ate an Entire Pizza and Didn",
     "excerpt": "The Day I Ate an Entire Pizza and Didn",
-    "category": "article",
-    "url": "blog/the-day-i-ate-an-entire-pizza-and-didn-t-log-it.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "My Doctor Said My BMI Is 'Borderline' and I Got Defensive | my-bmi.net",
     "slug": "my-doctor-said-my-bmi-is-borderline-and-i-got-defensive",
+    "title": "My Doctor Said My BMI Is 'Borderline' and I Got Defensive",
     "date": "2026-05-06",
+    "date_iso": "2026-05-06",
+    "date_published": "2026-05-06",
+    "date_modified": "2026-05-06",
+    "category": "article",
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "My Doctor Said My BMI Is",
     "excerpt": "My Doctor Said My BMI Is",
-    "category": "article",
-    "url": "blog/my-doctor-said-my-bmi-is-borderline-and-i-got-defensive.html"
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened | my-bmi.net",
     "slug": "i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened",
+    "title": "I Tried Intermittent Fasting for 30 Days and Here's What Actually Happened",
     "date": "2026-05-04",
-    "excerpt": "I Tried Intermittent Fasting for 30 Days and Here",
+    "date_iso": "2026-05-04",
+    "date_published": "2026-05-04",
+    "date_modified": "2026-05-04",
     "category": "article",
-    "url": "blog/i-tried-intermittent-fasting-for-30-days-and-here-s-what-actually-happened.html"
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "I Tried Intermittent Fasting for 30 Days and Here",
+    "excerpt": "I Tried Intermittent Fasting for 30 Days and Here",
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
   },
   {
-    "title": "How I Explain My Weird Health Website to Dates | my-bmi.net",
     "slug": "how-i-explain-my-weird-health-website-to-dates",
+    "title": "How I Explain My Weird Health Website to Dates",
     "date": "2026-05-01",
-    "excerpt": "How I Explain My Weird Health Website to Dates\n\nBeen dating a bit. Nothing serious. Coffee, drinks. Denver scene.",
+    "date_iso": "2026-05-01",
+    "date_published": "2026-05-01",
+    "date_modified": "2026-05-01",
     "category": "article",
-    "url": "blog/how-i-explain-my-weird-health-website-to-dates.html"
+    "word_count": 0,
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": "Denver, CO"
+    },
+    "description": "How I Explain My Weird Health Website to Dates\n\nBeen dating a bit. Nothing serious. Coffee, drinks. Denver scene.",
+    "excerpt": "How I Explain My Weird Health Website to Dates\n\nBeen dating a bit. Nothing serious. Coffee, drinks. Denver scene.",
+    "tags": [
+      "article"
+    ],
+    "has_image": false,
+    "image_path": "",
+    "readTime": "5min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "stress-eating-is-my-biggest-enemy",
+    "title": "Stress Eating Is My Biggest Enemy",
+    "description": "I don't overeat when I'm happy. I don't overeat when I'm bored. I overeat when I'm stressed. Not hungry-stressed. Just stressed. Deadline at work. Arg...",
+    "excerpt": "I don't overeat when I'm happy. I don't overeat when I'm bored. I overeat when I'm stressed. Not hungry-stressed. Just stressed. Deadline at work. Arg...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-04-07T08:00:00+00:00",
+    "date": "2026-04-07T08:00:00+00:00",
+    "date_modified": "2026-04-07T08:00:00+00:00",
+    "word_count": 1135,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/stress-eating-is-my-biggest-enemy.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmi-calculator",
+      "ideal-weight-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-04-07T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "sleep-deprivation-made-me-gain-weight",
+    "title": "Sleep Deprivation Made Me Gain Weight",
+    "description": "Last quarter at work was brutal. Three major deadlines, two production incidents, and a manager who thought",
+    "excerpt": "Last quarter at work was brutal. Three major deadlines, two production incidents, and a manager who thought",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-03-30T08:00:00+00:00",
+    "date": "2026-03-30T08:00:00+00:00",
+    "date_modified": "2026-03-30T08:00:00+00:00",
+    "word_count": 1125,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/sleep-deprivation-made-me-gain-weight.jpg",
+    "tools_referenced": [
+      "index",
+      "bmr-calculator",
+      "calorie-calculator",
+      "bmi-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-03-30T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "protein-intake-changed-my-body-composition",
+    "title": "Protein Intake Changed My Body Composition",
+    "description": "For most of my twenties, I ate like a college student who never graduated. Pasta, pizza, sandwiches, cereal. Carbs and more carbs, with occasional mea...",
+    "excerpt": "For most of my twenties, I ate like a college student who never graduated. Pasta, pizza, sandwiches, cereal. Carbs and more carbs, with occasional mea...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-03-27T08:00:00+00:00",
+    "date": "2026-03-27T08:00:00+00:00",
+    "date_modified": "2026-03-27T08:00:00+00:00",
+    "word_count": 1055,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/protein-intake-changed-my-body-composition.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "body-fat-calculator",
+      "ideal-weight-calculator",
+      "bmi-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-03-27T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "desk-job-is-destroying-my-health",
+    "title": "My Desk Job Is Destroying My Health",
+    "description": "I sit for ten hours a day. Not because I want to. Because my job requires it. I'm a software engineer. My tools are a keyboard and a monitor. There's ...",
+    "excerpt": "I sit for ten hours a day. Not because I want to. Because my job requires it. I'm a software engineer. My tools are a keyboard and a monitor. There's ...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-03-25T08:00:00+00:00",
+    "date": "2026-03-25T08:00:00+00:00",
+    "date_modified": "2026-03-25T08:00:00+00:00",
+    "word_count": 1078,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/desk-job-is-destroying-my-health.jpg",
+    "tools_referenced": [
+      "index",
+      "bmr-calculator",
+      "calorie-calculator",
+      "bmi-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-03-25T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "i-tried-omad-for-a-week",
+    "title": "I Tried OMAD for a Week",
+    "description": "OMAD stands for One Meal a Day. It's exactly what it sounds like: you fast for twenty-three hours, then eat all your daily calories in a single hour. ...",
+    "excerpt": "OMAD stands for One Meal a Day. It's exactly what it sounds like: you fast for twenty-three hours, then eat all your daily calories in a single hour. ...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-03-23T08:00:00+00:00",
+    "date": "2026-03-23T08:00:00+00:00",
+    "date_modified": "2026-03-23T08:00:00+00:00",
+    "word_count": 1063,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/i-tried-omad-for-a-week.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmr-calculator",
+      "bmi-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-03-23T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "i-tried-keto-for-one-week-and-quit",
+    "title": "I Tried Keto for One Week and Quit",
+    "description": "My coworker Dave lost twenty pounds on keto in two months. He wouldn't shut up about it.",
+    "excerpt": "My coworker Dave lost twenty pounds on keto in two months. He wouldn't shut up about it.",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-03-03T08:00:00+00:00",
+    "date": "2026-03-03T08:00:00+00:00",
+    "date_modified": "2026-03-03T08:00:00+00:00",
+    "word_count": 1114,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/i-tried-keto-for-one-week-and-quit.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmr-calculator",
+      "bmi-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-03-03T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "i-quit-soda-for-30-days",
+    "title": "I Quit Soda for 30 Days",
+    "description": "I used to drink two to three cans of Diet Coke a day. Not regular Coke. Diet. The zero-calorie kind. I told myself it was fine because there were no c...",
+    "excerpt": "I used to drink two to three cans of Diet Coke a day. Not regular Coke. Diet. The zero-calorie kind. I told myself it was fine because there were no c...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-02-24T08:00:00+00:00",
+    "date": "2026-02-24T08:00:00+00:00",
+    "date_modified": "2026-02-24T08:00:00+00:00",
+    "word_count": 1084,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/i-quit-soda-for-30-days.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmi-calculator",
+      "bmr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-02-24T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "how-i-track-my-weight-with-a-spreadsheet",
+    "title": "How I Track My Weight With a Spreadsheet",
+    "description": "Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o...",
+    "excerpt": "Three months ago, I got fed up with my phone app. It wanted permissions, it wanted cloud sync, it wanted to sell me a premium subscription to see my o...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-02-22T08:00:00+00:00",
+    "date": "2026-02-22T08:00:00+00:00",
+    "date_modified": "2026-02-22T08:00:00+00:00",
+    "word_count": 1142,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/how-i-track-my-weight-with-a-spreadsheet.jpg",
+    "tools_referenced": [
+      "index",
+      "bmi-calculator",
+      "calorie-calculator",
+      "whtr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-02-22T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "how-i-set-realistic-weight-goals",
+    "title": "How I Set Realistic Weight Goals",
+    "description": "When I first decided to lose weight, I picked a number out of thin air. I wanted to weigh 160 pounds. Why? Because it sounded good. Because it was a r...",
+    "excerpt": "When I first decided to lose weight, I picked a number out of thin air. I wanted to weigh 160 pounds. Why? Because it sounded good. Because it was a r...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-02-19T08:00:00+00:00",
+    "date": "2026-02-19T08:00:00+00:00",
+    "date_modified": "2026-02-19T08:00:00+00:00",
+    "word_count": 1105,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/how-i-set-realistic-weight-goals.jpg",
+    "tools_referenced": [
+      "index",
+      "ideal-weight-calculator",
+      "calorie-calculator",
+      "bmi-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-02-19T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "how-i-got-my-roommate-to-track-bmi",
+    "title": "How I Got My Roommate to Track BMI",
+    "description": "My roommate Jake is the opposite of me. He doesn't track anything. He doesn't weigh himself. He eats what he wants, when he wants, and somehow maintai...",
+    "excerpt": "My roommate Jake is the opposite of me. He doesn't track anything. He doesn't weigh himself. He eats what he wants, when he wants, and somehow maintai...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-02-18T08:00:00+00:00",
+    "date": "2026-02-18T08:00:00+00:00",
+    "date_modified": "2026-02-18T08:00:00+00:00",
+    "word_count": 1140,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/how-i-got-my-roommate-to-track-bmi.jpg",
+    "tools_referenced": [
+      "index",
+      "bmi-calculator",
+      "whtr-calculator",
+      "calorie-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-02-18T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "drinking-water-changed-my-weight-chart",
+    "title": "Drinking Water Changed My Weight Chart",
+    "description": "I used to drink maybe two glasses of water a day. The rest was coffee, Diet Coke, and whatever was in the office fridge. I didn't think it mattered fo...",
+    "excerpt": "I used to drink maybe two glasses of water a day. The rest was coffee, Diet Coke, and whatever was in the office fridge. I didn't think it mattered fo...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-02-04T08:00:00+00:00",
+    "date": "2026-02-04T08:00:00+00:00",
+    "date_modified": "2026-02-04T08:00:00+00:00",
+    "word_count": 1167,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/drinking-water-changed-my-weight-chart.jpg",
+    "tools_referenced": [
+      "index",
+      "bmi-calculator",
+      "calorie-calculator",
+      "bmr-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-02-04T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "cooking-at-home-saved-my-diet",
+    "title": "Cooking at Home Saved My Diet",
+    "description": "I used to eat out for almost every meal. Breakfast was a breakfast sandwich from the cafe near work. Lunch was whatever the team ordered. Dinner was t...",
+    "excerpt": "I used to eat out for almost every meal. Breakfast was a breakfast sandwich from the cafe near work. Lunch was whatever the team ordered. Dinner was t...",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-02-03T08:00:00+00:00",
+    "date": "2026-02-03T08:00:00+00:00",
+    "date_modified": "2026-02-03T08:00:00+00:00",
+    "word_count": 1068,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/cooking-at-home-saved-my-diet.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmi-calculator",
+      "ideal-weight-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-02-03T08:00:00+00:00",
+    "readTime": "5min read"
+  },
+  {
+    "slug": "carbs-are-not-the-enemy",
+    "title": "Carbs Are Not the Enemy",
+    "description": "The anti-carb movement has gone too far. I can't open social media without seeing someone demonizing bread, pasta, or fruit.",
+    "excerpt": "The anti-carb movement has gone too far. I can't open social media without seeing someone demonizing bread, pasta, or fruit.",
+    "category": "",
+    "tags": [
+      "General"
+    ],
+    "date_published": "2026-02-02T08:00:00+00:00",
+    "date": "2026-02-02T08:00:00+00:00",
+    "date_modified": "2026-02-02T08:00:00+00:00",
+    "word_count": 1013,
+    "has_image": true,
+    "image_path": "https://my-bmi.net/images/blog/carbs-are-not-the-enemy.jpg",
+    "tools_referenced": [
+      "index",
+      "calorie-calculator",
+      "bmi-calculator",
+      "ideal-weight-calculator"
+    ],
+    "author": {
+      "name": "Alex",
+      "job_title": "Software Engineer",
+      "location": ""
+    },
+    "date_iso": "2026-02-02T08:00:00+00:00",
+    "readTime": "5min read"
   }
 ]
