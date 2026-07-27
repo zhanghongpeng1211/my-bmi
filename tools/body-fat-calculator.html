@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body Fat Calculator | my-bmi.net</title>
+<meta name="description" content="Free body fat calculator using the U.S. Navy method. Estimate body fat percentage from neck, waist, and hip measurements.">
+<meta name="author" content="Alex">
+<link rel="canonical" href="https://my-bmi.net/tools/body-fat-calculator.html">
+<meta property="og:title" content="Body Fat Calculator | my-bmi.net">
+<meta property="og:description" content="Free body fat calculator using the Navy method.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://my-bmi.net/tools/body-fat-calculator.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Body Fat Calculator","applicationCategory":"HealthApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Alex"}}
+</script>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="mbn-nav">
+  <div class="mbn-nav-inner">
+    <a href="../index.html" class="mbn-logo"><svg class="mbn-logo-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/><path d="M14 32c0-8 4-14 10-14s10 6 10 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="16" r="3" fill="currentColor"/><path d="M12 36h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/></svg><span>my-bmi</span></a>
+    <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
+    <div class="mbn-nav-links">
+      <a href="../index.html">Home</a><a href="index.html" class="mbn-active">Tools</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../faq.html">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main class="mbn-tool-page">
+  <div class="mbn-tool-hero" style="background:linear-gradient(135deg,var(--mbn-warning-bg) 0%,#fff 100%);">
+    <h1>🔥 Body Fat Calculator</h1>
+    <p>U.S. Navy method. Uses neck, waist, and hip measurements. All data stays local.</p>
+  </div>
+  <div id="tool_top" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+  <div class="mbn-tool-form">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
+      <div class="mbn-form-group"><label>Gender</label><select id="gender" class="mbn-input"><option value="male">Male</option><option value="female">Female</option></select></div>
+      <div class="mbn-form-group"><label>Height (cm)</label><input type="number" id="height" class="mbn-input" placeholder="e.g. 178" min="100" max="250"></div>
+      <div class="mbn-form-group"><label>Neck (cm)</label><input type="number" id="neck" class="mbn-input" placeholder="e.g. 38" min="20" max="80" step="0.1"></div>
+      <div class="mbn-form-group"><label>Waist (cm)</label><input type="number" id="waist" class="mbn-input" placeholder="e.g. 86" min="40" max="200" step="0.1"></div>
+      <div class="mbn-form-group" id="hipGroup" style="display:none;"><label>Hip (cm)</label><input type="number" id="hip" class="mbn-input" placeholder="e.g. 96" min="40" max="200" step="0.1"></div>
+      <div class="mbn-form-group"><label>Age</label><input type="number" id="age" class="mbn-input" placeholder="e.g. 28" min="10" max="100"></div>
+    </div>
+    <div class="mbn-tool-actions">
+      <button class="mbn-btn mbn-btn-primary" onclick="calcBodyFat()">Calculate</button>
+      <button class="mbn-btn mbn-btn-secondary" onclick="saveBF()">Save</button>
+      <button class="mbn-btn mbn-btn-secondary" onclick="exportBF()">Export CSV</button>
+      <button class="mbn-btn mbn-btn-secondary" onclick="clearBF()" style="background:#fee2e2;color:#991b1b;">Clear</button>
+    </div>
+    <div id="result" class="mbn-tool-result">
+      <div class="mbn-tool-result-value" id="bfValue">--</div>
+      <div class="mbn-tool-result-label">Body Fat %</div>
+      <div id="bfCategory" style="display:inline-block;padding:6px 16px;border-radius:20px;font-weight:600;font-size:0.85rem;margin-top:12px;">--</div>
+    </div>
+  </div>
+  <div id="tool_middle" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+  <div class="mbn-tool-chart"><canvas id="bfChart"></canvas></div>
+  <div class="mbn-tool-history" id="historySection" style="display:none;">
+    <h3>History</h3><table class="mbn-tool-history-table"><thead><tr><th>Date</th><th>Body Fat %</th><th>Category</th></tr></thead><tbody id="historyBody"></tbody></table>
+  </div>
+  <div class="mbn-tool-how">
+    <h3>How It Works</h3>
+    <p>The U.S. Navy method estimates body fat percentage using circumference measurements. It's surprisingly accurate compared to hydrostatic weighing.</p>
+    <p><strong>For men:</strong> 495 / (1.0324 - 0.19077*log10(waist-neck) + 0.15456*log10(height)) - 450</p>
+    <p><strong>For women:</strong> 495 / (1.29579 - 0.35004*log10(waist+hip-neck) + 0.22100*log10(height)) - 450</p>
+    <p><em>Measure at the same time of day, ideally in the morning. Consistency matters more than absolute accuracy.</em></p>
+  </div>
+  <div class="mbn-tool-related">
+    <div class="mbn-tool-related-col">
+      <h3>Related Articles</h3>
+      <ul>
+        <li><a href="../blog/what-8-months-of-data-taught-me-about-my-body.html">What 8 Months of Data Taught Me</a></li>
+        <li><a href="../blog/the-saturday-morning-routine-that-actually-works.html">Saturday Morning Routine</a></li>
+        <li><a href="../blog/why-i-deleted-my-fitness-app-after-using-it-for-2-years.html">Why I Deleted My Fitness App</a></li>
+      </ul>
+    </div>
+    <div class="mbn-tool-related-col">
+      <h3>More Tools</h3>
+      <ul>
+        <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+        <li><a href="bmr-calculator.html">BMR Calculator</a></li>
+        <li><a href="whtr-calculator.html">WHtR Calculator</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tool_bottom" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
+</main>
+<footer class="mbn-footer">
+  <div class="mbn-footer-inner">
+    <div class="mbn-footer-links">
+      <a href="../about.html">About Alex</a><a href="../faq.html">FAQ</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../contact.html">Contact</a>
+    </div>
+    <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+  </div>
+</footer>
+<script src="../ads-loader.js"></script>
+<script>
+document.getElementById('gender').addEventListener('change',function(){document.getElementById('hipGroup').style.display=this.value==='female'?'block':'none';});
+function calcBodyFat(){var g=document.getElementById('gender').value,h=parseFloat(document.getElementById('height').value),n=parseFloat(document.getElementById('neck').value),w=parseFloat(document.getElementById('waist').value),age=parseFloat(document.getElementById('age').value);if(!h||!n||!w||!age){alert('Fill all fields');return;}var bf;if(g==='male'){bf=495/(1.0324-0.19077*Math.log10(w-n)+0.15456*Math.log10(h))-450;}else{var hip=parseFloat(document.getElementById('hip').value)||0;if(!hip){alert('Hip required for women');return;}bf=495/(1.29579-0.35004*Math.log10(w+hip-n)+0.22100*Math.log10(h))-450;}bf=Math.max(2,Math.min(60,bf));var bfR=bf.toFixed(1);document.getElementById('bfValue').textContent=bfR+'%';document.getElementById('result').classList.add('show');var cat=document.getElementById('bfCategory');if(bf<6){cat.textContent='Essential Fat';cat.style.background='#dbeafe';cat.style.color='#1e40af';}else if(bf<14){cat.textContent='Athletes';cat.style.background='#d1fae5';cat.style.color='#065f46';}else if(bf<18){cat.textContent='Fitness';cat.style.background='#d1fae5';cat.style.color='#065f46';}else if(bf<25){cat.textContent='Average';cat.style.background='var(--mbn-warning-bg)';cat.style.color='var(--mbn-warning-text)';}else{cat.textContent='Obese';cat.style.background='#fee2e2';cat.style.color='#991b1b';}}
+function saveBF(){var bf=document.getElementById('bfValue').textContent;if(bf==='--'){alert('Calculate first');return;}var rec={date:new Date().toISOString().split('T')[0],bf:bf,category:document.getElementById('bfCategory').textContent};var hist=JSON.parse(localStorage.getItem('mbn_bf_history')||'[]');hist.unshift(rec);localStorage.setItem('mbn_bf_history',JSON.stringify(hist));loadBF();drawBF();alert('Saved!');}
+function loadBF(){var hist=JSON.parse(localStorage.getItem('mbn_bf_history')||'[]');if(hist.length>0){document.getElementById('historySection').style.display='block';var tb=document.getElementById('historyBody');tb.innerHTML='';hist.slice(0,20).forEach(function(r){tb.innerHTML+='<tr><td>'+r.date+'</td><td>'+r.bf+'</td><td>'+r.category+'</td></tr>';});}}
+function drawBF(){var hist=JSON.parse(localStorage.getItem('mbn_bf_history')||'[]');if(hist.length<2)return;var c=document.getElementById('bfChart');c.width=c.offsetWidth||600;c.height=300;var ctx=c.getContext('2d'),w=c.width,h=c.height,p=40;ctx.clearRect(0,0,w,h);var vals=hist.slice(0,30).reverse().map(function(r){return parseFloat(r.bf);});var minV=Math.min.apply(null,vals)-2,maxV=Math.max.apply(null,vals)+2;ctx.strokeStyle='var(--mbn-border)';ctx.lineWidth=1;for(var i=0;i<=5;i++){var y=p+(h-2*p)*i/5;ctx.beginPath();ctx.moveTo(p,y);ctx.lineTo(w-p,y);ctx.stroke();}ctx.strokeStyle='#f59e0b';ctx.lineWidth=3;ctx.beginPath();vals.forEach(function(v,i){var x=p+(w-2*p)*i/(vals.length-1),y=p+(h-2*p)*(1-(v-minV)/(maxV-minV));if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();ctx.fillStyle='#f59e0b';vals.forEach(function(v,i){var x=p+(w-2*p)*i/(vals.length-1),y=p+(h-2*p)*(1-(v-minV)/(maxV-minV));ctx.beginPath();ctx.arc(x,y,5,0,Math.PI*2);ctx.fill();});}
+function exportBF(){var hist=JSON.parse(localStorage.getItem('mbn_bf_history')||'[]');if(!hist.length){alert('No data');return;}var csv='Date,BodyFat%,Category\n';hist.forEach(function(r){csv+=r.date+','+r.bf+','+r.category+'\n';});var blob=new Blob([csv],{type:'text/csv'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='bodyfat-history.csv';a.click();URL.revokeObjectURL(url);}
+function clearBF(){if(confirm('Delete all history?')){localStorage.removeItem('mbn_bf_history');document.getElementById('historySection').style.display='none';var c=document.getElementById('bfChart'),ctx=c.getContext('2d');ctx.clearRect(0,0,c.width,c.height);}}
+document.addEventListener('DOMContentLoaded',function(){loadBF();drawBF();});
+</script>
+</body>
+</html>
