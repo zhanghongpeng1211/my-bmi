@@ -43,6 +43,18 @@
   "description": "Personal BMI tracking and weight loss diary by a software engineer in Denver."
 }
 </script>
+<!-- Open Graph -->
+<meta property="og:title" content="About Alex | my-bmi.net">
+<meta property="og:description" content="Hi, I'm Alex. I'm a 28-year-old software engineer in Denver who built this tool because I needed a simple way to track my own weight and BMI.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://my-bmi.net/about.html">
+<meta property="og:image" content="https://my-bmi.net/images/og-default.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About Alex | my-bmi.net">
+<meta name="twitter:description" content="Hi, I'm Alex. I'm a 28-year-old software engineer in Denver who built this tool because I needed a simple way to track my own weight and BMI.">
+<meta name="twitter:image" content="https://my-bmi.net/images/og-default.jpg">
 </head>
 <body>
 
@@ -60,14 +72,17 @@
     </a>
     <button class="mbn-hamburger" onclick="document.querySelector('.mbn-nav-links').classList.toggle('mbn-open')">☰</button>
     <div class="mbn-nav-links">
-      <a href="index.html">Tracker</a>
-      <a href="blog/index.html">Journal</a>
-      <a href="faq.html">FAQ</a>
+      <a href="index.html">Home</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="blog/index.html">Blog</a>
       <a href="about.html" class="mbn-active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
     </div>
   </div>
 </nav>
 
+<nav style="max-width:700px;margin:20px auto 0;padding:0 20px;font-size:0.85rem;color:var(--mbn-text-light);"><a href="index.html" style="color:var(--mbn-text-light);text-decoration:none;">Home</a> <span style="margin:0 8px;">/</span> <span style="color:var(--mbn-text);">About</span></nav>
 <main class="mbn-main" style="max-width:700px;margin:0 auto;padding:40px 20px;">
   <article>
     <header style="text-align:center;margin-bottom:40px;">
@@ -121,7 +136,7 @@
     </section>
 
     <section style="margin-bottom:32px;">
-      <h2 style="color:var(--mbn-text);margin-bottom:16px;font-size:1.2rem;">The Journal</h2>
+      <h2 style="color:var(--mbn-text);margin-bottom:16px;font-size:1.2rem;">The Blog</h2>
       <p style="line-height:1.8;color:var(--mbn-text);margin-bottom:16px;">
         I write about what I'm learning, what I'm struggling with, and what tools I'm trying. It's not medical advice — I'm not a doctor, I'm a guy who writes Python scripts and sometimes goes to the gym.
       </p>
@@ -136,6 +151,7 @@
       <p style="color:var(--mbn-text-light);margin-top:8px;font-size:0.9rem;">I read every email. I don't always respond quickly because, you know, day job. But I do read them.</p>
     </section>
   </article>
+<div id="about_bottom" class="mbn-ad-slot"><div class="mbn-ad-label">Advertisement</div></div>
 </main>
 
 <footer class="mbn-footer">
@@ -145,10 +161,13 @@
       <a href="faq.html">FAQ</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
     </div>
-    <p class="mbn-footer-copy">© 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
+    <p class="mbn-footer-copy">&copy; 2026 my-bmi.net. Built by Alex in Denver. No trackers, no BS.</p>
   </div>
 </footer>
 
+<script src="ads-loader.js"></script>
 </body>
 </html>
