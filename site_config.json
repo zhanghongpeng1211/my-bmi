@@ -1,0 +1,16 @@
+{
+  "site_name": "my-bmi.net",
+  "domain": "my-bmi.net",
+  "css_prefix": "mbn",
+  "author": {
+    "name": "Alex",
+    "full_name": "Alex",
+    "job_title": "Software Engineer",
+    "location": "Denver, CO",
+    "email": "hello@my-bmi.net"
+  },
+  "language": "en",
+  "timezone": "America/Denver",
+  "created_date": "2026-05-19",
+  "version": "2.0"
+}
